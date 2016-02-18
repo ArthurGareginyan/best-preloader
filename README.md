@@ -2,8 +2,6 @@
 
 **Free Premium WorPress Plugin**
 
-`** NOTE: I haven't finished this plugin. Join me and help finish the plugin! **`
-
 ![screenshot](https://github.com/ArthurGareginyan/best-preloader/blob/master/assets/banner-772x250.png)
 
 An easy to use WordPress plugin that gives you the ability to add the preloader (animated loading screen indicator) to your website in a simple and elegant way.
