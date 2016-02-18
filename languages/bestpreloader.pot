@@ -1,0 +1,165 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Best Preloader\n"
+"POT-Creation-Date: 2016-02-18 03:53+0300\n"
+"PO-Revision-Date: 2016-02-18 03:53+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: best-preloader.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: best-preloader.php:58 inc/settings_page.php:81
+msgid "Settings"
+msgstr ""
+
+#: best-preloader.php:71
+msgid "Preloader"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: inc/settings_page.php:22
+msgid "Best Preloader"
+msgstr ""
+
+#: inc/settings_page.php:25
+msgid ""
+"by <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Arthur "
+"\"Berserkr\" Gareginyan</a>"
+msgstr ""
+
+#: inc/settings_page.php:36
+msgid "About"
+msgstr ""
+
+#: inc/settings_page.php:41
+msgid ""
+"This plugin allows you to easily add the preloader to your website in a "
+"simple and elegant way."
+msgstr ""
+
+#: inc/settings_page.php:42
+msgid ""
+"To use, select the desired settings, then click \"Save Changes\". It's that "
+"simple!"
+msgstr ""
+
+#: inc/settings_page.php:47
+msgid "Donate"
+msgstr ""
+
+#: inc/settings_page.php:49
+msgid ""
+"If you like this plugin and find it useful, help me to make this plugin even "
+"better and keep it up-to-date."
+msgstr ""
+
+#: inc/settings_page.php:55
+msgid "Thanks for your support!"
+msgstr ""
+
+#: inc/settings_page.php:60
+msgid "Help"
+msgstr ""
+
+#: inc/settings_page.php:63
+msgid "If you want more options then tell me and I will be happy to add it."
+msgstr ""
+
+#: inc/settings_page.php:87
+msgid "Enable preloader"
+msgstr ""
+
+#: inc/settings_page.php:90
+msgid "ON"
+msgstr ""
+
+#: inc/settings_page.php:91
+msgid "OFF"
+msgstr ""
+
+#: inc/settings_page.php:97
+msgid "Preloader image"
+msgstr ""
+
+#: inc/settings_page.php:104
+msgid ""
+"You can set your own image of preloader. To do this, enter the link to the "
+"file of image. Leave blank to use the default image of preloader."
+msgstr ""
+
+#: inc/settings_page.php:108
+msgid "Preloader image size"
+msgstr ""
+
+#: inc/settings_page.php:115
+msgid "You can set the size of preloaders image (in px)."
+msgstr ""
+
+#: inc/settings_page.php:119
+msgid "Background color"
+msgstr ""
+
+#: inc/settings_page.php:126
+msgid ""
+"Select the background color of preloader. You can also add html HEX color "
+"code."
+msgstr ""
+
+#: inc/settings_page.php:130
+msgid "Display Preloader on"
+msgstr ""
+
+#: inc/settings_page.php:133
+msgid "Full Website"
+msgstr ""
+
+#: inc/settings_page.php:134
+msgid "Home Page Only"
+msgstr ""
+
+#: inc/settings_page.php:140
+msgid "Select where preloader need to be appeared."
+msgstr ""
+
+#: inc/settings_page.php:144
+msgid "Save Changes"
+msgstr ""
+
+#: inc/settings_page.php:149
+msgid "Preview"
+msgstr ""
+
+#: inc/settings_page.php:151
+msgid "Click \"Save Changes\" to update this preview."
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://mycyberuniverse.com/my_programs/wp-plugin-preloader.html"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Easily add cross browser animated preloader to your website. It will be "
+"responsive and compatible with all major browsers. It will work with any "
+"theme!"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Arthur \"Berserkr\" Gareginyan"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.arthurgareginyan.com"
+msgstr ""
