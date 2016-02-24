@@ -1,10 +1,11 @@
 === Best Preloader ===
 Contributors: Arthur Gareginyan
-Tags: preloader, best preloader, load, loading screen indicator, loading indicator, screen indicator, 
+Tags: animated pre-loader, animated preloader, best preloader, custom preloader, flat, preloader spinner, flat preloader, free preloader, html5 loader, load, loader,
+loader, loading, loading screen indicator, loading indicator, screen indicator, page load, page loader, page spinners, pre-loader, preload, preloader, preloader spinner, preloader, site loader, spinner,
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
 Tested up to: 4.4
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -34,11 +35,10 @@ Please if you have any suggestions to make this plugin better, don't hesitate to
 * Option to enable/disable preloader
 * Option to display preloader in full website or in Home page only
 * Ready for translation (.pot file included)
-
+* Added Russian translation
 
 **Coming soon:**
 
-* Adding Russian translation
 * (Got more ideas? Tell me!)
 
 
@@ -79,7 +79,7 @@ A. Sorry, this plugin is available for use only on self-hosted (WordPress.org) w
 A. Yes. But If your language is not available then you can make one. This plugin is ready for translation. The `.pot` file is included and placed in "`languages`" folder. Many of plugin users would be delighted if you shared your translation with the community. Just send the translation files (`*.po, *.mo`) to me at the arthurgareginyan@gmail.com and I will include the translation within the next plugin update.
 
 = Q. How does it work? =
-A. First, go to page "`Settings`" —> "`Preloader ".
+A. First, go to page "`Settings`" —> "`Preloader`".
 On the plugins page select the desired settings, then click "Save Changes". It's that simple!
 
 = Q. How can I upload my image? =
@@ -124,6 +124,9 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 * [Dedicated Plugin Page on GitHub](https://github.com/ArthurGareginyan/best-preloader)
 
 == Changelog ==
+= 1.1 =
+* Added Russian translation.
+* Added HTML tag < No Script > in order to hide preloader if JavaScript is disabled in user's browser.
 = 1.0 =
 * Initial release.
 * Added ready for translation (.pot file included).
@@ -134,5 +137,8 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Upgrade Notice ==
+= 1.1 =
+* Added Russian translation.
+* Added HTML tag < No Script > in order to hide preloader if JavaScript is disabled in user's browser.
 = 1.0 =
 Please update to first stable release!

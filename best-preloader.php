@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Best Preloader
- * Plugin URI: http://mycyberuniverse.com/my_programs/wp-plugin-preloader.html
+ * Plugin URI: http://mycyberuniverse.com/my_programs/wp-plugin-best-preloader.html
  * Description: Easily add cross browser animated preloader to your website. It will be responsive and compatible with all major browsers. It will work with any theme!
  * Author: Arthur "Berserkr" Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 1.0
+ * Version: 1.1
  * License: GPL3
  * Text Domain: bestpreloader
  * Domain Path: /languages/
@@ -130,7 +130,7 @@ add_action( 'admin_init', 'bestpreloader_register_settings' );
 /**
  * Generate the CSS of preloader from options and add it to head section of website
  *
- * @since 1.0
+ * @since 1.1
  */
 function bestpreloader_css_options() {
 
@@ -167,6 +167,16 @@ function bestpreloader_css_options() {
                 -webkit-background-size: <?php echo $preloader_size; ?>px <?php echo $preloader_size; ?>px;
             }
         </style>
+
+        <noscript>
+            <style type="text/css">
+                #preloader,
+                #preloader-background,
+                #preloader-status {
+                    display: none !important;
+                }
+            </style>
+        </noscript>
     <?php
 }
 add_action('wp_head' , 'bestpreloader_css_options');

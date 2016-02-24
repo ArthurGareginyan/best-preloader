@@ -26,10 +26,10 @@ Please if you have any suggestions to make this plugin better, don't hesitate to
 * Option to enable/disable preloader
 * Option to display preloader in full website or in Home page only
 * Ready for translation (.pot file included)
+* Added Russian translation
 
 **Coming soon:**
 
-* Adding Russian translation.
 * (Got more ideas? Tell me!)
 
 
