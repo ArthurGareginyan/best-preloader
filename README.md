@@ -63,9 +63,9 @@ Arthur Garegnyan aka Berserkr
 
 ## Links
 
-* [Dedicated Plugin Page](http://mycyberuniverse.com/my_programs/wp-plugin-best-preloader.html) - `STILL NOT CREATED`
+* [Dedicated Plugin Page](http://mycyberuniverse.com/my_programs/wp-plugin-best-preloader.html)
 
-* [Dedicated Plugin Page on WordPress.org](https://wordpress.org/plugins/best-preloader/) - `STILL NOT CREATED`
+* [Dedicated Plugin Page on WordPress.org](https://wordpress.org/plugins/best-preloader/)
 
 * [Donation Page](http://www.arthurgareginyan.com/donate.html)
 
