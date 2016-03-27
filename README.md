@@ -10,12 +10,8 @@ This plugin give you finer control over preloader, it can be configured on the p
 
 Also you don't need to edit any file of your theme, this plugin will do everything for you. It's just plug and play, no tedious configurations or hacks, just install, enable and start enjoying the preloader. Preloader will be responsive and compatible with all major browsers. It will work with any theme!
 
-Please if you have any suggestions to make this plugin better, don't hesitate to contact me.
-
 
 ## Features
-
-**Current features:**
 
 * Responsive
 * Retina support
@@ -26,11 +22,9 @@ Please if you have any suggestions to make this plugin better, don't hesitate to
 * Option to enable/disable preloader
 * Option to display preloader in full website or in Home page only
 * Ready for translation (.pot file included)
-* Added Russian translation
+* Russian translation
 
-**Coming soon:**
-
-* (Got more ideas? Tell me!)
+**Got more ideas? Tell me!**
 
 
 ## Contributing
@@ -62,8 +56,6 @@ Arthur Garegnyan aka Berserkr
 
 
 ## Links
-
-* [Dedicated Plugin Page](http://mycyberuniverse.com/my_programs/wp-plugin-best-preloader.html)
 
 * [Dedicated Plugin Page on WordPress.org](https://wordpress.org/plugins/best-preloader/)
 
