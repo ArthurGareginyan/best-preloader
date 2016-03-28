@@ -41,9 +41,6 @@ Please if you have any suggestions to make this plugin better, don't hesitate to
 
 * (Got more ideas? Tell me!)
 
-
-For more details please visit - [Dedicated Plugin Page](http://mycyberuniverse.com/my_programs/wp-plugin-best-preloader.html)
-
 **Please Vote and Enjoy**
 
 * Your votes really make a difference! Thanks.
@@ -72,7 +69,7 @@ After installation, a "`Preloader`" menu item will appear in the "`Settings`" s
 
 
 == Frequently Asked Questions ==
-= Q. Will this Plugin work on my WordPress.com website? =
+= Q. Will this Plugin work on my WordPress.COM website? =
 A. Sorry, this plugin is available for use only on self-hosted (WordPress.org) websites.
 
 = Q. Can I use this plugin on my language? =
@@ -85,11 +82,20 @@ On the plugins page select the desired settings, then click "Save Changes". It's
 = Q. How can I upload my image? =
 A. You can put the url of image to the "Preloader image" field.
 
+= Q. Does this plugin require modification to the theme? =
+A. Absolutely not. This plugin is added/configured entirely from the website's Admin section.
+
+= Q. Does this require any knowledge of HTML or CSS? =
+A. Absolutely not. This plugin can be configured with no knowledge of HTML or CSS, using a simple WordPress settings page.
+
+= Q. It's not working. What could be wrong? =
+A. As with every plugin, it's possible that things don't work. The most common reason for this is that the plugin has a conflict with another plugin you're using. It's impossible to tell what could be wrong exactly, but if you post a support request in the plugin's support forum on WordPress.org, I'd be happy to give it a look and try to help out. Please include as much information as possible, including a link to your website where the problem can be seen.
+
 = Q. Where to report bug if found? =
 A. Please visit [Dedicated Plugin Page on GitHub](https://github.com/ArthurGareginyan/best-preloader) and report.
 
 = Q. Where to share any ideas or suggestions to make the plugin better? =
-A. Please visit [Dedicated Plugin Page](http://mycyberuniverse.com/my_programs/wp-plugin-best-preloader.html) and share.
+A. Please send me email [arthurgareginyan@gmail.com](mailto:arthurgareginyan@gmail.com).
 
 
 == Screenshots ==
@@ -111,7 +117,7 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 **Support**
 
 * Did you enjoy this plugin? Please [donate to support ongoing development](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS). Your contribution would be greatly appreciated.
-* Do you have any ideas or suggestions to make the plugin better? I can’t wait to hear them! Please share! [Dedicated Plugin Page](http://mycyberuniverse.com/my_programs/wp-plugin-best-preloader.html)
+* Do you have any ideas or suggestions to make the plugin better? I can’t wait to hear them! Please share! [arthurgareginyan@gmail.com](mailto:arthurgareginyan@gmail.com)
 
 **Please Vote and Enjoy**
 
@@ -120,7 +126,6 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 **Links**
 
 * [Developer Website](http://www.arthurgareginyan.com)
-* [Dedicated Plugin Page](http://mycyberuniverse.com/my_programs/wp-plugin-best-preloader.html)
 * [Dedicated Plugin Page on GitHub](https://github.com/ArthurGareginyan/best-preloader)
 
 == Changelog ==
