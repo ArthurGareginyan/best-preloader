@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Best Preloader\n"
-"POT-Creation-Date: 2016-02-24 06:33+0300\n"
+"POT-Creation-Date: 2016-04-09 13:56+0300\n"
 "PO-Revision-Date: 2016-02-18 03:53+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -20,133 +20,146 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: best-preloader.php:58 inc/settings_page.php:81
+#: best-preloader.php:70 inc/settings_page.php:94
 msgid "Settings"
 msgstr ""
 
-#: best-preloader.php:71
+#: best-preloader.php:82
 msgid "Preloader"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-#: inc/settings_page.php:22
+#: inc/settings_page.php:24
 msgid "Best Preloader"
 msgstr ""
 
-#: inc/settings_page.php:25
+#: inc/settings_page.php:27
 msgid ""
 "by <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Arthur "
 "\"Berserkr\" Gareginyan</a>"
 msgstr ""
 
-#: inc/settings_page.php:36
+#: inc/settings_page.php:38
 msgid "About"
 msgstr ""
 
-#: inc/settings_page.php:41
-msgid ""
-"This plugin allows you to easily add the preloader to your website in a "
-"simple and elegant way."
-msgstr ""
-
-#: inc/settings_page.php:42
+#: inc/settings_page.php:40 inc/settings_page.php:47
 msgid ""
 "To use, select the desired settings, then click \"Save Changes\". It's that "
 "simple!"
 msgstr ""
 
-#: inc/settings_page.php:47
+#: inc/settings_page.php:45
+msgid "Using"
+msgstr ""
+
+#: inc/settings_page.php:52
+msgid "Help"
+msgstr ""
+
+#: inc/settings_page.php:54
+msgid "If you want more options then tell me and I will be happy to add it."
+msgstr ""
+
+#: inc/settings_page.php:60
 msgid "Donate"
 msgstr ""
 
-#: inc/settings_page.php:49
+#: inc/settings_page.php:63
 msgid ""
 "If you like this plugin and find it useful, help me to make this plugin even "
 "better and keep it up-to-date."
 msgstr ""
 
-#: inc/settings_page.php:55
+#: inc/settings_page.php:67
 msgid "Thanks for your support!"
 msgstr ""
 
-#: inc/settings_page.php:60
-msgid "Help"
+#: inc/settings_page.php:72
+msgid "Freelance"
 msgstr ""
 
-#: inc/settings_page.php:63
-msgid "If you want more options then tell me and I will be happy to add it."
+#: inc/settings_page.php:75
+msgid ""
+"Hello, my name is Arthur and I'm a freelance web designer and developer."
 msgstr ""
 
-#: inc/settings_page.php:87
+#: inc/settings_page.php:76
+msgid ""
+"Share your thoughts with me. You may have a brilliant idea in your mind and "
+"I can make it happen, so let’s get started!"
+msgstr ""
+
+#: inc/settings_page.php:100
 msgid "Enable preloader"
 msgstr ""
 
-#: inc/settings_page.php:90
+#: inc/settings_page.php:103
 msgid "ON"
 msgstr ""
 
-#: inc/settings_page.php:91
+#: inc/settings_page.php:104
 msgid "OFF"
 msgstr ""
 
-#: inc/settings_page.php:97
+#: inc/settings_page.php:110
 msgid "Preloader image"
 msgstr ""
 
-#: inc/settings_page.php:104
+#: inc/settings_page.php:117
 msgid ""
 "You can set your own image of preloader. To do this, enter the link to the "
 "file of image. Leave blank to use the default image of preloader."
 msgstr ""
 
-#: inc/settings_page.php:108
+#: inc/settings_page.php:121
 msgid "Preloader image size"
 msgstr ""
 
-#: inc/settings_page.php:115
+#: inc/settings_page.php:128
 msgid "You can set the size of preloaders image (in px)."
 msgstr ""
 
-#: inc/settings_page.php:119
+#: inc/settings_page.php:132
 msgid "Background color"
 msgstr ""
 
-#: inc/settings_page.php:126
+#: inc/settings_page.php:139
 msgid ""
 "Select the background color of preloader. You can also add html HEX color "
 "code."
 msgstr ""
 
-#: inc/settings_page.php:130
+#: inc/settings_page.php:143
 msgid "Display Preloader on"
 msgstr ""
 
-#: inc/settings_page.php:133
+#: inc/settings_page.php:146
 msgid "Full Website"
 msgstr ""
 
-#: inc/settings_page.php:134
+#: inc/settings_page.php:147
 msgid "Home Page Only"
 msgstr ""
 
-#: inc/settings_page.php:140
+#: inc/settings_page.php:153
 msgid "Select where preloader need to be appeared."
 msgstr ""
 
-#: inc/settings_page.php:144
+#: inc/settings_page.php:157
 msgid "Save Changes"
 msgstr ""
 
-#: inc/settings_page.php:149
+#: inc/settings_page.php:162
 msgid "Preview"
 msgstr ""
 
-#: inc/settings_page.php:151
+#: inc/settings_page.php:164
 msgid "Click \"Save Changes\" to update this preview."
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "http://mycyberuniverse.com/my_programs/wp-plugin-preloader.html"
+msgid "https://github.com/ArthurGareginyan/best-preloader"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -157,7 +170,7 @@ msgid ""
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Arthur \"Berserkr\" Gareginyan"
+msgid "Arthur Gareginyan"
 msgstr ""
 
 #. Author URI of the plugin/theme

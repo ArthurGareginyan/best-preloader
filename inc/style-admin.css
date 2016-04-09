@@ -1,7 +1,7 @@
 /*
  * Best Preloader
  * Style sheet for plugin's page
- * @since 1.0
+ * @since 2.0
  * @agareginyan
  */
 
@@ -42,10 +42,6 @@ h3.title {
     text-align: center;
 }
 
-.postbox h3.title {
-    font-size: 120%;
-}
-
 td.help-text {
     font-style: italic;
     font-size: 12px !important;
@@ -64,11 +60,23 @@ td.help-text {
     position: relative;
 }
 
-.about img {
-    max-width: 100%;
+#about {
+    text-align: center;
 }
 
-.donate {
+#using {
+    text-align: center;
+}
+
+#help {
+    text-align: center;
+}
+
+#donate {
+    text-align: center;
+}
+
+#freelance {
     text-align: center;
 }
 
