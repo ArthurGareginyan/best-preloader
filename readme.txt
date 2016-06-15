@@ -29,6 +29,7 @@ Also you don't need to edit any file of your theme, this plugin will do everythi
 * Have default animated GIF preloader image
 * Option to enable/disable preloader
 * Option to display preloader in full website or in Home page only
+* Option to set the delay before the preloader appears
 * Ready for translation (.pot file included)
 * Russian translation
 
