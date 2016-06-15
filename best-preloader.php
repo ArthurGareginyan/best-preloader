@@ -5,7 +5,7 @@
  * Description: Easily add cross browser animated preloader to your website. It will be responsive and compatible with all major browsers. It will work with any theme!
  * Author: Arthur Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 2.0
+ * Version: 2.1
  * License: GPL3
  * Text Domain: best-preloader
  * Domain Path: /languages/
@@ -37,7 +37,7 @@
 defined('ABSPATH') or die("Restricted access!");
 
 /**
- * Plugin constants
+ * Define constants
  *
  * @since 2.0
  */
@@ -111,7 +111,7 @@ add_action('admin_enqueue_scripts', 'bestpreloader_enqueue_scripts_admin');
 /**
  *  Enqueue scripts and style sheet for front end of website
  *
- * @since 2.0
+ * @since 2.1
  */
 function bestpreloader_enqueue_scripts_frontend() {
 
@@ -125,6 +125,12 @@ function bestpreloader_enqueue_scripts_frontend() {
             wp_enqueue_style('style-preloader', BESTPL_URL . 'inc/style-preloader.css');
         }
     }
+
+    // Create js object and injected it into the js file
+    $script_params = array(
+                           'seconds' => $options['seconds'],
+                           );
+    wp_localize_script( 'preloader', 'scriptParams', $script_params );
 }
 add_action('wp_enqueue_scripts', 'bestpreloader_enqueue_scripts_frontend');
 
@@ -141,7 +147,7 @@ add_action( 'admin_init', 'bestpreloader_register_settings' );
 /**
  * Generate the CSS of preloader from options and add it to head section of website
  *
- * @since 1.1
+ * @since 2.1
  */
 function bestpreloader_css_options() {
 
@@ -168,6 +174,9 @@ function bestpreloader_css_options() {
 
     ?>
         <style type="text/css">
+            #preloader {
+                display: none;
+            }
             #preloader-background {
                 background-color: <?php echo $backgroun_color; ?>;
             }

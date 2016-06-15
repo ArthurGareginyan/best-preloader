@@ -10,7 +10,7 @@ defined('ABSPATH') or die("Restricted access!");
 /**
  * Render Settings Page
  *
- * @since 2.0
+ * @since 2.1
  */
 function bestpreloader_render_submenu_page() {
 
@@ -24,7 +24,7 @@ function bestpreloader_render_submenu_page() {
             <?php _e( 'Best Preloader', 'best-preloader' ); ?>
             <br/>
             <span>
-                <?php _e( 'by <a href="http://www.arthurgareginyan.com" target="_blank">Arthur "Berserkr" Gareginyan</a>', 'best-preloader' ); ?>
+                <?php _e( 'by <a href="http://www.arthurgareginyan.com" target="_blank">Arthur Gareginyan</a>', 'best-preloader' ); ?>
             <span/>
 		</h2>
 
@@ -109,7 +109,7 @@ function bestpreloader_render_submenu_page() {
                                         <tr valign='top'>
                                             <th scope='row'><?php _e( 'Preloader image', 'best-preloader' ); ?></th>
                                             <td>
-                                                <input type="text" name="bestpreloader_settings[custom-image]" id="bestpreloader_settings[custom-image]" value="<?php echo $options['custom-image']; ?>" placeholder="http://" size="50" >
+                                                <input type="text" name="bestpreloader_settings[custom-image]" id="bestpreloader_settings[custom-image]" value="<?php if ( !empty($options['custom-image']) ) {  echo $options['custom-image']; } ?>" placeholder="http://" size="50" >
                                             </td>
                                         </tr>
                                         <tr valign='top'>
@@ -120,7 +120,7 @@ function bestpreloader_render_submenu_page() {
                                         <tr valign='top'>
                                             <th scope='row'><?php _e( 'Preloader image size', 'best-preloader' ); ?></th>
                                             <td>
-                                                <input type="text" name="bestpreloader_settings[preloader-size]" id="bestpreloader_settings[preloader-size]" value="<?php echo $options['preloader-size']; ?>" placeholder="100" size="2" >
+                                                <input type="text" name="bestpreloader_settings[preloader-size]" id="bestpreloader_settings[preloader-size]" value="<?php if ( !empty($options['preloader-size']) ) { echo $options['preloader-size']; } ?>" placeholder="100" size="2" >
                                             </td>
                                         </tr>
                                         <tr valign='top'>
@@ -131,7 +131,7 @@ function bestpreloader_render_submenu_page() {
                                         <tr valign='top'>
                                             <th scope='row'><?php _e( 'Background color', 'best-preloader' ); ?></th>
                                             <td>
-                                                <input type="text" name="bestpreloader_settings[background-color]" id="bestpreloader_settings[background-color]" value="<?php echo $options['background-color']; ?>" placeholder="#ffffff" class="color-picker">
+                                                <input type="text" name="bestpreloader_settings[background-color]" id="bestpreloader_settings[background-color]" value="<?php if ( !empty($options['background-color']) ) { echo $options['background-color']; } ?>" placeholder="#ffffff" class="color-picker">
                                             </td>
                                         </tr>
                                         <tr valign='top'>
@@ -151,6 +151,17 @@ function bestpreloader_render_submenu_page() {
                                         <tr valign='top'>
                                             <td></td>
                                             <td class='help-text'><?php _e( 'Select where preloader need to be appeared.', 'best-preloader' ); ?></td>
+                                        </tr>
+
+                                        <tr valign='top'>
+                                            <th scope='row'><?php _e( 'Delay time', 'best-preloader' ); ?></th>
+                                            <td>
+                                                <input type="text" name="bestpreloader_settings[seconds]" id="bestpreloader_settings[seconds]" value="<?php if ( !empty($options['seconds']) ) { echo $options['seconds']; } ?>" placeholder="0" size="2" >
+                                            </td>
+                                        </tr>
+                                        <tr valign='top'>
+                                            <td></td>
+                                            <td class='help-text'><?php _e( 'You can set the time (in seconds) before preloader will appear.', 'best-preloader' ); ?></td>
                                         </tr>
 
                                     </table>

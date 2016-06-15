@@ -5,7 +5,7 @@ loader, loading, loading screen indicator, loading indicator, screen indicator, 
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
 Tested up to: 4.5
-Stable tag: 1.1
+Stable tag: 2.0
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -118,13 +118,15 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 * [Dedicated Plugin Page on GitHub](https://github.com/ArthurGareginyan/best-preloader)
 
 == Changelog ==
+= 2.1 =
+* Added option to set the time delay after which the preloader will appear.
+* CSS code of preloader is improved.
 = 2.0 =
 * Some changes in design of settings page.
 * Constants variables added.
 * Text domain changed to "best-preloader".
 * Added compatibility with the translate.wordpress.org.
 * All images are moved to the directory "images".
-* Image "btn_donateCC_LG.gif" is now located in the "images" directory.
 * Plugin URI changed to GitHub repository.
 * Added my personal ad about freelance.
 * .pot file updated.

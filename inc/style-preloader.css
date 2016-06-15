@@ -1,7 +1,7 @@
 /*
  * Best Preloader
  * Style sheet for preloader
- * @since 1.0
+ * @since 2.1
  * @agareginyan
  */
 
@@ -25,13 +25,12 @@
 }
 
 #preloader-status {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
     z-index: 99999;
     background-repeat: no-repeat;
     background-position: center;
-    margin: -100px 0 0 -100px;
 }
