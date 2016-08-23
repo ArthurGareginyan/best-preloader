@@ -4,8 +4,8 @@ Tags: animated pre-loader, animated preloader, best preloader, custom preloader,
 loader, loading, loading screen indicator, loading indicator, screen indicator, page load, page loader, page spinners, pre-loader, preload, preloader, preloader spinner, preloader, site loader, spinner,
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
-Tested up to: 4.5
-Stable tag: 2.0
+Tested up to: 4.6
+Stable tag: 2.1
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -30,16 +30,22 @@ Also you don't need to edit any file of your theme, this plugin will do everythi
 * Option to enable/disable preloader
 * Option to display preloader in full website or in Home page only
 * Option to set the delay before the preloader appears
-* Ready for translation (.pot file included)
-* Russian translation
+* Ready for translation (POT file included)
+
+= Translation =
+
+Please keep in mind that not all translations are up to date. You are welcome to contribute!
+
+* English (default)
+* Russian
 
 >**Contribution**
 >
 >Developing plugins is long and tedious work. If you benefit or enjoy this plugin please take the time to:
 >
->* Please [donate](http://www.arthurgareginyan.com/donate.html) to support ongoing development. Your contribution would be greatly appreciated.
->* Please take the time to [rate and review](https://wordpress.org/support/view/plugin-reviews/best-preloader?rate=5#postform) this plugin.
->* Please [share with me](mailto:arthurgareginyan@gmail.com) if you have any ideas or suggestions to make this plugin better.
+>* [Donate](http://www.arthurgareginyan.com/donate.html) to support ongoing development. Your contribution would be greatly appreciated.
+>* [Rate and Review](https://wordpress.org/support/view/plugin-reviews/best-preloader?rate=5#postform) this plugin.
+>* [Share with me](mailto:arthurgareginyan@gmail.com) or view the [GitHub Repo](https://github.com/ArthurGareginyan/best-preloader) if you have any ideas or suggestions to make this plugin better.
 
 
 == Installation ==
@@ -99,7 +105,7 @@ A. Yes, any financial contributions are welcome! Just visit my website and click
 
 
 == Screenshots ==
-1. Plugin’s page.
+1. Plugin page.
 2. Preloader displayed on the website with "Anarcho Notepad" theme. Used default image (spinner with text) and default (white) color of background.
 3. Preloader displayed on the website with "Anarcho Notepad" theme. Used default image (spinner with text) and custom (black) color of background.
 
@@ -119,8 +125,17 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 * [Dedicated Plugin Page on GitHub](https://github.com/ArthurGareginyan/best-preloader)
 
 == Changelog ==
+= 2.1.1 =
+* POT file updated.
+* Russian translation updated.
+* Image "thanks.png" removed.
+* Advertisement replaced by new.
+* Added the subject with plugin name to email address on settings page.
+* On settings page, size of field of "Preloader image size" option changed to 3.
+* Function "bestpreloader_enqueue_scripts_admin" renamed to "bestpreloader_load_scripts_admin".
+* Function "bestpreloader_enqueue_scripts_frontend" renamed to "bestpreloader_load_scripts_frontend".
 = 2.1 =
-* Added option to set the time delay after which the preloader will appear.
+* Added option to set the delay before the preloader appears.
 * CSS code of preloader is improved.
 = 2.0 =
 * Some changes in design of settings page.

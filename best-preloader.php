@@ -5,7 +5,7 @@
  * Description: Easily add cross browser animated preloader to your website. It will be responsive and compatible with all major browsers. It will work with any theme!
  * Author: Arthur Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 2.1
+ * Version: 2.1.1
  * License: GPL3
  * Text Domain: best-preloader
  * Domain Path: /languages/
@@ -91,11 +91,11 @@ add_action( 'admin_menu', 'bestpreloader_register_submenu_page' );
 require_once( BESTPL_PATH . 'inc/settings_page.php' );
 
 /**
- *  Enqueue scripts and style sheet for setting's page
+ *  Load scripts and style sheet for settings page
  *
  * @since 2.0
  */
-function bestpreloader_enqueue_scripts_admin($hook) {
+function bestpreloader_load_scripts_admin($hook) {
 
     // Return if the page is not a settings page of this plugin
     if ( 'settings_page_best-preloader' != $hook ) {
@@ -106,14 +106,14 @@ function bestpreloader_enqueue_scripts_admin($hook) {
     wp_enqueue_script('color-picker', BESTPL_URL . 'inc/js/color-picker.js', array('wp-color-picker'), false, true);
     wp_enqueue_style('style-admin', BESTPL_URL . 'inc/style-admin.css');
 }
-add_action('admin_enqueue_scripts', 'bestpreloader_enqueue_scripts_admin');
+add_action('admin_enqueue_scripts', 'bestpreloader_load_scripts_admin');
 
 /**
- *  Enqueue scripts and style sheet for front end of website
+ *  Load scripts and style sheet for front end of website
  *
  * @since 2.1
  */
-function bestpreloader_enqueue_scripts_frontend() {
+function bestpreloader_load_scripts_frontend() {
 
     // Read options from BD
     $options = get_option( 'bestpreloader_settings' );
@@ -132,7 +132,7 @@ function bestpreloader_enqueue_scripts_frontend() {
                            );
     wp_localize_script( 'preloader', 'scriptParams', $script_params );
 }
-add_action('wp_enqueue_scripts', 'bestpreloader_enqueue_scripts_frontend');
+add_action('wp_enqueue_scripts', 'bestpreloader_load_scripts_frontend');
 
 /**
  * Register settings

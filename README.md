@@ -24,6 +24,7 @@ Also you don't need to edit any file of your theme, this plugin will do everythi
 * Option to set the delay before the preloader appears
 * Ready for translation (.pot file included)
 * Russian translation
+* Published on [WordPess.org](http://wordpess.org/)
 
 **Got more ideas? Tell me!**
 

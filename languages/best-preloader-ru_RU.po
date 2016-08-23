@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Best Preloader\n"
-"POT-Creation-Date: 2016-04-09 13:56+0300\n"
-"PO-Revision-Date: 2016-04-09 13:56+0300\n"
+"POT-Creation-Date: 2016-08-23 07:16+0300\n"
+"PO-Revision-Date: 2016-08-23 07:16+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: best-preloader.php:70 inc/settings_page.php:94
+#: best-preloader.php:70 inc/settings_page.php:90
 msgid "Settings"
 msgstr "Настройки"
 
@@ -37,10 +37,10 @@ msgstr ""
 #: inc/settings_page.php:27
 msgid ""
 "by <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Arthur "
-"\"Berserkr\" Gareginyan</a>"
+"Gareginyan</a>"
 msgstr ""
-"от <a href=“http://www.arthurgareginyan.com” target=“_blank”>Артур "
-"“Berserkr” Гарегинян</a>"
+"от <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Артур "
+"Гарегинян</a>"
 
 #: inc/settings_page.php:38
 msgid "About"
@@ -63,61 +63,46 @@ msgid "Help"
 msgstr "Помощь"
 
 #: inc/settings_page.php:54
-msgid "If you want more options then tell me and I will be happy to add it."
-msgstr ""
-"Если вы хотите больше опций, то скажите мне об этом и я буду счастлив "
-"добавить их."
+msgid "Got something to say? Need help?"
+msgstr "Есть что сказать? Нужна помощь?"
 
 #: inc/settings_page.php:60
 msgid "Donate"
 msgstr "Пожертвование"
 
-#: inc/settings_page.php:63
+#: inc/settings_page.php:62
 msgid ""
-"If you like this plugin and find it useful, help me to make this plugin even "
-"better and keep it up-to-date."
+"If you like this plugin and find it useful, please help me to make this "
+"plugin even better and keep it up-to-date."
 msgstr ""
-"Если вам нравится этот плагин и вы находите его полезным, то помогите мне "
-"сделать его ещё лучше."
+"Если вам нравится этот плагин и вы находите его полезным, то пожалуйста "
+"помогите мне сделать его ещё лучше."
 
-#: inc/settings_page.php:67
+#: inc/settings_page.php:66
 msgid "Thanks for your support!"
 msgstr "Спасибо за вашу поддержку!"
 
-#: inc/settings_page.php:72
-msgid "Freelance"
-msgstr "Фриланс"
+#: inc/settings_page.php:71
+msgid "Advertisement"
+msgstr "Реклама"
 
-#: inc/settings_page.php:75
-msgid ""
-"Hello, my name is Arthur and I'm a freelance web designer and developer."
-msgstr "Привет, меня зовут Артур и Я внештатный веб-дизайнер и разработчик."
-
-#: inc/settings_page.php:76
-msgid ""
-"Share your thoughts with me. You may have a brilliant idea in your mind and "
-"I can make it happen, so let’s get started!"
-msgstr ""
-"Поделитесь со мной своими мыслями. У вас может быть блестящая идея в уме, а "
-"я могу сделать её явью, так что давайте начнём!"
-
-#: inc/settings_page.php:100
+#: inc/settings_page.php:96
 msgid "Enable preloader"
 msgstr "Включить прелоадер"
 
-#: inc/settings_page.php:103
+#: inc/settings_page.php:99
 msgid "ON"
 msgstr "ВКЛ"
 
-#: inc/settings_page.php:104
+#: inc/settings_page.php:100
 msgid "OFF"
 msgstr "ВЫКЛ"
 
-#: inc/settings_page.php:110
+#: inc/settings_page.php:106
 msgid "Preloader image"
 msgstr "Изображение прелоадера"
 
-#: inc/settings_page.php:117
+#: inc/settings_page.php:113
 msgid ""
 "You can set your own image of preloader. To do this, enter the link to the "
 "file of image. Leave blank to use the default image of preloader."
@@ -126,50 +111,58 @@ msgstr ""
 "введите ссылку на файл изображения. Оставьте пустым для использования "
 "встроенного изображение прелоадера."
 
-#: inc/settings_page.php:121
+#: inc/settings_page.php:117
 msgid "Preloader image size"
 msgstr "Размер изображения прелоадера"
 
-#: inc/settings_page.php:128
+#: inc/settings_page.php:124
 msgid "You can set the size of preloaders image (in px)."
 msgstr "Можно задать размер изображения прелоадера (в пикселях)."
 
-#: inc/settings_page.php:132
+#: inc/settings_page.php:128
 msgid "Background color"
 msgstr "Фоновый цвет"
 
-#: inc/settings_page.php:139
+#: inc/settings_page.php:135
 msgid ""
 "Select the background color of preloader. You can also add html HEX color "
 "code."
 msgstr ""
 "Выберите цвет фона прелоадера. Вы также можете добавить html HEX код цвета."
 
-#: inc/settings_page.php:143
+#: inc/settings_page.php:139
 msgid "Display Preloader on"
 msgstr "Отображать прелоадер на"
 
-#: inc/settings_page.php:146
+#: inc/settings_page.php:142
 msgid "Full Website"
 msgstr "Весь Веб-сайт"
 
-#: inc/settings_page.php:147
+#: inc/settings_page.php:143
 msgid "Home Page Only"
 msgstr "Только Главная Страница"
 
-#: inc/settings_page.php:153
+#: inc/settings_page.php:149
 msgid "Select where preloader need to be appeared."
 msgstr "Выберите, где прелоадера должен показываться."
 
-#: inc/settings_page.php:157
+#: inc/settings_page.php:153
+msgid "Delay time"
+msgstr "Время задержки"
+
+#: inc/settings_page.php:160
+msgid "You can set the time (in seconds) before preloader will appear."
+msgstr ""
+
+#: inc/settings_page.php:164
 msgid "Save Changes"
 msgstr "Сохранить изменения"
 
-#: inc/settings_page.php:162
+#: inc/settings_page.php:169
 msgid "Preview"
 msgstr "Предварительный просмотр"
 
-#: inc/settings_page.php:164
+#: inc/settings_page.php:171
 msgid "Click \"Save Changes\" to update this preview."
 msgstr "Нажмите кнопку «Сохранить изменения», чтобы обновить этот просмотр."
 
@@ -191,6 +184,42 @@ msgstr "Артур Гарегинян"
 #. Author URI of the plugin/theme
 msgid "http://www.arthurgareginyan.com"
 msgstr ""
+
+#~ msgid "Advertising"
+#~ msgstr "Реклама"
+
+#~ msgid ""
+#~ "by <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Arthur "
+#~ "\"Berserkr\" Gareginyan</a>"
+#~ msgstr ""
+#~ "от <a href=“http://www.arthurgareginyan.com” target=“_blank”>Артур "
+#~ "“Berserkr” Гарегинян</a>"
+
+#~ msgid "If you want more options then tell me and I will be happy to add it."
+#~ msgstr ""
+#~ "Если вы хотите больше опций, то скажите мне об этом и я буду счастлив "
+#~ "добавить их."
+
+#~ msgid ""
+#~ "If you like this plugin and find it useful, help me to make this plugin "
+#~ "even better and keep it up-to-date."
+#~ msgstr ""
+#~ "Если вам нравится этот плагин и вы находите его полезным, то помогите мне "
+#~ "сделать его ещё лучше."
+
+#~ msgid "Freelance"
+#~ msgstr "Фриланс"
+
+#~ msgid ""
+#~ "Hello, my name is Arthur and I'm a freelance web designer and developer."
+#~ msgstr "Привет, меня зовут Артур и Я внештатный веб-дизайнер и разработчик."
+
+#~ msgid ""
+#~ "Share your thoughts with me. You may have a brilliant idea in your mind "
+#~ "and I can make it happen, so let’s get started!"
+#~ msgstr ""
+#~ "Поделитесь со мной своими мыслями. У вас может быть блестящая идея в уме, "
+#~ "а я могу сделать её явью, так что давайте начнём!"
 
 #~ msgid ""
 #~ "This plugin allows you to easily add the preloader to your website in a "

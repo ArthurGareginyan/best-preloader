@@ -10,7 +10,7 @@ defined('ABSPATH') or die("Restricted access!");
 /**
  * Render Settings Page
  *
- * @since 2.1
+ * @since 2.1.1
  */
 function bestpreloader_render_submenu_page() {
 
@@ -37,44 +37,40 @@ function bestpreloader_render_submenu_page() {
                     <div id="about" class="postbox">
                         <h3 class="title"><?php _e( 'About', 'best-preloader' ); ?></h3>
                         <div class="inside">
-                            <p><?php _e( 'To use, select the desired settings, then click "Save Changes". It\'s that simple!', 'best-preloader' ) ?></p>
+                            <p><?php _e( 'To use, select the desired settings, then click "Save Changes". It\'s that simple!', 'best-preloader' ); ?></p>
                         </div>
                     </div>
 
                     <div id="using" class="postbox">
                         <h3 class="title"><?php _e( 'Using', 'best-preloader' ); ?></h3>
                         <div class="inside">
-                            <p><?php _e( 'To use, select the desired settings, then click "Save Changes". It\'s that simple!', 'best-preloader' ) ?></p>
+                            <p><?php _e( 'To use, select the desired settings, then click "Save Changes". It\'s that simple!', 'best-preloader' ); ?></p>
                         </div>
                     </div>
 
                     <div id="help" class="postbox">
                         <h3 class="title"><?php _e( 'Help', 'best-preloader' ); ?></h3>
                         <div class="inside">
-                            <p><?php _e( 'If you want more options then tell me and I will be happy to add it.', 'best-preloader' ); ?></p>
-                            <p><a href="mailto:arthurgareginyan@gmail.com">arthurgareginyan@gmail.com</a></p>
+                            <p><?php _e( 'Got something to say? Need help?', 'best-preloader' ); ?></p>
+                            <p><a href="mailto:arthurgareginyan@gmail.com?subject=Best Preloader">arthurgareginyan@gmail.com</a></p>
                         </div>
                     </div>
 
                     <div id="donate" class="postbox">
                         <h3 class="title"><?php _e( 'Donate', 'best-preloader' ); ?></h3>
                         <div class="inside">
-                            <img src="<?php echo plugins_url('images/thanks.png', __FILE__); ?>">
-                            <p><?php _e( 'If you like this plugin and find it useful, help me to make this plugin even better and keep it up-to-date.', 'best-preloader' ) ?></p>
+                            <p><?php _e( 'If you like this plugin and find it useful, please help me to make this plugin even better and keep it up-to-date.', 'best-preloader' ); ?></p>
                             <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" rel="nofollow">
                                 <img src="<?php echo plugins_url('images/btn_donateCC_LG.gif', __FILE__); ?>" alt="Make a donation">
                             </a>
-                            <p><?php _e( 'Thanks for your support!', 'best-preloader' ) ?></p>
+                            <p><?php _e( 'Thanks for your support!', 'best-preloader' ); ?></p>
                         </div>
                     </div>
 
-                    <div id="freelance" class="postbox">
-                        <h3 class="title"><?php _e( 'Freelance', 'best-preloader' ) ?></h3>
+                    <div id="advertisement" class="postbox">
+                        <h3 class="title"><?php _e( 'Advertisement', 'best-preloader' ); ?></h3>
                         <div class="inside">
-                            <img src="<?php echo plugins_url('images/author.png', __FILE__); ?>">
-                            <p><?php _e( 'Hello, my name is Arthur and I\'m a freelance web designer and developer.', 'best-preloader' ) ?></p>
-                            <p><?php _e( 'Share your thoughts with me. You may have a brilliant idea in your mind and I can make it happen, so let’s get started!', 'best-preloader' ) ?></p>
-                            <p><a href="http://www.arthurgareginyan.com/" target="_blank">www.arthurgareginyan.com</a></p>
+                            <a href="http://www.elegantthemes.com/affiliates/idevaffiliate.php?id=36439_5_1_21" target="_blank" rel="nofollow"><img style="border:0px" src="http://www.elegantthemes.com/affiliates/media/banners/divi_250x250.jpg" width="250" height="250" alt="Divi WordPress Theme"></a>
                         </div>
                     </div>
 
@@ -91,7 +87,7 @@ function bestpreloader_render_submenu_page() {
                             <?php settings_fields( 'bestpreloader_settings_group' ); ?>
 
                             <div class="postbox" id="Settings">
-                                <h3 class="title"><?php _e( 'Settings', 'best-preloader' ) ?></h3>
+                                <h3 class="title"><?php _e( 'Settings', 'best-preloader' ); ?></h3>
                                 <div class="inside">
                                     <p class="description"></p>
                                     <table class="form-table">
@@ -120,7 +116,7 @@ function bestpreloader_render_submenu_page() {
                                         <tr valign='top'>
                                             <th scope='row'><?php _e( 'Preloader image size', 'best-preloader' ); ?></th>
                                             <td>
-                                                <input type="text" name="bestpreloader_settings[preloader-size]" id="bestpreloader_settings[preloader-size]" value="<?php if ( !empty($options['preloader-size']) ) { echo $options['preloader-size']; } ?>" placeholder="100" size="2" >
+                                                <input type="text" name="bestpreloader_settings[preloader-size]" id="bestpreloader_settings[preloader-size]" value="<?php if ( !empty($options['preloader-size']) ) { echo $options['preloader-size']; } ?>" placeholder="100" size="3" >
                                             </td>
                                         </tr>
                                         <tr valign='top'>
@@ -170,9 +166,9 @@ function bestpreloader_render_submenu_page() {
                             </div>
 
                             <div class="postbox" id="Preview">
-                                <h3 class="title"><?php _e( 'Preview', 'best-preloader' ) ?></h3>
+                                <h3 class="title"><?php _e( 'Preview', 'best-preloader' ); ?></h3>
                                 <div class="inside">
-                                    <p class="description"><?php _e( 'Click "Save Changes" to update this preview.', 'best-preloader' ) ?></p></br>
+                                    <p class="description"><?php _e( 'Click "Save Changes" to update this preview.', 'best-preloader' ); ?></p></br>
                                     <div id="preloader-background">
                                         <img src="<?php if ( !empty($options['custom-image']) ) { echo $options['custom-image']; } else { echo plugins_url( 'images/preloader.gif', __FILE__ ); } ?>" width="<?php echo $options['preloader-size']; ?>" height="<?php echo $options['preloader-size']; ?>" />
                                     </div>
