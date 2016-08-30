@@ -10,7 +10,7 @@ defined('ABSPATH') or die("Restricted access!");
 /**
  * Render Settings Page
  *
- * @since 2.1.1
+ * @since 3.0
  */
 function bestpreloader_render_submenu_page() {
 
@@ -61,7 +61,7 @@ function bestpreloader_render_submenu_page() {
                         <div class="inside">
                             <p><?php _e( 'If you like this plugin and find it useful, please help me to make this plugin even better and keep it up-to-date.', 'best-preloader' ); ?></p>
                             <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" rel="nofollow">
-                                <img src="<?php echo plugins_url('images/btn_donateCC_LG.gif', __FILE__); ?>" alt="Make a donation">
+                                <img src="<?php echo plugins_url('../img/btn_donateCC_LG.gif', __FILE__); ?>" alt="Make a donation">
                             </a>
                             <p><?php _e( 'Thanks for your support!', 'best-preloader' ); ?></p>
                         </div>
@@ -95,10 +95,7 @@ function bestpreloader_render_submenu_page() {
                                         <tr valign='top'>
                                             <th scope='row'><?php _e( 'Enable preloader', 'best-preloader' ); ?></th>
                                             <td>
-                                                <ul>
-                                                    <li><input type="radio" name="bestpreloader_settings[enable_preloader]" value="ON" <?php checked('ON', $options['enable_preloader']); ?> ><?php _e( 'ON', 'best-preloader' ); ?></li>
-                                                    <li><input type="radio" name="bestpreloader_settings[enable_preloader]" value="" <?php checked('', $options['enable_preloader']); ?> ><?php _e( 'OFF', 'best-preloader' ); ?></li>
-                                                </ul>
+                                                <input type="checkbox" name="bestpreloader_settings[enable_preloader]" id="bestpreloader_settings[enable_preloader]" value="ON" <?php if ( !empty($options['enable_preloader']) ) { checked( $options['enable_preloader'], "ON" ); } ?> >
                                             </td>
                                         </tr>
 
@@ -170,7 +167,7 @@ function bestpreloader_render_submenu_page() {
                                 <div class="inside">
                                     <p class="description"><?php _e( 'Click "Save Changes" to update this preview.', 'best-preloader' ); ?></p></br>
                                     <div id="preloader-background">
-                                        <img src="<?php if ( !empty($options['custom-image']) ) { echo $options['custom-image']; } else { echo plugins_url( 'images/preloader.gif', __FILE__ ); } ?>" width="<?php echo $options['preloader-size']; ?>" height="<?php echo $options['preloader-size']; ?>" />
+                                        <img src="<?php if ( !empty($options['custom-image']) ) { echo $options['custom-image']; } else { echo plugins_url( '../img/preloader.gif', __FILE__ ); } ?>" width="<?php echo $options['preloader-size']; ?>" height="<?php echo $options['preloader-size']; ?>" />
                                     </div>
                                 </div>
                             </div>

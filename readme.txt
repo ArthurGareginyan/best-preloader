@@ -119,12 +119,25 @@ A. Yes, any financial contributions are welcome! Just visit my website and click
 This plugin is open-sourced software licensed under the [GNU General Public License, version 3 (GPLv3)](http://www.gnu.org/licenses/gpl-3.0.html) and is distributed free of charge.
 Commercial licensing (e.g. for projects that can’t use an open-source license) is available upon request.
 
+**Credits**
+[Bootstrap](http://getbootstrap.com) released under the [MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE).
+
+[Bootstrap-checkbox](https://github.com/vsn4ik/bootstrap-checkbox) is a project of [Vasily A.](https://github.com/vsn4ik), shared under the [MIT license](https://github.com/vsn4ik/bootstrap-checkbox/blob/master/LICENSE).
+
 **Links**
 
 * [Developer Website](http://www.arthurgareginyan.com)
 * [Dedicated Plugin Page on GitHub](https://github.com/ArthurGareginyan/best-preloader)
 
 == Changelog ==
+= 3.0 =
+* The structure of files changed.
+* Style sheet of settings page improved and better commented.
+* Style sheet of settings page optimized for mobile devices.
+* JS code improved.
+* Added JavaScript function of automatic remove the "successful" message after 3 seconds.
+* Checkboxes replaced with cool triggers by using Bootstrap framework and Bootstrap-checkbox component.
+* Fixed error that appeared when preloader is disabled.
 = 2.1.1 =
 * POT file updated.
 * Russian translation updated.

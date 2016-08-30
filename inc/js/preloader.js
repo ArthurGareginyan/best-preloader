@@ -1,8 +1,8 @@
 /*
  * Best Preloader
- * @since 2.1
- * @agareginyan
- * GPL v3 Licensed
+ *
+ * Copyright (c) 2016 Arthur Gareginyan ( http://www.arthurgareginyan.com ).
+ * All Rights Reserved.
  */
 
 
