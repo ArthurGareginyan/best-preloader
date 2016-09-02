@@ -5,7 +5,7 @@
  * Description: Easily add cross browser animated preloader to your website. It will be responsive and compatible with all major browsers. It will work with any theme!
  * Author: Arthur Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 3.0
+ * Version: 3.1
  * License: GPL3
  * Text Domain: best-preloader
  * Domain Path: /languages/
@@ -29,6 +29,7 @@
  *
  */
 
+
 /**
  * Prevent Direct Access
  *
@@ -37,14 +38,15 @@
 defined('ABSPATH') or die("Restricted access!");
 
 /**
- * Define constants
+ * Define global constants
  *
- * @since 2.0
+ * @since 3.1
  */
 defined('BESTPL_DIR') or define('BESTPL_DIR', dirname(plugin_basename(__FILE__)));
 defined('BESTPL_BASE') or define('BESTPL_BASE', plugin_basename(__FILE__));
 defined('BESTPL_URL') or define('BESTPL_URL', plugin_dir_url(__FILE__));
 defined('BESTPL_PATH') or define('BESTPL_PATH', plugin_dir_path(__FILE__));
+defined('BESTPL_VERSION') or define('BESTPL_VERSION', '3.1');
 
 /**
  * Register text domain
@@ -93,7 +95,7 @@ require_once( BESTPL_PATH . 'inc/php/settings_page.php' );
 /**
  *  Load scripts and style sheet for settings page
  *
- * @since 3.0
+ * @since 3.1
  */
 function bestpreloader_load_scripts_admin($hook) {
 
@@ -104,13 +106,13 @@ function bestpreloader_load_scripts_admin($hook) {
 
     // Style sheet
     wp_enqueue_style( 'wp-color-picker' );
-    wp_enqueue_style( 'admin-css', BESTPL_URL . 'inc/css/admin.css' );
-    wp_enqueue_style( 'bootstrap', BESTPL_URL . 'inc/css/bootstrap.css' );
-    wp_enqueue_style( 'bootstrap-theme', BESTPL_URL . 'inc/css/bootstrap-theme.css' );
+    wp_enqueue_style( 'bestpreloader-admin-css', BESTPL_URL . 'inc/css/admin.css' );
+    wp_enqueue_style( 'bestpreloader-bootstrap', BESTPL_URL . 'inc/css/bootstrap.css' );
+    wp_enqueue_style( 'bestpreloader-bootstrap-theme', BESTPL_URL . 'inc/css/bootstrap-theme.css' );
 
     // JavaScript
-    wp_enqueue_script( 'admin-js', BESTPL_URL . 'inc/js/admin.js', array('wp-color-picker'), false, true );
-    wp_enqueue_script( 'bootstrap-checkbox', BESTPL_URL . 'inc/js/bootstrap-checkbox.min.js' );
+    wp_enqueue_script( 'bestpreloader-admin-js', BESTPL_URL . 'inc/js/admin.js', array('wp-color-picker'), false, true );
+    wp_enqueue_script( 'bestpreloader-bootstrap-checkbox', BESTPL_URL . 'inc/js/bootstrap-checkbox.min.js' );
 
 }
 add_action('admin_enqueue_scripts', 'bestpreloader_load_scripts_admin');
@@ -118,7 +120,7 @@ add_action('admin_enqueue_scripts', 'bestpreloader_load_scripts_admin');
 /**
  *  Load scripts and style sheet for front end of website
  *
- * @since 3.0
+ * @since 3.1
  */
 function bestpreloader_load_scripts_frontend() {
 
@@ -127,10 +129,11 @@ function bestpreloader_load_scripts_frontend() {
 
     // Enqueue script and style sheet of preloader on front end
     if ( !empty($options['enable_preloader']) AND $options['enable_preloader'] == 'ON' ) {
+
         if ( $options['display-preloader'] == '' || $options['display-preloader'] == 'Home Page Only' && is_home() || $options['display-preloader'] == 'Home Page Only' && is_front_page() ) {
             
-            wp_enqueue_style( 'preloader-css', BESTPL_URL . 'inc/css/preloader.css' );
-            wp_enqueue_script( 'preloader', BESTPL_URL . 'inc/js/preloader.js', array('jquery'), false, true );
+            wp_enqueue_style( 'bestpreloader-preloader-css', BESTPL_URL . 'inc/css/preloader.css' );
+            wp_enqueue_script( 'bestpreloader-preloader', BESTPL_URL . 'inc/js/preloader.js', array('jquery'), false, true );
         }
     }
 
@@ -138,7 +141,7 @@ function bestpreloader_load_scripts_frontend() {
     $script_params = array(
                            'seconds' => $options['seconds'],
                            );
-    wp_localize_script( 'preloader', 'scriptParams', $script_params );
+    wp_localize_script( 'bestpreloader-preloader', 'scriptParams', $script_params );
 }
 add_action('wp_enqueue_scripts', 'bestpreloader_load_scripts_frontend');
 
