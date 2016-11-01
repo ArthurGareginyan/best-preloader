@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Best Preloader\n"
-"POT-Creation-Date: 2016-08-23 07:13+0300\n"
+"POT-Creation-Date: 2016-11-01 18:40+0300\n"
 "PO-Revision-Date: 2016-02-18 03:53+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -20,138 +20,127 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: best-preloader.php:70 inc/settings_page.php:90
+#: best-preloader.php:73 inc/php/settings_page.php:87
 msgid "Settings"
 msgstr ""
 
-#: best-preloader.php:82
+#: best-preloader.php:85
 msgid "Preloader"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-#: inc/settings_page.php:24
+#: inc/php/settings_page.php:24
 msgid "Best Preloader"
 msgstr ""
 
-#: inc/settings_page.php:27
+#: inc/php/settings_page.php:27
 msgid ""
 "by <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Arthur "
 "Gareginyan</a>"
 msgstr ""
 
-#: inc/settings_page.php:38
+#: inc/php/settings_page.php:38
 msgid "About"
 msgstr ""
 
-#: inc/settings_page.php:40 inc/settings_page.php:47
+#: inc/php/settings_page.php:40 inc/php/settings_page.php:47
 msgid ""
 "To use, select the desired settings, then click \"Save Changes\". It's that "
 "simple!"
 msgstr ""
 
-#: inc/settings_page.php:45
+#: inc/php/settings_page.php:45
 msgid "Using"
 msgstr ""
 
-#: inc/settings_page.php:52
+#: inc/php/settings_page.php:52
 msgid "Help"
 msgstr ""
 
-#: inc/settings_page.php:54
+#: inc/php/settings_page.php:54
 msgid "Got something to say? Need help?"
 msgstr ""
 
-#: inc/settings_page.php:60
+#: inc/php/settings_page.php:60
 msgid "Donate"
 msgstr ""
 
-#: inc/settings_page.php:62
+#: inc/php/settings_page.php:62
 msgid ""
-"If you like this plugin and find it useful, please help me to make this "
-"plugin even better and keep it up-to-date."
+"I'm an independent developer, without a regular income, so every little "
+"contribution helps cover my costs and lets me spend more time building "
+"things for people like you to enjoy."
 msgstr ""
 
-#: inc/settings_page.php:66
+#: inc/php/settings_page.php:66
 msgid "Thanks for your support!"
 msgstr ""
 
-#: inc/settings_page.php:71
-msgid "Advertisement"
-msgstr ""
-
-#: inc/settings_page.php:96
+#: inc/php/settings_page.php:93
 msgid "Enable preloader"
 msgstr ""
 
-#: inc/settings_page.php:99
-msgid "ON"
-msgstr ""
-
-#: inc/settings_page.php:100
-msgid "OFF"
-msgstr ""
-
-#: inc/settings_page.php:106
+#: inc/php/settings_page.php:100
 msgid "Preloader image"
 msgstr ""
 
-#: inc/settings_page.php:113
+#: inc/php/settings_page.php:107
 msgid ""
 "You can set your own image of preloader. To do this, enter the link to the "
 "file of image. Leave blank to use the default image of preloader."
 msgstr ""
 
-#: inc/settings_page.php:117
+#: inc/php/settings_page.php:111
 msgid "Preloader image size"
 msgstr ""
 
-#: inc/settings_page.php:124
+#: inc/php/settings_page.php:118
 msgid "You can set the size of preloaders image (in px)."
 msgstr ""
 
-#: inc/settings_page.php:128
+#: inc/php/settings_page.php:122
 msgid "Background color"
 msgstr ""
 
-#: inc/settings_page.php:135
+#: inc/php/settings_page.php:129
 msgid ""
 "Select the background color of preloader. You can also add html HEX color "
 "code."
 msgstr ""
 
-#: inc/settings_page.php:139
+#: inc/php/settings_page.php:133
 msgid "Display Preloader on"
 msgstr ""
 
-#: inc/settings_page.php:142
+#: inc/php/settings_page.php:136
 msgid "Full Website"
 msgstr ""
 
-#: inc/settings_page.php:143
+#: inc/php/settings_page.php:137
 msgid "Home Page Only"
 msgstr ""
 
-#: inc/settings_page.php:149
+#: inc/php/settings_page.php:143
 msgid "Select where preloader need to be appeared."
 msgstr ""
 
-#: inc/settings_page.php:153
+#: inc/php/settings_page.php:147
 msgid "Delay time"
 msgstr ""
 
-#: inc/settings_page.php:160
+#: inc/php/settings_page.php:154
 msgid "You can set the time (in seconds) before preloader will appear."
 msgstr ""
 
-#: inc/settings_page.php:164
+#: inc/php/settings_page.php:158
 msgid "Save Changes"
 msgstr ""
 
-#: inc/settings_page.php:169
+#: inc/php/settings_page.php:163
 msgid "Preview"
 msgstr ""
 
-#: inc/settings_page.php:171
+#: inc/php/settings_page.php:165
 msgid "Click \"Save Changes\" to update this preview."
 msgstr ""
 
