@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Best Preloader\n"
-"POT-Creation-Date: 2016-11-01 18:43+0300\n"
-"PO-Revision-Date: 2016-11-01 18:43+0300\n"
+"POT-Creation-Date: 2017-05-07 13:22+0300\n"
+"PO-Revision-Date: 2017-05-07 17:36+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -21,56 +21,239 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: best-preloader.php:73 inc/php/settings_page.php:87
+#: inc/php/core.php:31 inc/php/page.php:40
 msgid "Settings"
 msgstr "Настройки"
 
-#: best-preloader.php:85
-msgid "Preloader"
-msgstr ""
-
-#. Plugin Name of the plugin/theme
-#: inc/php/settings_page.php:24
-msgid "Best Preloader"
-msgstr ""
-
-#: inc/php/settings_page.php:27
-msgid ""
-"by <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Arthur "
-"Gareginyan</a>"
-msgstr ""
-"от <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Артур "
-"Гарегинян</a>"
-
-#: inc/php/settings_page.php:38
-msgid "About"
-msgstr "О плагине"
-
-#: inc/php/settings_page.php:40 inc/php/settings_page.php:47
-msgid ""
-"To use, select the desired settings, then click \"Save Changes\". It's that "
-"simple!"
-msgstr ""
-"Для использования, выберите нужные параметры, а затем нажмите кнопку "
-"«Сохранить изменения». Это так просто!"
-
-#: inc/php/settings_page.php:45
-msgid "Using"
-msgstr "Как пользоваться"
-
-#: inc/php/settings_page.php:52
-msgid "Help"
-msgstr "Помощь"
-
-#: inc/php/settings_page.php:54
-msgid "Got something to say? Need help?"
-msgstr "Есть что сказать? Нужна помощь?"
-
-#: inc/php/settings_page.php:60
+#: inc/php/core.php:47
 msgid "Donate"
 msgstr "Поддержать разработку"
 
-#: inc/php/settings_page.php:62
+#: inc/php/core.php:62
+msgid "Preloader"
+msgstr ""
+
+#: inc/php/messages.php:30
+msgid "Hello. I'm Arthur, the author of this plugin."
+msgstr "Привет! Я Артур, автор этого плагина."
+
+#: inc/php/messages.php:32
+#, php-format
+msgid "Thank you for installing my plugin! I hope you will love it %s"
+msgstr "Спасибо, что установили мой плагин! Надеюсь, что он вам полюбится %s"
+
+#: inc/php/messages.php:67
+msgid "You have installed an old version of this plugin."
+msgstr "Вы установили устаревшую версию этого плагина."
+
+#: inc/php/messages.php:68
+msgid "Please update the plugin to the latest version, and all will be fine."
+msgstr "Пожалуйста, обновите плагин до последней версии и всё будет отлично."
+
+#. Plugin Name of the plugin/theme
+#: inc/php/page.php:25
+msgid "Best Preloader"
+msgstr "Best Preloader"
+
+#: inc/php/page.php:28
+#, php-format
+msgid "by %s Arthur Gareginyan %s"
+msgstr "от %s Артура Гарегинян %s"
+
+#: inc/php/page.php:41 inc/php/page.php:61
+msgid "Usage"
+msgstr "Применение"
+
+#: inc/php/page.php:42
+msgid "F.A.Q."
+msgstr "F.A.Q."
+
+#: inc/php/page.php:43 inc/php/page.php:159
+msgid "Author"
+msgstr "Автор"
+
+#: inc/php/page.php:44 inc/php/page.php:168 inc/php/settings.php:29
+#: inc/php/settings.php:158
+msgid "Support"
+msgstr "Поддержка"
+
+#: inc/php/page.php:45
+msgid "Family"
+msgstr "Семья"
+
+#: inc/php/page.php:63
+msgid ""
+"To display the preloader on the front end of your website, simply follow "
+"these steps:"
+msgstr ""
+
+#: inc/php/page.php:65
+msgid "Go to the \"Settings\" tab."
+msgstr "Перейдите на вкладку «Настройки»."
+
+#: inc/php/page.php:66
+msgid "Select the desired settings and click the \"Save Changes\" button."
+msgstr "Выберите нужные настройки и нажмите кнопку «Сохранить изменения»."
+
+#: inc/php/page.php:67
+msgid "Enjoy your fancy preloader."
+msgstr ""
+
+#: inc/php/page.php:67
+msgid "It's that simple!"
+msgstr "Вот так просто!"
+
+#: inc/php/page.php:69
+msgid "Note!"
+msgstr "Примечание!"
+
+#: inc/php/page.php:69
+msgid "If you want more options then tell me and I will be happy to add it."
+msgstr ""
+"Если вы хотите больше опций, то скажите мне об этом и я буду счастлив "
+"добавить их."
+
+#: inc/php/page.php:78
+msgid "Frequently Asked Questions"
+msgstr "Часто задаваемые вопросы"
+
+#: inc/php/page.php:100
+msgid "Will this plugin work on my WordPress.COM website?"
+msgstr "Этот плагин будет работать на моем сайте WordPress.COM?"
+
+#: inc/php/page.php:101
+msgid ""
+"Sorry, this plugin is available for use only on self-hosted (WordPress.ORG) "
+"websites."
+msgstr ""
+"К сожалению, этот плагин доступен для использования только на самостоятельно "
+"размещённых веб-сайтах (WordPress.ORG)."
+
+#: inc/php/page.php:103
+msgid "Can I use this plugin on my language?"
+msgstr "Можно ли использовать этот плагин на моём языке?"
+
+#: inc/php/page.php:105
+#, php-format
+msgid ""
+"Yes. But If your language is not available then you can make one. This "
+"plugin is ready for translation. The<code>.pot</code>file is included and "
+"placed in the <code>languages</code> folder. Many of plugin users would be "
+"delighted if you shared your translation with the community. Just send the "
+"translation files (<code>*.po, *.mo</code>) to me at the %s and I will "
+"include the translation within the next plugin update."
+msgstr ""
+
+#: inc/php/page.php:111
+msgid "How does it work?"
+msgstr "Как оно работает?"
+
+#: inc/php/page.php:112
+msgid ""
+"On the \"Settings\" tab, select the desired settings and click the \"Save "
+"Changes\" button. Enjoy your fancy preloader. It's that simple!"
+msgstr ""
+"На вкладке «Параметры» выберите нужные параметры и нажмите кнопку «Сохранить "
+"изменения». Наслаждайтесь вашим модным прелоудером. Это так просто!"
+
+#: inc/php/page.php:114
+msgid "How can I upload my image?"
+msgstr ""
+
+#: inc/php/page.php:115
+msgid "You can put the URL of image to the \"Preloader image\" field."
+msgstr ""
+
+#: inc/php/page.php:117
+msgid "Does this plugin requires any modification of the theme?"
+msgstr "Этот плагин требует изменения темы?"
+
+#: inc/php/page.php:118
+msgid ""
+"Absolutely not. This plugin is configurable entirely from the plugin "
+"settings page."
+msgstr ""
+"Абсолютно нет. Этот плагин настраивается полностью на странице настроек "
+"плагина."
+
+#: inc/php/page.php:120
+msgid "Does this require any knowledge of HTML or CSS?"
+msgstr "Требуются ли какие-либо знания HTML или CSS?"
+
+#: inc/php/page.php:121
+msgid ""
+"Absolutely not. This plugin can be configured with no knowledge of HTML or "
+"CSS, using an easy-to-use plugin settings page."
+msgstr ""
+"Абсолютно нет. Этот плагин можно настроить без знания HTML или CSS, с "
+"помощью простой в использовании страницы настройки плагина."
+
+#: inc/php/page.php:123
+msgid "It's not working. What could be wrong?"
+msgstr "Оно не работает. Что может быть не так?"
+
+#: inc/php/page.php:124
+msgid ""
+"As with every plugin, it's possible that things don't work. The most common "
+"reason for this is a web browser's cache. Every web browser stores a cache "
+"of the websites you visit (pages, images, and etc.) to reduce bandwidth "
+"usage and server load. This is called the browser's cache.​ Clearing your "
+"browser's cache may solve the problem."
+msgstr ""
+
+#: inc/php/page.php:125
+msgid ""
+"It's impossible to tell what could be wrong exactly, but if you post a "
+"support request in the plugin's support forum on WordPress.org, I'd be happy "
+"to give it a look and try to help out. Please include as much information as "
+"possible, including a link to your website where the problem can be seen."
+msgstr ""
+
+#: inc/php/page.php:127
+msgid "Where to report bug if found?"
+msgstr "Где можно сообщить об ошибке?"
+
+#: inc/php/page.php:129
+#, php-format
+msgid "Please visit the %s Dedicated Plugin Page on GitHub %s and report."
+msgstr ""
+"Пожалуйста, посетите %s страницу плагина на GitHub %s и сообщите об ошибке."
+
+#: inc/php/page.php:135
+msgid "Where to share any ideas or suggestions to make the plugin better?"
+msgstr ""
+"Где можно поделиться идеями или предложениями, чтобы сделать плагин лучше?"
+
+#: inc/php/page.php:137
+#, php-format
+msgid ""
+"Any suggestions are very welcome! Please send me an email to %s "
+"arthurgareginyan@gmail.com %s. Thank you!"
+msgstr ""
+
+#: inc/php/page.php:143
+msgid "I love this plugin! Can I help somehow?"
+msgstr "Мне нравится этот плагин! Могу Я чем-то помочь?"
+
+#: inc/php/page.php:145
+#, php-format
+msgid ""
+"Yes, any financial contributions are welcome! Just visit %s my website %s, "
+"click on the donate button, and thank you!"
+msgstr ""
+
+#: inc/php/settings.php:21
+msgid "About"
+msgstr "О плагине"
+
+#: inc/php/settings.php:23
+msgid ""
+"This plugin allows you to easily add cross browser animated preloader to "
+"your website. It will be responsive and compatible with all major browsers. "
+"It will work with any theme!\n"
+msgstr ""
+
+#: inc/php/settings.php:31 inc/php/settings.php:160
 msgid ""
 "I'm an independent developer, without a regular income, so every little "
 "contribution helps cover my costs and lets me spend more time building "
@@ -80,19 +263,39 @@ msgstr ""
 "вклад помогает мне покрыть затраты и позволяет тратить больше времени на "
 "создание программ для людей как вы."
 
-#: inc/php/settings_page.php:66
+#: inc/php/settings.php:32 inc/php/settings.php:161
+msgid "Donate with PayPal"
+msgstr ""
+
+#: inc/php/settings.php:33 inc/php/settings.php:162
 msgid "Thanks for your support!"
 msgstr "Спасибо за вашу поддержку!"
 
-#: inc/php/settings_page.php:93
+#: inc/php/settings.php:38
+msgid "Help"
+msgstr "Помощь"
+
+#: inc/php/settings.php:40
+msgid "Got something to say? Need help?"
+msgstr "Есть что сказать? Нужна помощь?"
+
+#: inc/php/settings.php:65
+msgid "Main Settings"
+msgstr "Основные Настройки"
+
+#: inc/php/settings.php:67
+msgid "There you can configure this plugin."
+msgstr "Здесь вы можете настроить этот плагин."
+
+#: inc/php/settings.php:72
 msgid "Enable preloader"
 msgstr "Включить прелоадер"
 
-#: inc/php/settings_page.php:100
+#: inc/php/settings.php:79
 msgid "Preloader image"
 msgstr "Изображение прелоадера"
 
-#: inc/php/settings_page.php:107
+#: inc/php/settings.php:86
 msgid ""
 "You can set your own image of preloader. To do this, enter the link to the "
 "file of image. Leave blank to use the default image of preloader."
@@ -101,65 +304,65 @@ msgstr ""
 "введите ссылку на файл изображения. Оставьте пустым для использования "
 "встроенного изображение прелойдера."
 
-#: inc/php/settings_page.php:111
+#: inc/php/settings.php:90
 msgid "Preloader image size"
 msgstr "Размер изображения прелоадера"
 
-#: inc/php/settings_page.php:118
+#: inc/php/settings.php:97
 msgid "You can set the size of preloaders image (in px)."
 msgstr "Можно задать размер изображения прелоадера (в пикселях)."
 
-#: inc/php/settings_page.php:122
+#: inc/php/settings.php:101
 msgid "Background color"
 msgstr "Фоновый цвет"
 
-#: inc/php/settings_page.php:129
+#: inc/php/settings.php:108
 msgid ""
 "Select the background color of preloader. You can also add html HEX color "
 "code."
 msgstr ""
 "Выберите цвет фона прелоадера. Вы также можете добавить html HEX код цвета."
 
-#: inc/php/settings_page.php:133
+#: inc/php/settings.php:112
 msgid "Display Preloader on"
 msgstr "Отображать прелоадер на"
 
-#: inc/php/settings_page.php:136
+#: inc/php/settings.php:115
 msgid "Full Website"
 msgstr "Весь Веб-сайт"
 
-#: inc/php/settings_page.php:137
+#: inc/php/settings.php:116
 msgid "Home Page Only"
 msgstr "Только Главная Страница"
 
-#: inc/php/settings_page.php:143
+#: inc/php/settings.php:122
 msgid "Select where preloader need to be appeared."
 msgstr "Выберите, где должен показываться прелойдер."
 
-#: inc/php/settings_page.php:147
+#: inc/php/settings.php:126
 msgid "Delay time"
 msgstr "Время задержки"
 
-#: inc/php/settings_page.php:154
+#: inc/php/settings.php:133
 msgid "You can set the time (in seconds) before preloader will appear."
 msgstr "Вы можете установить время (в секундах) задержки появления прелоадера."
 
-#: inc/php/settings_page.php:158
+#: inc/php/settings.php:137
 msgid "Save Changes"
 msgstr "Сохранить изменения"
 
-#: inc/php/settings_page.php:163
+#: inc/php/settings.php:142
 msgid "Preview"
 msgstr "Предварительный просмотр"
 
-#: inc/php/settings_page.php:165
-msgid "Click \"Save Changes\" to update this preview."
+#: inc/php/settings.php:144
+msgid "Click the \"Save Changes\" button to update this preview."
 msgstr ""
 "Нажмите кнопку «Сохранить изменения», чтобы обновить этот пред. просмотр."
 
 #. Plugin URI of the plugin/theme
 msgid "https://github.com/ArthurGareginyan/best-preloader"
-msgstr ""
+msgstr "https://github.com/ArthurGareginyan/best-preloader"
 
 #. Description of the plugin/theme
 msgid ""
@@ -174,7 +377,28 @@ msgstr "Артур Гарегинян"
 
 #. Author URI of the plugin/theme
 msgid "http://www.arthurgareginyan.com"
-msgstr ""
+msgstr "http://www.arthurgareginyan.com"
+
+#~ msgid "Click \"Save Changes\" to update this preview."
+#~ msgstr ""
+#~ "Нажмите кнопку «Сохранить изменения», чтобы обновить этот пред. просмотр."
+
+#~ msgid ""
+#~ "by <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Arthur "
+#~ "Gareginyan</a>"
+#~ msgstr ""
+#~ "от <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Артур "
+#~ "Гарегинян</a>"
+
+#~ msgid "Using"
+#~ msgstr "Как пользоваться"
+
+#~ msgid ""
+#~ "To use, select the desired settings and click \"Save Changes\". It's that "
+#~ "simple!"
+#~ msgstr ""
+#~ "Для использования, выберите нужные параметры, а затем нажмите кнопку "
+#~ "«Сохранить изменения». Это так просто!"
 
 #~ msgid "Advertisement"
 #~ msgstr "Реклама"
@@ -201,11 +425,6 @@ msgstr ""
 #~ msgstr ""
 #~ "от <a href=“http://www.arthurgareginyan.com” target=“_blank”>Артур "
 #~ "“Berserkr” Гарегинян</a>"
-
-#~ msgid "If you want more options then tell me and I will be happy to add it."
-#~ msgstr ""
-#~ "Если вы хотите больше опций, то скажите мне об этом и я буду счастлив "
-#~ "добавить их."
 
 #~ msgid ""
 #~ "If you like this plugin and find it useful, help me to make this plugin "
