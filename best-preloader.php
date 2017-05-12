@@ -5,7 +5,7 @@
  * Description: Easily add cross browser animated preloader to your website. It will be responsive and compatible with all major browsers. It will work with any theme!
  * Author: Arthur Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 4.0
+ * Version: 4.0.1
  * License: GPL3
  * Text Domain: best-preloader
  * Domain Path: /languages/
@@ -62,7 +62,7 @@ defined('BESTPL_BASE') or define('BESTPL_BASE', plugin_basename(__FILE__));
 defined('BESTPL_URL') or define('BESTPL_URL', plugin_dir_url(__FILE__));
 defined('BESTPL_PATH') or define('BESTPL_PATH', plugin_dir_path(__FILE__));
 defined('BESTPL_TEXT') or define('BESTPL_TEXT', 'best-preloader');
-defined('BESTPL_VERSION') or define('BESTPL_VERSION', '4.0');
+defined('BESTPL_VERSION') or define('BESTPL_VERSION', '4.0.1');
 
 /**
  * Load the plugin modules
