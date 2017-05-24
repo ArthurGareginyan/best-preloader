@@ -5,18 +5,18 @@
  *
  * @since 0.1
  */
-defined('ABSPATH') or die("Restricted access!");
+defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
  * Hello message - Bootstrap Modal
  *
- * @since 4.0
+ * @since 4.1
  */
 function bestpreloader_hello_message() {
 
-    $options = get_option( 'bestpreloader_settings' );
+    $options = get_option( BESTPL_SETTINGS . '_settings' );
 
-    if ( !empty($options) ) {
+    if ( !empty( $options ) ) {
         return;
     }
 
@@ -48,11 +48,11 @@ function bestpreloader_hello_message() {
 /**
  * Error message (When the old version of plugin installed) - Bootstrap Modal
  *
- * @since 4.0
+ * @since 4.1
  */
 function bestpreloader_error_message() {
 
-    $info = get_option( 'bestpreloader_service_info' );
+    $info = get_option( BESTPL_SETTINGS . '_service_info' );
     $old_version = isset( $info['old_version'] ) && !empty( $info['old_version'] ) ? $info['old_version'] : '0';
 
     if ( $old_version != '1' ) {

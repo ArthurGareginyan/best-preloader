@@ -5,12 +5,12 @@
  *
  * @since 0.1
  */
-defined('ABSPATH') or die("Restricted access!");
+defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
  * Render Settings Tab
  *
- * @since 3.2
+ * @since 4.1
  */
 ?>
     <!-- SIDEBAR -->
@@ -20,8 +20,7 @@ defined('ABSPATH') or die("Restricted access!");
             <div id="about" class="postbox">
                 <h3 class="title"><?php _e( 'About', BESTPL_TEXT ); ?></h3>
                 <div class="inside">
-                    <p><?php _e( 'This plugin allows you to easily add cross browser animated preloader to your website. It will be responsive and compatible with all major browsers. It will work with any theme!
-', BESTPL_TEXT ); ?></p>
+                    <p><?php _e( 'This plugin allows you to easily add cross browser animated preloader to your website. It will be responsive and compatible with all major browsers. It will work with any theme!', BESTPL_TEXT ); ?></p>
                 </div>
             </div>
 
@@ -38,7 +37,7 @@ defined('ABSPATH') or die("Restricted access!");
                 <h3 class="title"><?php _e( 'Help', BESTPL_TEXT ); ?></h3>
                 <div class="inside">
                     <p><?php _e( 'Got something to say? Need help?', BESTPL_TEXT ); ?></p>
-                    <p><a href="mailto:arthurgareginyan@gmail.com?subject=Best Preloader">arthurgareginyan@gmail.com</a></p>
+                    <p><a href="mailto:arthurgareginyan@gmail.com?subject=<?php echo BESTPL_NAME; ?>">arthurgareginyan@gmail.com</a></p>
                 </div>
             </div>
 
@@ -51,14 +50,16 @@ defined('ABSPATH') or die("Restricted access!");
         <div id="post-body-content" class="has-sidebar-content">
             <div class="meta-box-sortabless">
 
-                <form name="bestpreloader-form" action="options.php" method="post" enctype="multipart/form-data">
-                    <?php settings_fields( 'bestpreloader_settings_group' ); ?>
+                <form action="options.php" method="post" enctype="multipart/form-data">
+                    <?php settings_fields( BESTPL_SETTINGS . '_settings_group' ); ?>
 
                     <?php
                         // Get options from the BD
-                        $options = get_option( 'bestpreloader_settings' );
+                        $options = get_option( BESTPL_SETTINGS . '_settings' );
+
+                        // Set default value if the option is empty
                         $display_preloader = isset( $options['display-preloader'] ) && !empty( $options['display-preloader'] ) ? $options['display-preloader'] : '';
-                        
+                        $background_color = isset( $options['background-color'] ) && !empty( $options['background-color'] ) ? $options['background-color'] : '#ffffff';
                     ?>
 
                     <div class="postbox" id="Settings">
@@ -68,39 +69,35 @@ defined('ABSPATH') or die("Restricted access!");
 
                             <table class="form-table">
 
-                                <tr>
-                                    <th scope='row'><?php _e( 'Enable preloader', BESTPL_TEXT ); ?></th>
-                                    <td>
-                                        <input type="checkbox" name="bestpreloader_settings[enable_preloader]" id="bestpreloader_settings[enable_preloader]" value="ON" <?php if ( !empty($options['enable_preloader']) ) { checked( $options['enable_preloader'], "ON" ); } ?> >
-                                    </td>
-                                </tr>
+                                <?php bestpreloader_setting( 'enable_preloader',
+                                                             __( 'Enable preloader', BESTPL_TEXT ),
+                                                             '',
+                                                             'check'
+                                                            );
+                                ?>
 
-                                <tr>
-                                    <th scope='row'><?php _e( 'Preloader image', BESTPL_TEXT ); ?></th>
-                                    <td>
-                                        <input type="text" name="bestpreloader_settings[custom-image]" id="bestpreloader_settings[custom-image]" value="<?php if ( !empty($options['custom-image']) ) {  echo $options['custom-image']; } ?>" placeholder="http://" size="50" >
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class='help-text'><?php _e( 'You can set your own image of preloader. To do this, enter the link to the file of image. Leave blank to use the default image of preloader.', BESTPL_TEXT ); ?></td>
-                                </tr>
+                                <?php bestpreloader_setting( 'custom-image',
+                                                             __( 'Preloader image', BESTPL_TEXT ),
+                                                             __( 'You can set your own image of preloader. To do this, enter the link to the file of image. Leave blank to use the default image of preloader.', BESTPL_TEXT ),
+                                                             'field',
+                                                             'http://',
+                                                             '50'
+                                                            );
+                                ?>
 
-                                <tr>
-                                    <th scope='row'><?php _e( 'Preloader image size', BESTPL_TEXT ); ?></th>
-                                    <td>
-                                        <input type="text" name="bestpreloader_settings[preloader-size]" id="bestpreloader_settings[preloader-size]" value="<?php if ( !empty($options['preloader-size']) ) { echo $options['preloader-size']; } ?>" placeholder="100" size="3" >
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class='help-text'><?php _e( 'You can set the size of preloaders image (in px).', BESTPL_TEXT ); ?></td>
-                                </tr>
+                                <?php bestpreloader_setting( 'preloader-size',
+                                                             __( 'Preloader image size', BESTPL_TEXT ),
+                                                             __( 'You can set the size of preloaders image (in px).', BESTPL_TEXT ),
+                                                             'field',
+                                                             '100',
+                                                             '3'
+                                                            );
+                                ?>
 
                                 <tr>
                                     <th scope='row'><?php _e( 'Background color', BESTPL_TEXT ); ?></th>
                                     <td>
-                                        <input type="text" name="bestpreloader_settings[background-color]" id="bestpreloader_settings[background-color]" value="<?php if ( !empty($options['background-color']) ) { echo $options['background-color']; } ?>" placeholder="#ffffff" class="color-picker">
+                                        <input type="text" name="bestpreloader_settings[background-color]" id="bestpreloader_settings[background-color]" value="<?php echo $background_color; ?>" placeholder="#ffffff" class="color-picker">
                                     </td>
                                 </tr>
                                 <tr>
@@ -122,19 +119,19 @@ defined('ABSPATH') or die("Restricted access!");
                                     <td class='help-text'><?php _e( 'Select where preloader need to be appeared.', BESTPL_TEXT ); ?></td>
                                 </tr>
 
-                                <tr>
-                                    <th scope='row'><?php _e( 'Delay time', BESTPL_TEXT ); ?></th>
-                                    <td>
-                                        <input type="text" name="bestpreloader_settings[seconds]" id="bestpreloader_settings[seconds]" value="<?php if ( !empty($options['seconds']) ) { echo $options['seconds']; } ?>" placeholder="0" size="2" >
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class='help-text'><?php _e( 'You can set the time (in seconds) before preloader will appear.', BESTPL_TEXT ); ?></td>
-                                </tr>
+                                <?php bestpreloader_setting( 'seconds',
+                                                             __( 'Delay time', BESTPL_TEXT ),
+                                                             __( 'You can set the time (in seconds) before preloader will appear.', BESTPL_TEXT ),
+                                                             'field',
+                                                             '0',
+                                                             '3'
+                                                            );
+                                ?>
 
                             </table>
+
                             <?php submit_button( __( 'Save Changes', BESTPL_TEXT ), 'primary', 'submit', true ); ?>
+
                         </div>
                     </div>
 
@@ -144,7 +141,7 @@ defined('ABSPATH') or die("Restricted access!");
                             <p class="note"><?php _e( 'Click the "Save Changes" button to update this preview.', BESTPL_TEXT ); ?></p><br>
                             <div id="preloader">
                                 <div id="preloader-background"></div>
-                                <img src="<?php if ( !empty($options['custom-image']) ) { echo $options['custom-image']; } else { echo BESTPL_URL . 'inc/img/preloader.gif'; } ?>" width="<?php echo $options['preloader-size']; ?>" height="<?php echo $options['preloader-size']; ?>" />
+                                <img src="<?php if ( !empty( $options['custom-image'] ) ) { echo $options['custom-image']; } else { echo BESTPL_URL . 'inc/img/preloader.gif'; } ?>" width="<?php echo $options['preloader-size']; ?>" height="<?php echo $options['preloader-size']; ?>" />
                             </div>
                             <style>
                                 #preloader-background {
@@ -154,7 +151,7 @@ defined('ABSPATH') or die("Restricted access!");
                         </div>
                     </div>
 
-                    <div id="support-addition" class="postbox">
+                    <div class="postbox" id="support-addition">
                         <h3 class="title"><?php _e( 'Support', BESTPL_TEXT ); ?></h3>
                         <div class="inside">
                             <p><?php _e( 'I\'m an independent developer, without a regular income, so every little contribution helps cover my costs and lets me spend more time building things for people like you to enjoy.', BESTPL_TEXT ); ?></p>

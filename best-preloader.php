@@ -5,7 +5,7 @@
  * Description: Easily add cross browser animated preloader to your website. It will be responsive and compatible with all major browsers. It will work with any theme!
  * Author: Arthur Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 4.0.1
+ * Version: 4.1
  * License: GPL3
  * Text Domain: best-preloader
  * Domain Path: /languages/
@@ -50,19 +50,23 @@
  *
  * @since 0.1
  */
-defined('ABSPATH') or die("Restricted access!");
+defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
  * Define global constants
  *
- * @since 3.2
+ * @since 4.1
  */
-defined('BESTPL_DIR') or define('BESTPL_DIR', dirname(plugin_basename(__FILE__)));
-defined('BESTPL_BASE') or define('BESTPL_BASE', plugin_basename(__FILE__));
-defined('BESTPL_URL') or define('BESTPL_URL', plugin_dir_url(__FILE__));
-defined('BESTPL_PATH') or define('BESTPL_PATH', plugin_dir_path(__FILE__));
-defined('BESTPL_TEXT') or define('BESTPL_TEXT', 'best-preloader');
-defined('BESTPL_VERSION') or define('BESTPL_VERSION', '4.0.1');
+defined( 'BESTPL_DIR' ) or define( 'BESTPL_DIR', dirname( plugin_basename( __FILE__ ) ) );
+defined( 'BESTPL_BASE' ) or define( 'BESTPL_BASE', plugin_basename( __FILE__ ) );
+defined( 'BESTPL_URL' ) or define( 'BESTPL_URL', plugin_dir_url( __FILE__ ) );
+defined( 'BESTPL_PATH' ) or define( 'BESTPL_PATH', plugin_dir_path( __FILE__ ) );
+defined( 'BESTPL_TEXT' ) or define( 'BESTPL_TEXT', 'best-preloader' );
+defined( 'BESTPL_SLUG' ) or define( 'BESTPL_SLUG', 'best-preloader' );
+defined( 'BESTPL_PREFIX' ) or define( 'BESTPL_PREFIX', 'bestpreloader' );
+defined( 'BESTPL_SETTINGS' ) or define( 'BESTPL_SETTINGS', 'bestpreloader' );
+defined( 'BESTPL_NAME' ) or define( 'BESTPL_NAME', 'Best Preloader' );
+defined( 'BESTPL_VERSION' ) or define( 'BESTPL_VERSION', get_file_data( __FILE__, array( 'Version' ) ) );
 
 /**
  * Load the plugin modules

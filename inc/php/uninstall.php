@@ -5,14 +5,14 @@
  *
  * @since 0.1
  */
-defined('ABSPATH') or die("Restricted access!");
+defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
  * Delete options on uninstall
  *
- * @since 0.1
+ * @since 4.1
  */
 function bestpreloader_uninstall() {
-    delete_option( 'bestpreloader_settings' );
+    delete_option( BESTPL_SETTINGS . '_settings' );
 }
-register_uninstall_hook( __FILE__, 'bestpreloader_uninstall' );
+register_uninstall_hook( __FILE__, BESTPL_PREFIX . '_uninstall' );

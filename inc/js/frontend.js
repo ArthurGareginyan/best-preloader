@@ -5,12 +5,12 @@
  * @uthor       Arthur Gareginyan
  * @link        http://www.arthurgareginyan.com
  * @copyright   Copyright (c) 2016-2017 Arthur Gareginyan. All Rights Reserved.
- * @since       4.0
+ * @since       4.1
  */
 
 
 // Set variables
-var seconds = parseInt( scriptParams["seconds"] );
+var seconds = parseInt( bestpreloader_scriptParams["seconds"] );
 var preloader = jQuery('#preloader');
 var loaded = false;
 
@@ -19,7 +19,7 @@ wait = setTimeout(displayPreloader, (seconds * 1000) );
 
 // Display the preloader
 function displayPreloader() {
-    if (loaded != true) {
+    if ( loaded != true ) {
         preloader.show();
     }
 }
@@ -30,7 +30,7 @@ jQuery(window).load(function() {
     // Change variable
     loaded = true;
 
-    // Fade out the loading animation and the white DIV that covers the website.
+    // Fade out the loading animation and the white DIV that covers the website
     preloader.delay(500).fadeOut("slow");
 
 });
