@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Render Settings Tab
  *
- * @since 4.1
+ * @since 4.2
  */
 ?>
     <!-- SIDEBAR -->
@@ -54,12 +54,14 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                     <?php settings_fields( BESTPL_SETTINGS . '_settings_group' ); ?>
 
                     <?php
-                        // Get options from the BD
+                        // Get options from the database
                         $options = get_option( BESTPL_SETTINGS . '_settings' );
 
-                        // Set default value if the option is empty
-                        $display_preloader = isset( $options['display-preloader'] ) && !empty( $options['display-preloader'] ) ? $options['display-preloader'] : '';
-                        $background_color = isset( $options['background-color'] ) && !empty( $options['background-color'] ) ? $options['background-color'] : '#ffffff';
+                        // Set default value if option is empty
+                        $display_preloader = !empty( $options['display-preloader'] ) ? $options['display-preloader'] : '';
+                        $background_color = !empty( $options['background-color'] ) ? $options['background-color'] : '#ffffff';
+                        $custom_image = !empty( $options['custom-image'] ) ? $options['custom-image'] : BESTPL_URL . 'inc/img/preloader.gif';
+                        $preloader_size = !empty( $options['preloader-size'] ) ? $options['preloader-size'] : '100';
                     ?>
 
                     <div class="postbox" id="Settings">
@@ -141,7 +143,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                             <p class="note"><?php _e( 'Click the "Save Changes" button to update this preview.', BESTPL_TEXT ); ?></p><br>
                             <div id="preloader">
                                 <div id="preloader-background"></div>
-                                <img src="<?php if ( !empty( $options['custom-image'] ) ) { echo $options['custom-image']; } else { echo BESTPL_URL . 'inc/img/preloader.gif'; } ?>" width="<?php echo $options['preloader-size']; ?>" height="<?php echo $options['preloader-size']; ?>" />
+                                <img src="<?php echo $custom_image; ?>" width="<?php echo $preloader_size; ?>" height="<?php echo $preloader_size; ?>" />
                             </div>
                             <style>
                                 #preloader-background {
