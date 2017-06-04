@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Hello message - Bootstrap Modal
  *
- * @since 4.1
+ * @since 4.3
  */
 function bestpreloader_hello_message() {
 
@@ -29,7 +29,7 @@ function bestpreloader_hello_message() {
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <p><?php _e( 'Hello. I\'m Arthur, the author of this plugin.', BESTPL_TEXT ); ?></p>
                         <p><?php printf(
-                                        __( 'Thank you for installing my plugin! I hope you will love it %s', BESTPL_TEXT ),
+                                        __( 'Thank you for installing my plugin! I hope you will love it! %s', BESTPL_TEXT ),
                                         '&#x1F603;'
                                         );
                             ?></p>
