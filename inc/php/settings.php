@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Render Settings Tab
  *
- * @since 4.2
+ * @since 4.3
  */
 ?>
     <!-- SIDEBAR -->
@@ -21,6 +21,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                 <h3 class="title"><?php _e( 'About', BESTPL_TEXT ); ?></h3>
                 <div class="inside">
                     <p><?php _e( 'This plugin allows you to easily add cross browser animated preloader to your website. It will be responsive and compatible with all major browsers. It will work with any theme!', BESTPL_TEXT ); ?></p>
+                    <p class="version"><?php _e( 'Version', BESTPL_TEXT ); ?> <?php echo BESTPL_VERSION; ?></p>
                 </div>
             </div>
 

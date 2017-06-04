@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Best Preloader\n"
-"POT-Creation-Date: 2017-05-24 05:55+0300\n"
+"POT-Creation-Date: 2017-06-04 13:31+0300\n"
 "PO-Revision-Date: 2016-02-18 03:53+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -65,7 +65,7 @@ msgstr ""
 msgid "Author"
 msgstr ""
 
-#: inc/php/page.php:44 inc/php/page.php:170 inc/php/settings.php:28 inc/php/settings.php:156
+#: inc/php/page.php:44 inc/php/page.php:170 inc/php/settings.php:29 inc/php/settings.php:158
 msgid "Support"
 msgstr ""
 
@@ -236,41 +236,45 @@ msgid ""
 "responsive and compatible with all major browsers. It will work with any theme!"
 msgstr ""
 
-#: inc/php/settings.php:30 inc/php/settings.php:158
+#: inc/php/settings.php:24
+msgid "Version"
+msgstr ""
+
+#: inc/php/settings.php:31 inc/php/settings.php:160
 msgid ""
 "I'm an independent developer, without a regular income, so every little contribution helps cover my "
 "costs and lets me spend more time building things for people like you to enjoy."
 msgstr ""
 
-#: inc/php/settings.php:31 inc/php/settings.php:159
+#: inc/php/settings.php:32 inc/php/settings.php:161
 msgid "Donate with PayPal"
 msgstr ""
 
-#: inc/php/settings.php:32 inc/php/settings.php:160
+#: inc/php/settings.php:33 inc/php/settings.php:162
 msgid "Thanks for your support!"
 msgstr ""
 
-#: inc/php/settings.php:37
+#: inc/php/settings.php:38
 msgid "Help"
 msgstr ""
 
-#: inc/php/settings.php:39
+#: inc/php/settings.php:40
 msgid "Got something to say? Need help?"
 msgstr ""
 
-#: inc/php/settings.php:63
+#: inc/php/settings.php:69
 msgid "Main Settings"
 msgstr ""
 
-#: inc/php/settings.php:65
+#: inc/php/settings.php:71
 msgid "There you can configure this plugin."
 msgstr ""
 
-#: inc/php/settings.php:70
+#: inc/php/settings.php:76
 msgid "Enable preloader"
 msgstr ""
 
-#: inc/php/settings.php:77
+#: inc/php/settings.php:83
 msgid "Preloader image"
 msgstr ""
 
@@ -280,55 +284,55 @@ msgid ""
 "use the default image of preloader."
 msgstr ""
 
-#: inc/php/settings.php:88
+#: inc/php/settings.php:92
 msgid "Preloader image size"
 msgstr ""
 
-#: inc/php/settings.php:95
+#: inc/php/settings.php:93
 msgid "You can set the size of preloaders image (in px)."
 msgstr ""
 
-#: inc/php/settings.php:99
+#: inc/php/settings.php:101
 msgid "Background color"
 msgstr ""
 
-#: inc/php/settings.php:106
+#: inc/php/settings.php:108
 msgid "Select the background color of preloader. You can also add html HEX color code."
 msgstr ""
 
-#: inc/php/settings.php:110
+#: inc/php/settings.php:112
 msgid "Display Preloader on"
 msgstr ""
 
-#: inc/php/settings.php:113
+#: inc/php/settings.php:115
 msgid "Full Website"
 msgstr ""
 
-#: inc/php/settings.php:114
+#: inc/php/settings.php:116
 msgid "Home Page Only"
 msgstr ""
 
-#: inc/php/settings.php:120
+#: inc/php/settings.php:122
 msgid "Select where preloader need to be appeared."
 msgstr ""
 
-#: inc/php/settings.php:124
+#: inc/php/settings.php:126
 msgid "Delay time"
 msgstr ""
 
-#: inc/php/settings.php:131
+#: inc/php/settings.php:127
 msgid "You can set the time (in seconds) before preloader will appear."
 msgstr ""
 
-#: inc/php/settings.php:135
+#: inc/php/settings.php:136
 msgid "Save Changes"
 msgstr ""
 
-#: inc/php/settings.php:140
+#: inc/php/settings.php:142
 msgid "Preview"
 msgstr ""
 
-#: inc/php/settings.php:142
+#: inc/php/settings.php:144
 msgid "Click the \"Save Changes\" button to update this preview."
 msgstr ""
 
