@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Render Settings Tab
  *
- * @since 4.3
+ * @since 4.4
  */
 ?>
     <!-- SIDEBAR -->
@@ -18,27 +18,25 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
         <div id="side-sortables" class="meta-box-sortabless ui-sortable">
 
             <div id="about" class="postbox">
-                <h3 class="title"><?php _e( 'About', BESTPL_TEXT ); ?></h3>
+                <h3 class="title"><?php _e( 'About', $text ); ?></h3>
                 <div class="inside">
-                    <p><?php _e( 'This plugin allows you to easily add cross browser animated preloader to your website. It will be responsive and compatible with all major browsers. It will work with any theme!', BESTPL_TEXT ); ?></p>
-                    <p class="version"><?php _e( 'Version', BESTPL_TEXT ); ?> <?php echo BESTPL_VERSION; ?></p>
+                    <p><?php _e( 'This plugin allows you to easily add cross browser animated preloader to your website. It will be responsive and compatible with all major browsers. It will work with any theme!', $text ); ?></p>
                 </div>
             </div>
 
             <div id="support" class="postbox">
-                <h3 class="title"><?php _e( 'Support', BESTPL_TEXT ); ?></h3>
+                <h3 class="title"><?php _e( 'Support', $text ); ?></h3>
                 <div class="inside">
-                    <p><?php _e( 'I\'m an independent developer, without a regular income, so every little contribution helps cover my costs and lets me spend more time building things for people like you to enjoy.', BESTPL_TEXT ); ?></p>
-                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" class="additional-button paypal"><?php _e( 'Donate with PayPal', BESTPL_TEXT ); ?></a>
-                    <p><?php _e( 'Thanks for your support!', BESTPL_TEXT ); ?></p>
+                    <p><?php _e( 'I\'m an independent developer, without a regular income, so every little contribution helps cover my costs and lets me spend more time building things for people like you to enjoy.', $text ); ?></p>
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" class="additional-button paypal"><?php _e( 'Donate with PayPal', $text ); ?></a>
+                    <p><?php _e( 'Thanks for your support!', $text ); ?></p>
                 </div>
             </div>
 
             <div id="help" class="postbox">
-                <h3 class="title"><?php _e( 'Help', BESTPL_TEXT ); ?></h3>
+                <h3 class="title"><?php _e( 'Help', $text ); ?></h3>
                 <div class="inside">
-                    <p><?php _e( 'Got something to say? Need help?', BESTPL_TEXT ); ?></p>
-                    <p><a href="mailto:arthurgareginyan@gmail.com?subject=<?php echo BESTPL_NAME; ?>">arthurgareginyan@gmail.com</a></p>
+                    <p><?php _e( 'If you have a question, please read the information in the FAQ section.', $text ); ?></p>
                 </div>
             </div>
 
@@ -66,22 +64,22 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                     ?>
 
                     <div class="postbox" id="Settings">
-                        <h3 class="title"><?php _e( 'Main Settings', BESTPL_TEXT ); ?></h3>
+                        <h3 class="title"><?php _e( 'Main Settings', $text ); ?></h3>
                         <div class="inside">
-                            <p class="note"><?php _e( 'There you can configure this plugin.', BESTPL_TEXT ); ?></p>
+                            <p class="note"><?php _e( 'There you can configure this plugin.', $text ); ?></p>
 
                             <table class="form-table">
 
                                 <?php bestpreloader_setting( 'enable_preloader',
-                                                             __( 'Enable preloader', BESTPL_TEXT ),
+                                                             __( 'Enable preloader', $text ),
                                                              '',
                                                              'check'
                                                             );
                                 ?>
 
                                 <?php bestpreloader_setting( 'custom-image',
-                                                             __( 'Preloader image', BESTPL_TEXT ),
-                                                             __( 'You can set your own image of preloader. To do this, enter the link to the file of image. Leave blank to use the default image of preloader.', BESTPL_TEXT ),
+                                                             __( 'Preloader image', $text ),
+                                                             __( 'You can set your own image of preloader. To do this, enter the link to the file of image. Leave blank to use the default image of preloader.', $text ),
                                                              'field',
                                                              'http://',
                                                              '50'
@@ -89,8 +87,8 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                 ?>
 
                                 <?php bestpreloader_setting( 'preloader-size',
-                                                             __( 'Preloader image size', BESTPL_TEXT ),
-                                                             __( 'You can set the size of preloaders image (in px).', BESTPL_TEXT ),
+                                                             __( 'Preloader image size', $text ),
+                                                             __( 'You can set the size of preloaders image (in px).', $text ),
                                                              'field',
                                                              '100',
                                                              '3'
@@ -98,33 +96,33 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                 ?>
 
                                 <tr>
-                                    <th scope='row'><?php _e( 'Background color', BESTPL_TEXT ); ?></th>
+                                    <th scope='row'><?php _e( 'Background color', $text ); ?></th>
                                     <td>
                                         <input type="text" name="bestpreloader_settings[background-color]" id="bestpreloader_settings[background-color]" value="<?php echo $background_color; ?>" placeholder="#ffffff" class="color-picker">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td class='help-text'><?php _e( 'Select the background color of preloader. You can also add html HEX color code.', BESTPL_TEXT ); ?></td>
+                                    <td class='help-text'><?php _e( 'Select the background color of preloader. You can also add html HEX color code.', $text ); ?></td>
                                 </tr>
 
                                 <tr>
-                                    <th scope='row'><?php _e( 'Display Preloader on', BESTPL_TEXT ); ?></th>
+                                    <th scope='row'><?php _e( 'Display Preloader on', $text ); ?></th>
                                     <td>
                                         <ul>
-                                            <li><input type="radio" name="bestpreloader_settings[display-preloader]" value="" <?php checked( '', $display_preloader ); ?> ><?php _e( 'Full Website', BESTPL_TEXT ); ?><li>
-                                            <li><input type="radio" name="bestpreloader_settings[display-preloader]" value="Home Page Only" <?php checked( 'Home Page Only', $display_preloader ); ?> ><?php _e( 'Home Page Only', BESTPL_TEXT ); ?></li>
+                                            <li><input type="radio" name="bestpreloader_settings[display-preloader]" value="" <?php checked( '', $display_preloader ); ?> ><?php _e( 'Full Website', $text ); ?><li>
+                                            <li><input type="radio" name="bestpreloader_settings[display-preloader]" value="Home Page Only" <?php checked( 'Home Page Only', $display_preloader ); ?> ><?php _e( 'Home Page Only', $text ); ?></li>
                                         </ul>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td class='help-text'><?php _e( 'Select where preloader need to be appeared.', BESTPL_TEXT ); ?></td>
+                                    <td class='help-text'><?php _e( 'Select where preloader need to be appeared.', $text ); ?></td>
                                 </tr>
 
                                 <?php bestpreloader_setting( 'seconds',
-                                                             __( 'Delay time', BESTPL_TEXT ),
-                                                             __( 'You can set the time (in seconds) before preloader will appear.', BESTPL_TEXT ),
+                                                             __( 'Delay time', $text ),
+                                                             __( 'You can set the time (in seconds) before preloader will appear.', $text ),
                                                              'field',
                                                              '0',
                                                              '3'
@@ -133,15 +131,15 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 
                             </table>
 
-                            <?php submit_button( __( 'Save Changes', BESTPL_TEXT ), 'primary', 'submit', true ); ?>
+                            <?php submit_button( __( 'Save changes', $text ), 'primary', 'submit', true ); ?>
 
                         </div>
                     </div>
 
                     <div class="postbox" id="Preview">
-                        <h3 class="title"><?php _e( 'Preview', BESTPL_TEXT ); ?></h3>
+                        <h3 class="title"><?php _e( 'Preview', $text ); ?></h3>
                         <div class="inside">
-                            <p class="note"><?php _e( 'Click the "Save Changes" button to update this preview.', BESTPL_TEXT ); ?></p><br>
+                            <p class="note"><?php _e( 'Click the "Save changes" button to update this preview.', $text ); ?></p><br>
                             <div id="preloader">
                                 <div id="preloader-background"></div>
                                 <img src="<?php echo $custom_image; ?>" width="<?php echo $preloader_size; ?>" height="<?php echo $preloader_size; ?>" />
@@ -155,11 +153,11 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                     </div>
 
                     <div class="postbox" id="support-addition">
-                        <h3 class="title"><?php _e( 'Support', BESTPL_TEXT ); ?></h3>
+                        <h3 class="title"><?php _e( 'Support', $text ); ?></h3>
                         <div class="inside">
-                            <p><?php _e( 'I\'m an independent developer, without a regular income, so every little contribution helps cover my costs and lets me spend more time building things for people like you to enjoy.', BESTPL_TEXT ); ?></p>
-                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" class="additional-button paypal"><?php _e( 'Donate with PayPal', BESTPL_TEXT ); ?></a>
-                            <p><?php _e( 'Thanks for your support!', BESTPL_TEXT ); ?></p>
+                            <p><?php _e( 'I\'m an independent developer, without a regular income, so every little contribution helps cover my costs and lets me spend more time building things for people like you to enjoy.', $text ); ?></p>
+                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" class="additional-button paypal"><?php _e( 'Donate with PayPal', $text ); ?></a>
+                            <p><?php _e( 'Thanks for your support!', $text ); ?></p>
                         </div>
                     </div>
 

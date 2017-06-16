@@ -1,5 +1,5 @@
 /*
- * Plugin JavaScript and JQuery code for the front end of website
+ * Plugin JavaScript and jQuery code for the front end of website
  *
  * @package     Best Preloader
  * @uthor       Arthur Gareginyan
@@ -15,7 +15,7 @@ var preloader = jQuery('#preloader');
 var loaded = false;
 
 // Wait before preloader will appear
-wait = setTimeout(displayPreloader, (seconds * 1000) );
+wait = setTimeout( displayPreloader, ( seconds * 1000 ) );
 
 // Display the preloader
 function displayPreloader() {
@@ -24,7 +24,7 @@ function displayPreloader() {
     }
 }
 
-// Makes sure the whole site is loaded
+// Makes sure that the whole website is loaded
 jQuery(window).load(function() {
 
     // Change variable

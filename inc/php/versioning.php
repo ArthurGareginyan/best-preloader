@@ -18,6 +18,7 @@ function bestpreloader_versioning() {
     //                       SETTING VARIABLES                       //
     ///////////////////////////////////////////////////////////////////
 
+    // Put value of constants to variables for easier access
     $version_files = BESTPL_VERSION;
     $settings = BESTPL_SETTINGS;
 
