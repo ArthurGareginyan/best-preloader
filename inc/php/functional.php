@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Render checkboxes and fields for saving settings data to database
  *
- * @since 4.1
+ * @since 4.5
  */
 function bestpreloader_setting( $name, $label, $help=null, $field=null, $placeholder=null, $size=null ) {
 
@@ -54,7 +54,7 @@ function bestpreloader_setting( $name, $label, $help=null, $field=null, $placeho
 /**
  * Add DIV container with preloader to footer.
  *
- * @since 4.1
+ * @since 4.5
  */
 function bestpreloader_add_container() {
 

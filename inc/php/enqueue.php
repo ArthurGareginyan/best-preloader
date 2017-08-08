@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Base for the _load_scripts hook
  *
- * @since 4.4
+ * @since 4.5
  */
 function bestpreloader_load_scripts_base( $options ) {
 
@@ -50,7 +50,7 @@ function bestpreloader_load_scripts_base( $options ) {
 /**
  * Load scripts and style sheet for settings page
  *
- * @since 4.4
+ * @since 4.5
  */
 function bestpreloader_load_scripts_admin( $hook ) {
 
@@ -102,7 +102,7 @@ add_action( 'admin_enqueue_scripts', BESTPL_PREFIX . '_load_scripts_admin' );
 /**
  * Load scripts and style sheet for front end of website
  *
- * @since 4.4
+ * @since 4.5
  */
 function bestpreloader_load_scripts_frontend() {
 
