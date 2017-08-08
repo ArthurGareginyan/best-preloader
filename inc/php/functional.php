@@ -14,26 +14,17 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
  */
 function bestpreloader_setting( $name, $label, $help=null, $field=null, $placeholder=null, $size=null ) {
 
-    // Read options from BD
+    // Read options from database and declare variables
     $options = get_option( BESTPL_SETTINGS . '_settings' );
-
-    if ( !empty( $options[$name] ) ) {
-        $value = esc_textarea( $options[$name] );
-    } else {
-        $value = "";
-    }
+    $value = !empty( $options[$name] ) ? esc_textarea( $options[$name] ) : '';
 
     // Generate the table
-    if ( !empty( $options[$name] ) ) {
-        $checked = "checked='checked'";
-    } else {
-        $checked = "";
-    }
+    $checked = !empty( $options[$name] ) ? "checked='checked'" : '';
 
     if ( $field == "check" ) {
-        $input = "<input type='checkbox' name='" . BESTPL_SETTINGS . "_settings[$name]' id='" . BESTPL_SETTINGS . "_settings[$name]' $checked >";
+        $input = "<input type='checkbox' name='" . BESTPL_SETTINGS . "_settings[$name]' id='" . BESTPL_SETTINGS . "_settings[$name]' $checked class='$name' >";
     } elseif ( $field == "field" ) {
-        $input = "<input type='text' name='" . BESTPL_SETTINGS . "_settings[$name]' id='" . BESTPL_SETTINGS . "_settings[$name]' size='$size' value='$value' placeholder='$placeholder' >";
+        $input = "<input type='text' name='" . BESTPL_SETTINGS . "_settings[$name]' id='" . BESTPL_SETTINGS . "_settings[$name]' size='$size' value='$value' placeholder='$placeholder' class='$name' >";
     }
 
     // Put table to the variables $out and $help_out
@@ -61,49 +52,25 @@ function bestpreloader_setting( $name, $label, $help=null, $field=null, $placeho
 }
 
 /**
- * Generate the CSS of preloader from options and add it to head section of website
+ * Add DIV container with preloader to footer.
  *
  * @since 4.1
  */
-function bestpreloader_css_options() {
+function bestpreloader_add_container() {
 
-    // Read options from BD and declare variables
+    // Read options from database
     $options = get_option( BESTPL_SETTINGS . '_settings' );
 
-    if ( !empty( $options['background-color'] ) ) {
-        $backgroun_color = $options['background-color'];
-    } else {
-        $backgroun_color = "#ffffff";
-    }
-
-    if ( !empty( $options['preloader-size'] ) ) {
-        $preloader_size = $options['preloader-size'];
-    } else {
-        $preloader_size = "100";
-    }
-
-    if ( !empty( $options['custom-image'] ) ) {
-        $image = $options['custom-image'];
-    } else {
-        $image = BESTPL_URL . 'inc/img/preloader.gif';
+    // Return if the button is disabled
+    if ( empty( $options['enable_preloader'] ) ) {
+        return;
     }
 
     ?>
-        <style type="text/css">
-            #preloader {
-                display: none;
-            }
-            #preloader-background {
-                background-color: <?php echo $backgroun_color; ?>;
-            }
-            #preloader-status {
-                background-image:url(<?php echo $image; ?>);
-                -moz-background-size: <?php echo $preloader_size; ?>px <?php echo $preloader_size; ?>px;
-                -o-background-size: <?php echo $preloader_size; ?>px <?php echo $preloader_size; ?>px;
-                -webkit-background-size: <?php echo $preloader_size; ?>px <?php echo $preloader_size; ?>px;
-            }
-        </style>
-
+        <div id="preloader">
+            <div id="preloader-background"></div>
+            <div id="preloader-status"></div>
+        </div>
         <noscript>
             <style type="text/css">
                 #preloader,
@@ -115,19 +82,4 @@ function bestpreloader_css_options() {
         </noscript>
     <?php
 }
-add_action( 'wp_head' , BESTPL_PREFIX . '_css_options' );
-
-/**
- * Add DIV container with preloader to footer.
- *
- * @since 4.1
- */
-function bestpreloader_add_container() {
-    ?>
-        <div id="preloader">
-            <div id="preloader-background"></div>
-            <div id="preloader-status"></div>
-        </div>
-    <?php
-}
-add_action( 'wp_head', BESTPL_PREFIX . '_add_container', 1000 );
+add_action( 'wp_head', BESTPL_PREFIX . '_add_container', 0 );

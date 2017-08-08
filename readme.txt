@@ -5,7 +5,7 @@ loader, loading, loading screen indicator, loading indicator, screen indicator, 
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
 Tested up to: 4.8
-Stable tag: 4.4.1
+Stable tag: 4.5
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -13,13 +13,14 @@ Easily add cross browser animated preloader to your website. It will be responsi
 
 
 == Description ==
+
 An easy to use, with intuitive interface, WordPress plugin that gives you the ability to add the preloader (animated loading screen indicator) to your website in a simple and elegant way.
 
 This plugin give you finer control over preloader, it can be configured on the plugin settings page. You can select where the preloading page will be showed, such as home page or all pages. You can replace default preloader image with your own image. You can change the size of image, and etc. If you want more options then tell me and I will be happy to add it.
 
 Also you don't need to edit any file of your theme, this plugin will do everything for you. It's just plug and play, no tedious configurations or hacks, just install, enable and start enjoying the preloader. Preloader will be responsive and compatible with all major browsers. It will work with any theme!
 
-= Features =
+**Features**
 
 * Lightweight and fast
 * Secure code with using clear coding standards
@@ -39,7 +40,7 @@ Also you don't need to edit any file of your theme, this plugin will do everythi
 * Option to set the delay before the preloader appears
 * And much, much more!
 
-= Translation =
+**Translation**
 
 This plugin is ready for translation and has already been translated into several languages.
 
@@ -49,16 +50,17 @@ This plugin is ready for translation and has already been translated into severa
 
 If you want to help translate this plugin then please visit the [translation page](https://translate.wordpress.org/projects/wp-plugins/best-preloader).
 
->**Contribution**
->
->Developing plugins is long and tedious work. If you benefit or enjoy this plugin please take the time to:
->
->* [Donate](https://www.arthurgareginyan.com/donate.html) to support ongoing development. Your contribution would be greatly appreciated.
->* [Rate and Review](https://wordpress.org/support/view/plugin-reviews/best-preloader?rate=5#postform) this plugin.
->* [Share with me](mailto:arthurgareginyan@gmail.com) or view the [GitHub Repo](https://github.com/ArthurGareginyan/best-preloader) if you have any ideas or suggestions to make this plugin better.
+**Contribution**
+
+Developing plugins is long and tedious work. If you benefit or enjoy this plugin please take the time to:
+
+* [Donate](https://www.arthurgareginyan.com/donate.html) to support ongoing development. Your contribution would be greatly appreciated.
+* [Rate and Review](https://wordpress.org/support/view/plugin-reviews/best-preloader?rate=5#postform) this plugin.
+* [Share with me](mailto:arthurgareginyan@gmail.com) or view the [GitHub Repo](https://github.com/ArthurGareginyan/best-preloader) if you have any ideas or suggestions to make this plugin better.
 
 
 == Installation ==
+
 Install "Best Preloader" just as you would any other WordPress Plugin.
 
 Automatically via WordPress Admin Panel:
@@ -82,6 +84,7 @@ After installation and activation, the "`Preloader`"¬†menu item will appear i
 
 
 == Frequently Asked Questions ==
+
 = Q. Will this plugin work on my WordPress.COM website? =
 A. Sorry, this plugin is available for use only on self-hosted (WordPress.ORG) websites.
 
@@ -120,12 +123,15 @@ A. Yes, any financial contributions are welcome! Just visit [my website](https:/
 
 
 == Screenshots ==
+
 1. Plugin page.
 2. Preloader displayed on the website with "Anarcho Notepad" theme. Used default image (spinner with text) and default (white) color of background.
 3. Preloader displayed on the website with "Anarcho Notepad" theme. Used default image (spinner with text) and custom (black) color of background.
 
 
 == Other Notes ==
+
+****
 
 "Best Preloader" is one of the personal software projects of [Arthur Gareginyan](https://www.arthurgareginyan.com).
 
@@ -148,6 +154,20 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 
 
 == Changelog ==
+
+= 4.5 =
+* Preview section on the settings page changed to live preview.
+* Stylesheet in the admin.css file improved.
+* The '!important' declarations in the admin.css file removed.
+* Code formatting in the admin.js file improved.
+* Code commenting improved.
+* Load of the additional remote CSS file removed from the admin.js file.
+* Some PHP 'if' statements replaced with shorthand.
+* Inline CSS code removed, and instead added CSS class. The 'bestpreloader_css_options' function removed.
+* Changed the sorting of enqueueing of scripts. The 'bestpreloader_load_scripts_base' function added.
+* Fixed the issue with pause before loading preloader on pages.
+* The ''Family' page tab renamed to 'Store'.
+* Added ad banner of my store website.
 
 = 4.4.1 =
 * The HTTPS mixed content issue fixed by changing all links to HTTPS.

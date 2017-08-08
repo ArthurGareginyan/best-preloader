@@ -17,14 +17,14 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
     <div class="inner-sidebar">
         <div id="side-sortables" class="meta-box-sortabless ui-sortable">
 
-            <div id="about" class="postbox">
+            <div class="postbox about">
                 <h3 class="title"><?php _e( 'About', $text ); ?></h3>
                 <div class="inside">
                     <p><?php _e( 'This plugin allows you to easily add cross browser animated preloader to your website. It will be responsive and compatible with all major browsers. It will work with any theme!', $text ); ?></p>
                 </div>
             </div>
 
-            <div id="support" class="postbox">
+            <div class="postbox support">
                 <h3 class="title"><?php _e( 'Support', $text ); ?></h3>
                 <div class="inside">
                     <p><?php _e( 'I\'m an independent developer, without a regular income, so every little contribution helps cover my costs and lets me spend more time building things for people like you to enjoy.', $text ); ?></p>
@@ -33,12 +33,14 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                 </div>
             </div>
 
-            <div id="help" class="postbox">
+            <div class="postbox help">
                 <h3 class="title"><?php _e( 'Help', $text ); ?></h3>
                 <div class="inside">
                     <p><?php _e( 'If you have a question, please read the information in the FAQ section.', $text ); ?></p>
                 </div>
             </div>
+
+            <div class="include-banner"></div>
 
         </div>
     </div>
@@ -63,7 +65,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                         $preloader_size = !empty( $options['preloader-size'] ) ? $options['preloader-size'] : '100';
                     ?>
 
-                    <div class="postbox" id="Settings">
+                    <div class="postbox" id="settings">
                         <h3 class="title"><?php _e( 'Main Settings', $text ); ?></h3>
                         <div class="inside">
                             <p class="note"><?php _e( 'There you can configure this plugin.', $text ); ?></p>
@@ -98,7 +100,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                 <tr>
                                     <th scope='row'><?php _e( 'Background color', $text ); ?></th>
                                     <td>
-                                        <input type="text" name="bestpreloader_settings[background-color]" id="bestpreloader_settings[background-color]" value="<?php echo $background_color; ?>" placeholder="#ffffff" class="color-picker">
+                                        <input type="text" name="bestpreloader_settings[background-color]" id="bestpreloader_settings[background-color]" value="<?php echo $background_color; ?>" placeholder="#ffffff" class="color-picker background-color">
                                     </td>
                                 </tr>
                                 <tr>
@@ -136,17 +138,16 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                         </div>
                     </div>
 
-                    <div class="postbox" id="Preview">
-                        <h3 class="title"><?php _e( 'Preview', $text ); ?></h3>
+                    <div class="postbox" id="preview">
+                        <h3 class="title"><?php _e( 'Live Preview', $text ); ?></h3>
                         <div class="inside">
-                            <p class="note"><?php _e( 'Click the "Save changes" button to update this preview.', $text ); ?></p><br>
                             <div id="preloader">
                                 <div id="preloader-background"></div>
                                 <img src="<?php echo $custom_image; ?>" width="<?php echo $preloader_size; ?>" height="<?php echo $preloader_size; ?>" />
                             </div>
                             <style>
                                 #preloader-background {
-                                    background-color: <?php echo $options['background-color']; ?>;
+                                    background-color: <?php echo $background_color; ?>;
                                 }
                             </style>
                         </div>
