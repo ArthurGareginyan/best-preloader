@@ -1,149 +1,155 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Best Preloader v3.2\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: Best Preloader\n"
 "POT-Creation-Date: 2017-08-29 21:27+0300\n"
 "PO-Revision-Date: 2017-08-29 21:27+0300\n"
-"Last-Translator: admin <J-Michel.Harouy@ac-nantes.fr>\n"
+"Last-Translator: \n"
 "Language-Team: \n"
-"Language: fr_FR\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n>1;\n"
 "X-Generator: Poedit 1.8.4\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
-"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Poedit-Basepath: ..\n"
-"X-Textdomain-Support: yes\n"
+"X-Poedit-WPHeader: best-preloader.php\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
 
-# @ best-preloader
 #: inc/php/core.php:26 inc/php/page.php:43
 msgid "Settings"
-msgstr "Paramétrage"
+msgstr "Ajustes"
 
-# @ best-preloader
 #: inc/php/core.php:40
 msgid "Donate"
-msgstr "Faire un don"
+msgstr "Donar"
 
-# @ best-preloader
 #: inc/php/core.php:53
 msgid "Preloader"
-msgstr "Preloader"
+msgstr "Precarga (Best Preloader)"
 
 #: inc/php/messages.php:26
 msgid "Hello. I'm Arthur, the author of this plugin."
-msgstr ""
+msgstr "Hola! Yo soy Arthur, el autor de este complemento."
 
 #: inc/php/messages.php:28
 #, php-format
 msgid "Thank you for installing my plugin! I hope you will love it! %s"
-msgstr ""
+msgstr "Gracias por instalar este complemento! Espero que te encante! %s"
 
 #: inc/php/messages.php:61
 msgid "You have installed an old version of this plugin."
-msgstr ""
+msgstr "Has instalado una versión antigua de este complemento."
 
 #: inc/php/messages.php:62
 msgid "Please update the plugin to the latest version, and all will be fine."
-msgstr ""
+msgstr "Actualiza el complemento a la versión más reciente y todo estará bien."
 
 #: inc/php/page.php:30
 #, php-format
 msgid "by %s Arthur Gareginyan %s"
-msgstr "par %s Arthur Gareginyan %s"
+msgstr "por %s Arthur Gareginyan %s"
 
 #: inc/php/page.php:36
 msgid "Version"
-msgstr ""
+msgstr "Versión"
 
 #: inc/php/page.php:44 inc/php/page.php:64
 msgid "Usage"
-msgstr "Utilisation"
+msgstr "Uso"
 
 #: inc/php/page.php:45
 msgid "F.A.Q."
-msgstr ""
+msgstr "Preguntas ?"
 
 #: inc/php/page.php:46 inc/php/page.php:179 inc/php/settings.php:105
 #: inc/php/sidebar.php:23
 msgid "Support"
-msgstr "Support"
+msgstr "Soporte"
 
 #: inc/php/page.php:47 inc/php/page.php:199
 msgid "Author"
-msgstr ""
+msgstr "Autor"
 
 #: inc/php/page.php:48
 msgid "Store"
-msgstr ""
+msgstr "Tienda"
 
 #: inc/php/page.php:66
 msgid ""
 "To display the preloader on the front end of your website, simply follow "
 "these steps:"
 msgstr ""
+"Para mostrar la precarga en la parte frontal de tu sitio web, simplemente "
+"sigue estos pasos:"
 
 #: inc/php/page.php:68
 msgid "Go to the \"Settings\" tab."
-msgstr ""
+msgstr "Debes ir a la pestaña “Ajustes”."
 
 #: inc/php/page.php:69
 msgid "Select the desired settings."
-msgstr ""
+msgstr "Seleccione la configuración deseada."
 
 #: inc/php/page.php:70
 msgid "Click the \"Save changes\" button."
-msgstr ""
+msgstr "Clic en el botón \"Guardar Cambios\"."
 
 #: inc/php/page.php:71
 msgid "Enjoy your fancy preloader."
-msgstr ""
+msgstr "Disfruta de tu precarga de lujo."
 
 #: inc/php/page.php:71
 msgid "It's that simple!"
-msgstr ""
+msgstr "¡Es así de simple!"
 
 #: inc/php/page.php:73
 msgid "Note!"
-msgstr ""
+msgstr "¡Nota!"
 
 #: inc/php/page.php:73
 msgid "If you want more options then tell me and I will be happy to add it."
-msgstr ""
+msgstr "Si quieres más opciones, dímelo y estaré encantado de añadirlo."
 
 #: inc/php/page.php:82
 msgid "Frequently Asked Questions"
-msgstr ""
+msgstr "Preguntas Frecuentes"
 
 #: inc/php/page.php:86
 msgid ""
 "If you have a question, please read the Frequently Asked Questions below to "
 "see if the answer is here."
 msgstr ""
+"Si tienes alguna pregunta, por favor lee las Preguntas Frecuentes a "
+"continuación, para ver si la respuesta está aquí."
 
 #: inc/php/page.php:108
 msgid "Will this plugin work on my WordPress.COM website?"
-msgstr ""
+msgstr "¿Funcionará este complemento en mi sitio web WordPress.COM?"
 
 #: inc/php/page.php:109
 msgid ""
 "Sorry, this plugin is available for use only on self-hosted (WordPress.ORG) "
 "websites."
 msgstr ""
+"Lo sentimos, este complemento está disponible para su uso solo en sitios web "
+"alojados (WordPress.ORG)."
 
 #: inc/php/page.php:111
 msgid "Can I use this plugin on my language?"
-msgstr ""
+msgstr "¿Puedo usar este complemento en mi idioma?"
 
 #: inc/php/page.php:112
 msgid ""
 "Yes. This plugin is ready for translation and has already been translated "
 "into several languages."
 msgstr ""
+"Sí. Este complemento está listo para ser traducido y ya ha sido traducido a "
+"varios idiomas."
 
 #: inc/php/page.php:114
 #, php-format
@@ -154,60 +160,76 @@ msgid ""
 "me at the %s and I will include this translation within the next plugin "
 "update."
 msgstr ""
+"Si quieres ayudar a traducir este complemento, visita el %s. También puede "
+"utilizar el archivo POT, incluido y colocado en la carpeta \"languages\", "
+"para crear un archivo PO de traducción. Simplemente envíeme el archivo PO en "
+"el %s e incluiré esta traducción en la siguiente actualización del "
+"complemento."
 
 #: inc/php/page.php:119
 msgid ""
 "Maybe not all existed translations are up to date. You are welcome to "
 "contribute corrections!"
 msgstr ""
+"Quizás no todas las traducciones existentes estén actualizadas. Le invitamos "
+"a contribuir correcciones!"
 
 #: inc/php/page.php:120
 msgid ""
 "Many of plugin users would be delighted if you share your translation with "
 "the community. Thanks for your contribution!"
 msgstr ""
+"Muchos de los usuarios de este complemento estarían encantados si compartes "
+"tu traducción con la comunidad. ¡Gracias por tu contribución!"
 
 #: inc/php/page.php:122
 msgid "How does it work?"
-msgstr ""
+msgstr "¿Como funciona?"
 
 #: inc/php/page.php:123
 msgid ""
 "On the \"Settings\" tab, select the desired settings and click the \"Save "
 "changes\" button. Enjoy your fancy preloader. It's that simple!"
 msgstr ""
+"En la pestaña \"Configuración\", selecciona la configuración deseada y has "
+"clic en el botón \"Guardar Cambios\". Disfruta de tu precarga de lujo. ¡Es "
+"así de simple!"
 
 #: inc/php/page.php:125
 msgid "How can I upload my image?"
-msgstr ""
+msgstr "¿Cómo puedo subir mi imagen?"
 
 #: inc/php/page.php:126
 msgid "You can put the URL of image to the \"Preloader image\" field."
-msgstr ""
+msgstr "Puedes colocar la URL de la imagen en el campo \"Imagen Precarga\"."
 
 #: inc/php/page.php:128
 msgid "Does this plugin requires any modification of the theme?"
-msgstr ""
+msgstr "¿Este complemento requiere alguna modificación del tema?"
 
 #: inc/php/page.php:129
 msgid ""
 "Absolutely not. This plugin is configurable entirely from the plugin "
 "settings page."
 msgstr ""
+"Absolutamente NO. Este complemento se puede configurar completamente desde "
+"su página de configuración."
 
 #: inc/php/page.php:131
 msgid "Does this require any knowledge of HTML or CSS?"
-msgstr ""
+msgstr "¿Esto requiere algún conocimiento de HTML o CSS?"
 
 #: inc/php/page.php:132
 msgid ""
 "Absolutely not. This plugin can be configured with no knowledge of HTML or "
 "CSS, using an easy-to-use plugin settings page."
 msgstr ""
+"Absolutamente no. Este complemento se puede configurar sin conocimientos de "
+"HTML o CSS, utilizando su página de configuración la cual es fácil de usar."
 
 #: inc/php/page.php:134
 msgid "It's not working. What could be wrong?"
-msgstr ""
+msgstr "No funciona. ¿Qué podría estar mal?"
 
 #: inc/php/page.php:135
 msgid ""
@@ -217,6 +239,12 @@ msgid ""
 "usage and server load. This is called the browser's cache.​ Clearing your "
 "browser's cache may solve the problem."
 msgstr ""
+"Como con todos los complementos, es posible que las cosas no funcionen. La "
+"razón más común para esto es la caché de un navegador web. Cada navegador "
+"web almacena una caché de los sitios web que visitas (páginas, imágenes y "
+"etc.) para reducir el uso del ancho de banda y la carga del servidor. Esto "
+"se denomina caché del navegador. Limpiar la caché del navegador puede "
+"resolver el problema."
 
 #: inc/php/page.php:136
 msgid ""
@@ -225,12 +253,19 @@ msgid ""
 "to give it a look and try to help out. Please include as much information as "
 "possible, including a link to your website where the problem can be seen."
 msgstr ""
+"Es imposible decir exactamente lo que podría estar mal, pero si publicas una "
+"solicitud de soporte en el foro de soporte del complemento en WordPress.org, "
+"estaría encantado de darle un vistazo e intentar ayudarte. Incluye tanta "
+"información como sea posible, incluyendo un enlace a tu sitio web donde se "
+"pueda ver el problema."
 
 #: inc/php/page.php:138
 msgid ""
 "The last WordPress update is preventing me from editing my website that is "
 "using this plugin. Why is this?"
 msgstr ""
+"La última actualización de WordPress me impide editar mi sitio web que está "
+"utilizando este complemento. ¿Porqué sucede esto?"
 
 #: inc/php/page.php:139
 msgid ""
@@ -240,29 +275,37 @@ msgid ""
 "service such as the CloudFlare) and then the cache of your web browser. Also "
 "please try to re-login to the website, this too can help."
 msgstr ""
+"Este complemento no puede causar este problema. Lo más probable es que el "
+"problema esté relacionado con la configuración del sitio web. Podría ser "
+"sólo la caché, así que intenta borrar la caché de tu sitio web (puede ser "
+"que utilices un complemento de caché o algún servicio web como CloudFlare) y "
+"luego la caché de tu navegador web. También intenta volver a conectarte al "
+"sitio web, esto también puede ayudar."
 
 #: inc/php/page.php:141
 msgid "Where to report bug if found?"
-msgstr ""
+msgstr "¿Dónde informar el error si se encuentra?"
 
 #: inc/php/page.php:143
 #, php-format
 msgid "Please visit the %s Dedicated Plugin Page on GitHub %s and report."
-msgstr ""
+msgstr "Visita la página dedicada del complemento %s en GitHub %s e informa."
 
 #: inc/php/page.php:149
 msgid "Where to share any ideas or suggestions to make the plugin better?"
-msgstr ""
+msgstr "¿Dónde compartir ideas o sugerencias para mejorar el complemento?"
 
 #: inc/php/page.php:151
 #, php-format
 msgid ""
 "Any suggestions are very welcome! Please send me an email to %s. Thank you!"
 msgstr ""
+"¡Cualquier sugerencia es muy bienvenida! Por favor envíame un correo "
+"electrónico a %s. ¡Muchas Gracias!"
 
 #: inc/php/page.php:156
 msgid "I love this plugin! Can I help somehow?"
-msgstr ""
+msgstr "Me encanta este complemento! ¿Puedo ayudar de alguna manera?"
 
 #: inc/php/page.php:158
 #, php-format
@@ -270,10 +313,12 @@ msgid ""
 "Yes, any financial contributions are welcome! Just visit %s my website %s, "
 "click on the donate button, and thank you!"
 msgstr ""
+"Sí, cualquier contribución financiera es bienvenida! Simplemente visita %s "
+"mi sitio web %s, has clic en el botón DONAR y gracias!"
 
 #: inc/php/page.php:164
 msgid "My question wasn't answered here."
-msgstr ""
+msgstr "Mi pregunta no fue contestada aquí."
 
 #: inc/php/page.php:166
 #, php-format
@@ -282,6 +327,9 @@ msgid ""
 "mind that this plugin is free, and there is no a special support team, so I "
 "have no way to answer everyone."
 msgstr ""
+"Puede hacer tu pregunta en la página de soporte del complementos %s. Pero "
+"ten en cuenta que este complemento es gratuito, y no hay un equipo de "
+"soporte especial, así que no tengo forma de responder a todos."
 
 #: inc/php/page.php:182
 msgid "If you appreciate my work, you can buy me a coffee!"
@@ -299,132 +347,111 @@ msgstr ""
 
 #: inc/php/page.php:188 inc/php/settings.php:112 inc/php/sidebar.php:30
 msgid "Donate with PayPal"
-msgstr "Faire un don avec PayPal"
+msgstr "Donar con PayPal"
 
 #: inc/php/page.php:190
 msgid "Thank you for your support!"
-msgstr ""
+msgstr "¡Gracias por tu apoyo!"
 
-# @ best-preloader
 #: inc/php/settings.php:32 inc/php/settings.php:87
 msgid "Save changes"
-msgstr "Sauvegarder les modifications"
+msgstr "Guardar Cambios"
 
 #: inc/php/settings.php:36
 msgid "Main Settings"
-msgstr ""
+msgstr "Ajustes Principales"
 
 #: inc/php/settings.php:38
 msgid "There you can configure this plugin."
-msgstr ""
+msgstr "Aquí puedes configurar este complemento."
 
-# @ best-preloader
 #: inc/php/settings.php:42
 msgid "Enable preloader"
-msgstr "Activer preloader"
+msgstr "Activar precarga"
 
 #: inc/php/settings.php:43
 msgid "Enable or disable this plugin."
 msgstr ""
 
-# @ best-preloader
 #: inc/php/settings.php:46
 msgid "Preloader image"
-msgstr "Image de preloader"
+msgstr "Imagen precarga"
 
-# @ best-preloader
 #: inc/php/settings.php:47
 msgid ""
 "You can set your own image of preloader. To do this, enter the link to the "
 "file of image. Leave blank to use the default image of preloader."
 msgstr ""
-"Vous pouvez mettre votre propre animation de  \"Chargement de la page en "
-"cours...\". Pour cela, indiquer un lien vers cette animation. Si vous "
-"laisser le champ vide, l'extension utilisera l'animation par défaut."
+"Puedes configurar tu propia imagen de precarga. Para ello, ingrese el enlace "
+"al archivo de la imagen. Deja en blanco para utilizar la imagen "
+"predeterminada de precarga."
 
-# @ best-preloader
 #: inc/php/settings.php:51
 msgid "Preloader image size"
-msgstr "Dimensions de preloader"
+msgstr "Tamaño de la imagen de precarga"
 
-# @ best-preloader
 #: inc/php/settings.php:52
 msgid "You can set the size of preloaders image (in pixels)."
-msgstr ""
-"Vous pouvez indiquer les dimensions (en pixels) de l'animation  \"Chargement "
-"de la page en cours…”."
+msgstr "Puedes configurar el tamaño de la imagen de precarga (en px)."
 
-# @ best-preloader
 #: inc/php/settings.php:56
 msgid "Background color"
-msgstr "Couleur de fond"
+msgstr "Color de fondo"
 
-# @ best-preloader
 #: inc/php/settings.php:57
 msgid ""
 "Select the background color of preloader. You can also add html HEX color "
 "code."
 msgstr ""
-"Choisir la couleur de fond de l'animation de \"Chargement de la page en cours"
-"\". Vous pouvez aussi indiquer un code de couleur au format html hexadécimal."
+"Selecciona el color de fondo de la precarga. También puedes agregar el "
+"código html HEXADECIMAL del color."
 
-# @ best-preloader
 #: inc/php/settings.php:63
 msgid "Display Preloader on"
-msgstr "Afficher preloader sur"
+msgstr "Mostrar precarga activada en"
 
-# @ best-preloader
 #: inc/php/settings.php:66
 msgid "Full Website"
-msgstr "Le site complet"
+msgstr "Todo el sitio web"
 
-# @ best-preloader
 #: inc/php/settings.php:67
 msgid "Home Page Only"
-msgstr "Seulement sur la page d'accueil"
+msgstr "Solo en la página principal"
 
-# @ best-preloader
 #: inc/php/settings.php:73
 msgid "Select where preloader need to be appeared."
-msgstr "Choisir l'endroit où preloader apparaîtra."
+msgstr "Selecciona dónde debe aparecer la precarga."
 
-# @ best-preloader
 #: inc/php/settings.php:78
 msgid "Delay time"
-msgstr "Temporisation"
+msgstr "Tiempo de retardo"
 
-# @ best-preloader
 #: inc/php/settings.php:79
 msgid "You can set the time (in seconds) before preloader will appear."
 msgstr ""
-"Vous pouvez indiquer une durée (en secondes) avant que l'animation  "
-"\"Chargement de la page en cours...\" n'apparaisse."
+"Puedes ajustar el tiempo (en segundos) antes de que aparezca la precarga."
 
 #: inc/php/settings.php:90
 msgid "Live Preview"
-msgstr ""
+msgstr "Vista Previa"
 
-# @ best-preloader
 #: inc/php/settings.php:107 inc/php/sidebar.php:25
 msgid ""
 "I'm an independent developer, without a regular income, so every little "
 "contribution helps cover my costs and lets me spend more time building "
 "things for people like you to enjoy."
 msgstr ""
-"Je suis un développeur indépendant, sans revenus réguliers, aussi toute "
-"contribution même minime m'aide à couvrir mes frais et me laisse plus de "
-"temps pour ajouter des fonctionnalités que les utilisateurs comme vous "
-"apprécient."
+"Soy un desarrollador independiente, sin un ingreso regular, por lo que cada "
+"pequeña contribución ayuda a cubrir mis costos y me deja pasar más tiempo "
+"construyendo cosas para que personas como tú las disfruten."
 
-# @ best-preloader
 #: inc/php/settings.php:114 inc/php/sidebar.php:32
 msgid "Thanks for your support!"
-msgstr "Merci de votre aide !"
+msgstr "¡Gracias por tu apoyo!"
 
-# @ best-preloader
 #: inc/php/sidebar.php:16
 msgid "About"
-msgstr "A propos"
+msgstr "Acerca de"
 
 #: inc/php/sidebar.php:18
 msgid ""
@@ -432,73 +459,42 @@ msgid ""
 "your website. It will be responsive and compatible with all major browsers. "
 "It will work with any theme!"
 msgstr ""
+"Este complemento te permite agregar fácilmente una precarga animada en tu "
+"sitio web. Será sensible y compatible con todos los principales navegadores. "
+"¡Funcionará con cualquier tema!"
 
-# @ best-preloader
 #: inc/php/sidebar.php:37
 msgid "Help"
-msgstr "Aide"
+msgstr "Ayuda"
 
-# @ best-preloader
 #: inc/php/sidebar.php:39
 msgid "If you have a question, please read the information in the FAQ section."
-msgstr "Quelque chose à dire ? Besoin d'aide ?"
+msgstr ""
+"Si tiene alguna pregunta, lee la información en la sección de preguntas "
+"frecuentes."
 
-# @ best-preloader
-#~ msgid "Preview"
-#~ msgstr "Prévisualisation"
+#. Plugin Name of the plugin/theme
+msgid "Best Preloader"
+msgstr "Best Preloader"
 
-# @ best-preloader
-#~ msgid "Best Preloader"
-#~ msgstr "Best Preloader"
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/ArthurGareginyan/best-preloader"
+msgstr "https://github.com/ArthurGareginyan/best-preloader"
 
-# @ best-preloader
-#~ msgid "Click \"Save changes\" to update this preview."
-#~ msgstr ""
-#~ "Cliquer sur \"Sauvegarder les modifications\" pour mettre à jour cette "
-#~ "prévisualisation."
+#. Description of the plugin/theme
+msgid ""
+"Easily add cross browser animated preloader to your website. It will be "
+"responsive and compatible with all major browsers. It will work with any "
+"theme!"
+msgstr ""
+"Agregue fácilmente una precarga animada en tu sitio web. Será sensible y "
+"compatible con todos los principales navegadores. ¡Funcionará con cualquier "
+"tema!"
 
-# @ best-preloader
-#~ msgid ""
-#~ "by <a href=\"https://www.arthurgareginyan.com\" target=\"_blank\">Arthur "
-#~ "Gareginyan</a>"
-#~ msgstr ""
-#~ "par <a href=\"https://www.arthurgareginyan.com\" target=\"_blank\">Arthur "
-#~ "Gareginyan</a>"
+#. Author of the plugin/theme
+msgid "Arthur Gareginyan"
+msgstr "Arthur Gareginyan"
 
-# @ best-preloader
-#~ msgid ""
-#~ "To use, select the desired settings and click \"Save changes\". It's that "
-#~ "simple!"
-#~ msgstr ""
-#~ "Pour l'utiliser, choisir les paramètres souhaités, puis cliquer sur "
-#~ "\"Sauvegarder les modifications\". C'est très simple !"
-
-# @ best-preloader
-#~ msgid "https://github.com/ArthurGareginyan/best-preloader"
-#~ msgstr "https://github.com/ArthurGareginyan/best-preloader"
-
-# @ best-preloader
-#~ msgid ""
-#~ "Easily add cross browser animated preloader to your website. It will be "
-#~ "responsive and compatible with all major browsers. It will work with any "
-#~ "theme!"
-#~ msgstr ""
-#~ "Ajouter facilement une animation de  \"Chargement de la page en cours..."
-#~ "\"  à votre site. Extension \"responsive\" et compatible avec la majeure "
-#~ "partie des navigateurs. Extension qui fonctionne avec tous les thèmes!"
-
-# @ best-preloader
-#~ msgid "Arthur Gareginyan"
-#~ msgstr "Arthur Gareginyan"
-
-# @ best-preloader
-#~ msgid "https://www.arthurgareginyan.com"
-#~ msgstr "https://www.arthurgareginyan.com"
-
-# @ best-preloader
-#~ msgid "Using"
-#~ msgstr "Utilisation"
-
-# @ best-preloader
-#~ msgid "3.2"
-#~ msgstr "3.2"
+#. Author URI of the plugin/theme
+msgid "https://www.arthurgareginyan.com"
+msgstr "https://www.arthurgareginyan.com"

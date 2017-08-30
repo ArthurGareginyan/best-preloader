@@ -2,10 +2,9 @@
  * Plugin JavaScript and jQuery code for the admin pages of website
  *
  * @package     Best Preloader
- * @uthor       Arthur Gareginyan
+ * @author      Arthur Gareginyan
  * @link        https://www.arthurgareginyan.com
  * @copyright   Copyright (c) 2016-2017 Arthur Gareginyan. All Rights Reserved.
- * @since       4.6
  */
 
 
@@ -13,18 +12,12 @@ jQuery(document).ready(function($) {
 
     "use strict";
 
-    // Color picker
-    $('.color-picker').wpColorPicker();
-
     // Remove the 'successful' message after 3 seconds
     if ('.updated') {
         setTimeout(function() {
             $('.updated').fadeOut();
         }, 3000);
     }
-
-    // Enable Bootstrap Checkboxes
-    $(':checkbox').checkboxpicker();
 
     // Add dynamic content to page tabs. Needed for having an up to date content.
     $('.include-tab-author').load('https://www.spacexchimp.com/assets/dynamic-content/plugins.html #include-tab-author');
@@ -42,10 +35,28 @@ jQuery(document).ready(function($) {
          }
     });
 
-    // Get values for variables
-    var plugin_url = bestpreloader_scriptParams["plugin_url"];
+    // Enable color picker
+    $('.control-color').wpColorPicker();
+
+    // Enable switches
+    $('.control-switch').checkboxpicker();
+
+    // Enable number fields
+    $('.control-number .btn-danger').on('click', function(){
+        var input = $(this).parent().siblings('input');
+        var value = parseInt(input.val());
+        input.val(value - 1);
+        input.change();
+    });
+    $('.control-number .btn-success').on('click', function(){
+        var input = $(this).parent().siblings('input');
+        var value = parseInt(input.val());
+        input.val(value + 1);
+        input.change();
+    });
 
     // Live preview
+    var plugin_url = bestpreloader_scriptParams["plugin_url"];
     $('.custom-image').change(function() {
         var val = $(this).val();
         var def_val = plugin_url + 'inc/img/preloader.gif';
@@ -54,15 +65,12 @@ jQuery(document).ready(function($) {
         } else {
             $('#preview #preloader img').attr('src',def_val);
         }
-
     });
-
-    $('.preloader-size').change(function() {
+    $('.preloader-size input').change(function() {
         var val = $(this).val();
         $('#preview #preloader img').attr('width',val);
         $('#preview #preloader img').attr('height',val);
     });
-
     $('.background-color').wpColorPicker({
         change: function (event, ui) {
             var element = event.target;
