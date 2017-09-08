@@ -63,8 +63,8 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                     <th scope='row'><?php _e( 'Display Preloader on', $text ); ?></th>
                                     <td>
                                         <ul>
-                                            <li><input type="radio" name="bestpreloader_settings[display-preloader]" value="" <?php checked( '', $display_preloader ); ?> ><?php _e( 'Full Website', $text ); ?><li>
-                                            <li><input type="radio" name="bestpreloader_settings[display-preloader]" value="Home Page Only" <?php checked( 'Home Page Only', $display_preloader ); ?> ><?php _e( 'Home Page Only', $text ); ?></li>
+                                            <li><input type="radio" name="spacexchimp_p007_settings[display-preloader]" value="" <?php checked( '', $display_preloader ); ?> ><?php _e( 'Full Website', $text ); ?><li>
+                                            <li><input type="radio" name="spacexchimp_p007_settings[display-preloader]" value="Home Page Only" <?php checked( 'Home Page Only', $display_preloader ); ?> ><?php _e( 'Home Page Only', $text ); ?></li>
                                         </ul>
                                     </td>
                                 </tr>

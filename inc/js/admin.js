@@ -56,7 +56,7 @@ jQuery(document).ready(function($) {
     });
 
     // Live preview
-    var plugin_url = bestpreloader_scriptParams["plugin_url"];
+    var plugin_url = spacexchimp_p007_scriptParams["plugin_url"];
     $('.custom-image').change(function() {
         var val = $(this).val();
         var def_val = plugin_url + 'inc/img/preloader.gif';

@@ -9,7 +9,7 @@
 
 
 // Set variables
-var seconds = parseInt( bestpreloader_scriptParams["seconds"] );
+var seconds = parseInt( spacexchimp_p007_scriptParams["seconds"] );
 var preloader = jQuery('#preloader');
 var loaded = false;
 

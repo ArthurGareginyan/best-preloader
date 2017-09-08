@@ -5,7 +5,7 @@
  * Description: Easily add cross browser animated preloader to your website. It will be responsive and compatible with all major browsers. It will work with any theme!
  * Author: Arthur Gareginyan
  * Author URI: https://www.arthurgareginyan.com
- * Version: 4.7
+ * Version: 4.8
  * License: GPL3
  * Text Domain: best-preloader
  * Domain Path: /languages/
@@ -71,8 +71,8 @@ spacexchimp_p007_define_constants( 'SLUG', dirname( plugin_basename( __FILE__ ) 
 spacexchimp_p007_define_constants( 'NAME', $plugin_data['name'] );
 spacexchimp_p007_define_constants( 'VERSION', $plugin_data['version'] );
 spacexchimp_p007_define_constants( 'TEXT', $plugin_data['text'] );
-spacexchimp_p007_define_constants( 'PREFIX', 'bestpreloader' );
-spacexchimp_p007_define_constants( 'SETTINGS', 'bestpreloader' );
+spacexchimp_p007_define_constants( 'PREFIX', 'spacexchimp_p007' );
+spacexchimp_p007_define_constants( 'SETTINGS', 'spacexchimp_p007' );
 
 /**
  * Load the plugin modules
