@@ -169,3 +169,51 @@ function spacexchimp_p007_control_color( $name, $label, $help=null, $default=nul
     // Print a help text
     spacexchimp_p007_control_help( $help );
 }
+
+/**
+ * Generator of the switches for saving plugin settings to database
+ */
+function spacexchimp_p007_control_choice( $name, $items, $label, $help, $default ) {
+
+    // Read options from database and declare variables
+    $options = get_option( SPACEXCHIMP_P007_SETTINGS . '_settings' );
+    $option = !empty( $options[$name] ) ? $options[$name] : '';
+    $list_item = '';
+
+    foreach ( $items as $item_key => $item_value ) {
+        if ( empty( $option ) AND $item_key == $default ) {
+            $selected = "checked='checked'";
+        } elseif ( $option == $item_key ) {
+            $selected = "checked='checked'";
+        } else {
+            $selected = "";
+        }
+        $list_item .= "<li>
+                           <input
+                                  type='radio'
+                                  name='" . SPACEXCHIMP_P007_SETTINGS . "_settings[$name]'
+                                  value='$item_key'
+                                  $selected
+                           >
+                            $item_value
+                       <li>";
+    }
+
+    // Generate a part of table
+    $out = "<tr>
+                <th scope='row'>
+                    $label
+                </th>
+                <td>
+                    <ul class='control-list $name'>
+                        $list_item
+                    </ul>
+                </td>
+            </tr>";
+
+    // Print the generated part of table
+    echo $out;
+
+    // Print a help text
+    spacexchimp_p007_control_help( $help );
+}

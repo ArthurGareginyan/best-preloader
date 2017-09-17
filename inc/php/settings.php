@@ -21,7 +21,6 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                         $options = get_option( SPACEXCHIMP_P007_SETTINGS . '_settings' );
 
                         // Set default value if option is empty
-                        $display_preloader = !empty( $options['display-preloader'] ) ? $options['display-preloader'] : '';
                         $background_color = !empty( $options['background-color'] ) ? $options['background-color'] : '#ffffff';
                         $custom_image = !empty( $options['custom-image'] ) ? $options['custom-image'] : SPACEXCHIMP_P007_URL . 'inc/img/preloader.gif';
                         $preloader_size = !empty( $options['preloader-size'] ) ? $options['preloader-size'] : '100';
@@ -57,23 +56,15 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                                     __( 'Select the background color of preloader. You can also add html HEX color code.', $text ),
                                                                     '#ffffff'
                                                                   );
-                                ?>
-
-                                <tr>
-                                    <th scope='row'><?php _e( 'Display Preloader on', $text ); ?></th>
-                                    <td>
-                                        <ul>
-                                            <li><input type="radio" name="spacexchimp_p007_settings[display-preloader]" value="" <?php checked( '', $display_preloader ); ?> ><?php _e( 'Full Website', $text ); ?><li>
-                                            <li><input type="radio" name="spacexchimp_p007_settings[display-preloader]" value="Home Page Only" <?php checked( 'Home Page Only', $display_preloader ); ?> ><?php _e( 'Home Page Only', $text ); ?></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class='help-text'><?php _e( 'Select where preloader need to be appeared.', $text ); ?></td>
-                                </tr>
-
-                                <?php
+                                    spacexchimp_p007_control_choice( 'display-preloader',
+                                                                     array(
+                                                                            ''               => 'Full Website',
+                                                                            'Home Page Only' => 'Home Page Only'
+                                                                          ),
+                                                                     __( 'Display Preloader on', $text ),
+                                                                     __( 'Select where preloader need to be appeared.', $text ),
+                                                                     ''
+                                                                   );
                                     spacexchimp_p007_control_number( 'seconds',
                                                                      __( 'Delay time', $text ),
                                                                      __( 'You can set the time (in seconds) before preloader will appear.', $text ),
