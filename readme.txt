@@ -5,7 +5,7 @@ loader, loading, loading screen indicator, loading indicator, screen indicator, 
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
 Tested up to: 4.8
-Stable tag: 4.11
+Stable tag: 4.12
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -155,6 +155,9 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 
 
 == Changelog ==
+
+= 4.12 =
+* At the request of some users, plugin settings page moved to the submenu item in the top-level menu item "Settings", like before.
 
 = 4.11 =
 * Added branded footer text on the plugin's settings page.

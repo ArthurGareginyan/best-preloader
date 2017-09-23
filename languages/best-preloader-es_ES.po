@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Best Preloader\n"
-"POT-Creation-Date: 2017-09-15 14:25+0300\n"
-"PO-Revision-Date: 2017-09-15 14:25+0300\n"
+"POT-Creation-Date: 2017-09-23 04:53+0300\n"
+"PO-Revision-Date: 2017-09-23 04:53+0300\n"
 "Last-Translator: Patricio Toledo <patowins@gmail.com>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -28,7 +28,7 @@ msgstr "Ajustes"
 msgid "Donate"
 msgstr "Donar"
 
-#: inc/php/core.php:73
+#: inc/php/core.php:52
 msgid "Preloader"
 msgstr "Precarga (Best Preloader)"
 
@@ -66,7 +66,7 @@ msgstr "Uso"
 msgid "F.A.Q."
 msgstr "Preguntas ?"
 
-#: inc/php/page.php:46 inc/php/settings.php:105 inc/php/sidebar.php:23
+#: inc/php/page.php:46 inc/php/settings.php:96 inc/php/sidebar.php:23
 msgid "Support"
 msgstr "Soporte"
 
@@ -334,7 +334,7 @@ msgstr ""
 msgid "Support Me"
 msgstr ""
 
-#: inc/php/page.php:186 inc/php/settings.php:112 inc/php/sidebar.php:30
+#: inc/php/page.php:186 inc/php/settings.php:103 inc/php/sidebar.php:30
 msgid "Donate with PayPal"
 msgstr "Donar con PayPal"
 
@@ -376,31 +376,31 @@ msgstr "Si aprecias mi trabajo, puedes comprarme un café!"
 msgid "Thank you for your support!"
 msgstr "¡Gracias por tu apoyo!"
 
-#: inc/php/settings.php:32 inc/php/settings.php:87
+#: inc/php/settings.php:31 inc/php/settings.php:78
 msgid "Save changes"
 msgstr "Guardar Cambios"
 
-#: inc/php/settings.php:36
+#: inc/php/settings.php:35
 msgid "Main Settings"
 msgstr "Ajustes Principales"
 
-#: inc/php/settings.php:38
+#: inc/php/settings.php:37
 msgid "There you can configure this plugin."
 msgstr "Aquí puedes configurar este complemento."
 
-#: inc/php/settings.php:42
+#: inc/php/settings.php:41
 msgid "Enable preloader"
 msgstr "Activar precarga"
 
-#: inc/php/settings.php:43
+#: inc/php/settings.php:42
 msgid "Enable or disable this plugin."
 msgstr "Activar o Desactivar este complemento."
 
-#: inc/php/settings.php:46
+#: inc/php/settings.php:45
 msgid "Preloader image"
 msgstr "Imagen precarga"
 
-#: inc/php/settings.php:47
+#: inc/php/settings.php:46
 msgid ""
 "You can set your own image of preloader. To do this, enter the link to the "
 "file of image. Leave blank to use the default image of preloader."
@@ -409,19 +409,19 @@ msgstr ""
 "al archivo de la imagen. Deja en blanco para utilizar la imagen "
 "predeterminada de precarga."
 
-#: inc/php/settings.php:51
+#: inc/php/settings.php:50
 msgid "Preloader image size"
 msgstr "Tamaño de la imagen de precarga"
 
-#: inc/php/settings.php:52
+#: inc/php/settings.php:51
 msgid "You can set the size of preloaders image (in pixels)."
 msgstr "Puedes configurar el tamaño de la imagen de precarga (en px)."
 
-#: inc/php/settings.php:56
+#: inc/php/settings.php:55
 msgid "Background color"
 msgstr "Color de fondo"
 
-#: inc/php/settings.php:57
+#: inc/php/settings.php:56
 msgid ""
 "Select the background color of preloader. You can also add html HEX color "
 "code."
@@ -429,36 +429,28 @@ msgstr ""
 "Selecciona el color de fondo de la precarga. También puedes agregar el "
 "código html HEXADECIMAL del color."
 
-#: inc/php/settings.php:63
+#: inc/php/settings.php:64
 msgid "Display Preloader on"
 msgstr "Mostrar precarga activada en"
 
-#: inc/php/settings.php:66
-msgid "Full Website"
-msgstr "Todo el sitio web"
-
-#: inc/php/settings.php:67
-msgid "Home Page Only"
-msgstr "Solo en la página principal"
-
-#: inc/php/settings.php:73
+#: inc/php/settings.php:65
 msgid "Select where preloader need to be appeared."
 msgstr "Selecciona dónde debe aparecer la precarga."
 
-#: inc/php/settings.php:78
+#: inc/php/settings.php:69
 msgid "Delay time"
 msgstr "Tiempo de retardo"
 
-#: inc/php/settings.php:79
+#: inc/php/settings.php:70
 msgid "You can set the time (in seconds) before preloader will appear."
 msgstr ""
 "Puedes ajustar el tiempo (en segundos) antes de que aparezca la precarga."
 
-#: inc/php/settings.php:90
+#: inc/php/settings.php:81
 msgid "Live Preview"
 msgstr "Vista Previa"
 
-#: inc/php/settings.php:107 inc/php/sidebar.php:25
+#: inc/php/settings.php:98 inc/php/sidebar.php:25
 msgid ""
 "I'm an independent developer, without a regular income, so every little "
 "contribution helps cover my costs and lets me spend more time building "
@@ -468,7 +460,7 @@ msgstr ""
 "pequeña contribución ayuda a cubrir mis costos y me deja pasar más tiempo "
 "construyendo cosas para que personas como tú las disfruten."
 
-#: inc/php/settings.php:114 inc/php/sidebar.php:32
+#: inc/php/settings.php:105 inc/php/sidebar.php:32
 msgid "Thanks for your support!"
 msgstr "¡Gracias por tu apoyo!"
 
@@ -521,6 +513,12 @@ msgstr "Arthur Gareginyan"
 #. Author URI of the plugin/theme
 msgid "https://www.arthurgareginyan.com"
 msgstr "https://www.arthurgareginyan.com"
+
+#~ msgid "Full Website"
+#~ msgstr "Todo el sitio web"
+
+#~ msgid "Home Page Only"
+#~ msgstr "Solo en la página principal"
 
 #~ msgid "Author"
 #~ msgstr "Autor"
