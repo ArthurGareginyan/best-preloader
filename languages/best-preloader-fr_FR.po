@@ -466,22 +466,10 @@ msgstr "Quelque chose à dire ? Besoin d'aide ?"
 #~ msgstr "Prévisualisation"
 
 # @ best-preloader
-#~ msgid "Best Preloader"
-#~ msgstr "Best Preloader"
-
-# @ best-preloader
 #~ msgid "Click \"Save changes\" to update this preview."
 #~ msgstr ""
 #~ "Cliquer sur \"Sauvegarder les modifications\" pour mettre à jour cette "
 #~ "prévisualisation."
-
-# @ best-preloader
-#~ msgid ""
-#~ "by <a href=\"https://www.arthurgareginyan.com\" target=\"_blank\">Arthur "
-#~ "Gareginyan</a>"
-#~ msgstr ""
-#~ "par <a href=\"https://www.arthurgareginyan.com\" target=\"_blank\">Arthur "
-#~ "Gareginyan</a>"
 
 # @ best-preloader
 #~ msgid ""
@@ -490,10 +478,6 @@ msgstr "Quelque chose à dire ? Besoin d'aide ?"
 #~ msgstr ""
 #~ "Pour l'utiliser, choisir les paramètres souhaités, puis cliquer sur "
 #~ "\"Sauvegarder les modifications\". C'est très simple !"
-
-# @ best-preloader
-#~ msgid "https://github.com/ArthurGareginyan/best-preloader"
-#~ msgstr "https://github.com/ArthurGareginyan/best-preloader"
 
 # @ best-preloader
 #~ msgid ""
@@ -506,17 +490,5 @@ msgstr "Quelque chose à dire ? Besoin d'aide ?"
 #~ "partie des navigateurs. Extension qui fonctionne avec tous les thèmes!"
 
 # @ best-preloader
-#~ msgid "Arthur Gareginyan"
-#~ msgstr "Arthur Gareginyan"
-
-# @ best-preloader
-#~ msgid "https://www.arthurgareginyan.com"
-#~ msgstr "https://www.arthurgareginyan.com"
-
-# @ best-preloader
 #~ msgid "Using"
 #~ msgstr "Utilisation"
-
-# @ best-preloader
-#~ msgid "3.2"
-#~ msgstr "3.2"

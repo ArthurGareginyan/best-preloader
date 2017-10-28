@@ -1,8 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Best Preloader\n"
-"POT-Creation-Date: 2017-09-23 04:53+0300\n"
-"PO-Revision-Date: 2017-09-23 04:53+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-24 16:19+0300\n"
+"PO-Revision-Date: 2017-09-24 16:19+0300\n"
 "Last-Translator: Patricio Toledo <patowins@gmail.com>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -12,7 +13,7 @@ msgstr ""
 "X-Generator: Poedit 1.8.4\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: best-preloader.php\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
@@ -76,7 +77,7 @@ msgstr "Tienda"
 
 #: inc/php/page.php:63
 msgid "Usage Instructions"
-msgstr ""
+msgstr "Instrucciones de uso"
 
 #: inc/php/page.php:65
 msgid ""
@@ -332,7 +333,7 @@ msgstr ""
 
 #: inc/php/page.php:178
 msgid "Support Me"
-msgstr ""
+msgstr "Apoyarme!"
 
 #: inc/php/page.php:186 inc/php/settings.php:103 inc/php/sidebar.php:30
 msgid "Donate with PayPal"
@@ -344,6 +345,8 @@ msgid ""
 "Hello! My name is %s Arthur Gareginyan %s and I'm the founder of %s Space X-"
 "Chimp Studio %s."
 msgstr ""
+"¡Hola! Mi nombre es %s Arthur Gareginyan %s y soy el fundador de %s Space X-"
+"Chimp Studio %s."
 
 #: inc/php/page.php:199
 msgid ""
@@ -351,6 +354,9 @@ msgid ""
 "I'm really passionate about my work, I like what I'm doing and hope that you "
 "will be enriched by my projects too."
 msgstr ""
+"Mi intención es crear proyectos que hagan de este mundo un lugar mejor. Soy "
+"realmente apasionado por mi trabajo, me gusta lo que estoy haciendo y espero "
+"que tú también te enriquezcas con mis proyectos."
 
 #: inc/php/page.php:200
 msgid ""
@@ -513,15 +519,3 @@ msgstr "Arthur Gareginyan"
 #. Author URI of the plugin/theme
 msgid "https://www.arthurgareginyan.com"
 msgstr "https://www.arthurgareginyan.com"
-
-#~ msgid "Full Website"
-#~ msgstr "Todo el sitio web"
-
-#~ msgid "Home Page Only"
-#~ msgstr "Solo en la página principal"
-
-#~ msgid "Author"
-#~ msgstr "Autor"
-
-#~ msgid "by %s Arthur Gareginyan %s"
-#~ msgstr "por %s Arthur Gareginyan %s"
