@@ -4,8 +4,8 @@ Tags: animated pre-loader, animated preloader, best preloader, custom preloader,
 loader, loading, loading screen indicator, loading indicator, screen indicator, page load, page loader, page spinners, pre-loader, preload, preloader, preloader spinner, preloader, site loader, spinner,
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
-Tested up to: 4.8
-Stable tag: 4.13
+Tested up to: 4.9
+Stable tag: 4.14
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -51,6 +51,16 @@ This plugin is ready for translation and has already been translated into severa
 * Spanish (translation by Patricio Toledo)
 
 If you want to help translate this plugin then please visit the [translation page](https://translate.wordpress.org/projects/wp-plugins/best-preloader).
+
+**System requirements**
+
+* [PHP](https://php.net) version **5.2** or higher.
+* [MySQL](https://www.mysql.com) version **5.0** or higher.
+
+**Recommendations:**
+
+* [PHP](https://php.net) version **7.0** or higher.
+* [MySQL](https://www.mysql.com) version **5.6** or higher.
 
 **Contribution**
 
@@ -156,6 +166,10 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 
 
 == Changelog ==
+
+= 4.14 =
+* The plugin is fully tested for compatibility with WordPress version 4.9.
+* CSS code improved.
 
 = 4.13 =
 * German translation added. (Thanks to Michael)

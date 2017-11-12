@@ -5,7 +5,7 @@
  * Description: Easily add cross browser animated preloader to your website. It will be responsive and compatible with all major browsers. It will work with any theme!
  * Author: Arthur Gareginyan
  * Author URI: https://www.arthurgareginyan.com
- * Version: 4.13
+ * Version: 4.14
  * License: GPL3
  * Text Domain: best-preloader
  * Domain Path: /languages/
