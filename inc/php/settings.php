@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                         $options = get_option( SPACEXCHIMP_P007_SETTINGS . '_settings' );
 
                         // Set default value if option is empty
-                        $background_color = !empty( $options['background-color'] ) ? $options['background-color'] : '#ffffff';
+                        $background_color = !empty( $options['background-color'] ) ? $options['background-color'] : '#fff';
                         $custom_image = !empty( $options['custom-image'] ) ? $options['custom-image'] : SPACEXCHIMP_P007_URL . 'inc/img/preloader.gif';
                         $preloader_size = !empty( $options['preloader-size'] ) ? $options['preloader-size'] : '100';
                     ?>
@@ -54,7 +54,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                     spacexchimp_p007_control_color( 'background-color',
                                                                     __( 'Background color', $text ),
                                                                     __( 'Select the background color of preloader. You can also add html HEX color code.', $text ),
-                                                                    '#ffffff'
+                                                                    '#fff'
                                                                   );
                                     spacexchimp_p007_control_choice( 'display-preloader',
                                                                      array(
