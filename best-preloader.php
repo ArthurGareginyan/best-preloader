@@ -5,7 +5,7 @@
  * Description: Easily add cross browser animated preloader to your website. It will be responsive and compatible with all major browsers. It will work with any theme!
  * Author: Space X-Chimp
  * Author URI: https://www.spacexchimp.com
- * Version: 4.19
+ * Version: 4.20
  * License: GPL3
  * Text Domain: best-preloader
  * Domain Path: /languages/
@@ -78,4 +78,3 @@ require_once( SPACEXCHIMP_P007_PATH . 'inc/php/functional.php' );
 require_once( SPACEXCHIMP_P007_PATH . 'inc/php/controls.php' );
 require_once( SPACEXCHIMP_P007_PATH . 'inc/php/page.php' );
 require_once( SPACEXCHIMP_P007_PATH . 'inc/php/messages.php' );
-require_once( SPACEXCHIMP_P007_PATH . 'inc/php/uninstall.php' );

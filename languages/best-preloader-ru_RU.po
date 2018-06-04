@@ -274,7 +274,7 @@ msgid "Main Settings"
 msgstr "Основные Настройки"
 
 #: inc/php/settings.php:37
-msgid "There you can configure this plugin."
+msgid "Here you can configure this plugin."
 msgstr "Здесь вы можете настроить этот плагин."
 
 #: inc/php/settings.php:41
