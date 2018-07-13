@@ -1,5 +1,5 @@
 /*
- * Plugin JavaScript and jQuery code for the front end of website
+ * WordPress plugin Best Preloader by Space X-Chimp ( https://www.spacexchimp.com ).
  *
  * @package     Best Preloader
  * @author      Arthur Gareginyan
