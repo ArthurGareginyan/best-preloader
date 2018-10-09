@@ -58,7 +58,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                                   );
                                     spacexchimp_p007_control_choice( 'display-preloader',
                                                                      array(
-                                                                            ''               => 'Full Website',
+                                                                            ''               => 'Every frontend page',
                                                                             'Home Page Only' => 'Home Page Only'
                                                                           ),
                                                                      __( 'Display Preloader on', $text ),

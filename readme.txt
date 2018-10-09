@@ -5,7 +5,7 @@ loader, loading, loading screen indicator, loading indicator, screen indicator, 
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 4.22
+Stable tag: 4.23
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -16,7 +16,7 @@ Easily add cross browser animated preloader to your website. It will be responsi
 
 An easy to use, with intuitive interface, WordPress plugin that gives you the ability to add the preloader (animated loading screen indicator) to your website in a simple and elegant way.
 
-This plugin give you finer control over preloader, it can be configured on the plugin settings page. You can select where the preloading page will be showed, such as home page or all pages. You can replace default preloader image with your own image. You can change the size of image, and etc. If you want more options then tell us and we will be happy to add it.
+This plugin give you finer control over preloader, it can be configured on the plugin settings page. You can select where the preloading page will be showed, such as home page or all pages. You can replace default preloader image with your own image. You can change the size of image, and etc. If you want more options, then let us know and we will be happy to add them.
 
 Also you don't need to edit any file of your theme, this plugin will do everything for you. It's just plug and play, no tedious configurations or hacks, just install, enable and start enjoying the preloader. Preloader will be responsive and compatible with all major browsers. It will work with any theme!
 
@@ -164,9 +164,17 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 
 * [Developer website](https://www.spacexchimp.com)
 * [Dedicated plugin page on GitHub](https://github.com/ArthurGareginyan/best-preloader)
+* [Dedicated plugin page on WordPress.org](https://wordpress.org/plugins/best-preloader/)
 
 
 == Changelog ==
+
+= 4.23 =
+* Content of the "Settings" section updated.
+* Content of the "Usage Instructions" section updated.
+* CSS code, which is located in the file "admin.css" and is related to the "FAQ" section, is improved.
+* Code commenting improved.
+* Translation files are updated.
 
 = 4.22 =
 * Dutch translation added. (Thanks to Peter Leenders)
@@ -280,7 +288,7 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 * Inline CSS code removed, and instead added CSS class. The 'bestpreloader_css_options' function removed.
 * Changed the sorting of enqueueing of scripts. The 'bestpreloader_load_scripts_base' function added.
 * Fixed the issue with pause before loading preloader on pages.
-* The ''Family' page tab renamed to 'Store'.
+* The 'Family' page tab renamed to 'Store'.
 * Added ad banner of my store website.
 
 = 4.4.1 =
