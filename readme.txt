@@ -5,7 +5,7 @@ loader, loading, loading screen indicator, loading indicator, screen indicator, 
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 4.24
+Stable tag: 4.25
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -168,6 +168,9 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 
 
 == Changelog ==
+
+= 4.25 =
+* Improvement: Design of the plugin settings page is improved.
 
 = 4.24 =
 * Improvement: Design of the plugin settings page is improved.
