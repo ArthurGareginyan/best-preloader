@@ -71,7 +71,7 @@ function spacexchimp_p007_load_scripts_admin( $hook ) {
     $settings_page = 'settings_page_' . $slug;
     if ( $settings_page != $hook ) return;
 
-    // Read options from database
+    // Retrieve options from database
     $options = get_option( $settings . '_settings' );
 
     // Load jQuery library
@@ -118,7 +118,7 @@ function spacexchimp_p007_load_scripts_frontend() {
     $settings = SPACEXCHIMP_P007_SETTINGS;
     $version = SPACEXCHIMP_P007_VERSION;
 
-    // Read options from database and declare variables
+    // Retrieve options from database and declare variables
     $options = get_option( $settings . '_settings' );
     $display_on = !empty( $options['display-preloader'] ) ? $options['display-preloader'] : '';
 

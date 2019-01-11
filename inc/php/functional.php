@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
  */
 function spacexchimp_p007_add_container() {
 
-    // Read options from database
+    // Retrieve options from database
     $options = get_option( SPACEXCHIMP_P007_SETTINGS . '_settings' );
 
     // Return if the button is disabled
