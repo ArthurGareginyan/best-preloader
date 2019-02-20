@@ -2,10 +2,10 @@
 /**
  * Plugin Name: Best Preloader
  * Plugin URI: https://github.com/ArthurGareginyan/best-preloader
- * Description: Easily add cross browser animated preloader to your website. It will be responsive and compatible with all major browsers. It will work with any theme!
+ * Description: Easily and safely add a preloader to your WordPress website.
  * Author: Space X-Chimp
  * Author URI: https://www.spacexchimp.com
- * Version: 4.26
+ * Version: 4.27
  * License: GPL3
  * Text Domain: best-preloader
  * Domain Path: /languages/

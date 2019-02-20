@@ -1,24 +1,24 @@
 === Best Preloader ===
 Contributors: Arthur Gareginyan
 Tags: animated pre-loader, animated preloader, best preloader, custom preloader, flat, preloader spinner, flat preloader, free preloader, html5 loader, load, loader,
-loader, loading, loading screen indicator, loading indicator, screen indicator, page load, page loader, page spinners, pre-loader, preload, preloader, preloader spinner, preloader, site loader, spinner,
+loader, loading, loading screen indicator, loading indicator, screen indicator, page load, page loader, page spinners, pre-loader, preload, preloader, preloader spinner, preloader, site loader, spinner
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
-Tested up to: 5.0
-Stable tag: 4.26
+Tested up to: 5.1
+Stable tag: 4.27
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Easily add cross browser animated preloader to your website. It will be responsive and compatible with all major browsers. It will work with any theme!
+Easily and safely add a preloader to your WordPress website.
 
 
 == Description ==
 
-An easy to use, with intuitive interface, WordPress plugin that gives you the ability to add the preloader (animated loading screen indicator) to your website in a simple and elegant way.
+An easy to use, with intuitive interface, WordPress plugin that gives you the ability to easily and safely add a preloader (animated loading screen indicator) to your WordPress website.
 
 This plugin give you finer control over preloader, it can be configured on the plugin settings page. You can select where the preloading page will be showed, such as home page or all pages. You can replace default preloader image with your own image. You can change the size of image, and etc. If you want more options, then let us know and we will be happy to add them.
 
-Also you don't need to edit any file of your theme, this plugin will do everything for you. It's just plug and play, no tedious configurations or hacks, just install, enable and start enjoying the preloader. Preloader will be responsive and compatible with all major browsers. It will work with any theme!
+Its purpose is to provide a familiar experience to WordPress users. You don't need to edit any file of your theme, this plugin will do everything for you. It's just plug and play, no tedious configurations or hacks, just install, enable and start enjoying your fancy preloader. It's that simple! In addition, your preloader will be compatible with all major browsers and work with any theme.
 
 **Features**
 
@@ -42,16 +42,16 @@ Also you don't need to edit any file of your theme, this plugin will do everythi
 
 **Translation**
 
-This plugin is ready for translation and has already been translated into several languages.
+This plugin is ready for translation and has already been translated into several languages. But If your language is not available then you can make one. It is also possible that not all existing translations are up-to-date or correct, so you are welcome to make corrections. Many of plugin users would be delighted if you share your translation with the community. Thanks for your contribution!
 
 * English (default)
 * Russian (translation by [Milena Kiseleva](https://www.instagram.com/milava_kiseleva/))
 * German (translation by Michael)
-* French (translation by Jean-Michel)
+* French (translation by Jean-Michel, Theophil Bethel and Hervé Bouzin)
 * Spanish (translation by Ramiro Garcés and Patricio Toledo)
 * Dutch (translation by Peter Leenders)
 
-If you want to help translate this plugin then please visit the [translation page](https://translate.wordpress.org/projects/wp-plugins/best-preloader).
+If you want to help translate this plugin, please visit the [translation page](https://translate.wordpress.org/projects/wp-plugins/best-preloader).
 
 **Minimum system requirements:**
 
@@ -98,11 +98,13 @@ After installation and activation, the "`Preloader`" menu item will appear in th
 
 == Frequently Asked Questions ==
 
-= Q. Will this plugin work on my WordPress.COM website? =
-A. Sorry, this plugin is available for use only on self-hosted (WordPress.ORG) websites.
+= Q. Will this plugin work on my wordpress.COM website? =
+A. Sorry, this plugin is available for use only on self-hosted (wordpress.ORG) websites.
 
 = Q. Can I use this plugin on my language? =
-A. Yes. This plugin is ready for translation and has already been translated into several languages. But If your language is not available then you can make one. The POT file is included and placed in the "`languages`" folder. Just [send the PO file to us](https://www.spacexchimp.com/contact.html) and we will include this translation within the next plugin update. Many of plugin users would be delighted if you share your translation with the community. Thanks for your contribution!
+A. Yes. This plugin is ready for translation and has already been translated into several languages. But If your language is not available then you can make one. It is also possible that not all existing translations are up-to-date or correct, so you are welcome to make corrections. Many of plugin users would be delighted if you share your translation with the community. Thanks for your contribution!
+
+If you want to help translate this plugin, please use the POT file that is included and placed in the `languages` folder to create a translation PO file. Just [send the PO file to us](https://www.spacexchimp.com/contact.html) and we will include this translation within the next plugin update.
 
 = Q. How does it work? =
 A. Simply go to the plugin settings page, select the desired settings and click the "Save changes" button. Enjoy your fancy preloader. It's that simple!
@@ -118,9 +120,9 @@ A. Absolutely not. This plugin is configurable entirely from the plugin settings
 A. Absolutely not. This plugin can be configured with no knowledge of HTML or CSS, using an easy-to-use plugin settings page.
 
 = Q. It's not working. What could be wrong? =
-A. As with every plugin, it's possible that things don't work. The most common reason for this is a web browser's cache. Every web browser stores a cache of the websites you visit (pages, images, and etc.) to reduce bandwidth usage and server load. This is called the browser's cache.​ Clearing your browser's cache may solve the problem.
+A. As with every plugin, it's possible that things don't work. It's impossible to tell what could be wrong exactly. The most common reason for this is a web browser’s cache. Every web browser stores a cache of the websites you visit (pages, images, and etc.) to reduce bandwidth usage and server load. This is called the browser’s cache. Clearing your browser’s cache may solve the problem.
 
-It's impossible to tell what could be wrong exactly, but if you post a support request in the plugin's support forum on WordPress.org, we'd be happy to give it a look and try to help out. Please include as much information as possible, including a link to your website where the problem can be seen.
+If you post a support request in the plugin's support forum on WordPress.org, we'd be happy to give it a look and try to help out. Please include as much information as possible, including a link to your website where the problem can be seen.
 
 = Q. The last WordPress update is preventing me from editing my website that is using this plugin. Why is this? =
 A. This plugin can not cause such problem. More likely, the problem are related to the settings of the website. It could just be a cache, so please try to clear your website's cache (may be you using a caching plugin, or some web service such as the CloudFlare) and then the cache of your web browser. Also please try to re-login to the website, this too can help.
@@ -168,6 +170,15 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 
 
 == Changelog ==
+
+= 4.27 =
+* The readme "Tested up to:" value changed to 5.1 after full testing process and ensuring compatibility.
+* Content of the "F.A.Q." section updated.
+* Some texts are corrected or replaced with new ones.
+* All translation files are updated.
+* Code formatting improved.
+* Added CSS class ".custom-list" for displaying a custom list, which is used on the plugin settings page.
+* The human.txt file updated.
 
 = 4.26 =
 * Content of the "Usage" section updated.
