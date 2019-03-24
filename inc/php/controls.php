@@ -32,8 +32,11 @@ function spacexchimp_p007_control_help( $help=null ) {
  */
 function spacexchimp_p007_control_field( $name, $label, $help=null, $placeholder=null ) {
 
+    // Put value of plugin constants into an array for easier access
+    $plugin = spacexchimp_p007_plugin();
+
     // Retrieve options from database and declare variables
-    $options = get_option( SPACEXCHIMP_P007_SETTINGS . '_settings' );
+    $options = get_option( $plugin['settings'] . '_settings' );
     $value = !empty( $options[$name] ) ? esc_textarea( $options[$name] ) : '';
 
     // Generate a part of table
@@ -44,8 +47,8 @@ function spacexchimp_p007_control_field( $name, $label, $help=null, $placeholder
                 <td>
                     <input
                         type='text'
-                        name='" . SPACEXCHIMP_P007_SETTINGS . "_settings[$name]'
-                        id='" . SPACEXCHIMP_P007_SETTINGS . "_settings[$name]'
+                        name='" . $plugin['settings'] . "_settings[$name]'
+                        id='" . $plugin['settings'] . "_settings[$name]'
                         value='$value'
                         placeholder='$placeholder'
                         class='control-field $name'
@@ -65,8 +68,11 @@ function spacexchimp_p007_control_field( $name, $label, $help=null, $placeholder
  */
 function spacexchimp_p007_control_switch( $name, $label, $help=null ) {
 
+    // Put value of plugin constants into an array for easier access
+    $plugin = spacexchimp_p007_plugin();
+
     // Retrieve options from database and declare variables
-    $options = get_option( SPACEXCHIMP_P007_SETTINGS . '_settings' );
+    $options = get_option( $plugin['settings'] . '_settings' );
     $checked = !empty( $options[$name] ) ? "checked='checked'" : '';
 
     // Generate a part of table
@@ -77,8 +83,8 @@ function spacexchimp_p007_control_switch( $name, $label, $help=null ) {
                 <td>
                     <input
                         type='checkbox'
-                        name='" . SPACEXCHIMP_P007_SETTINGS . "_settings[$name]'
-                        id='" . SPACEXCHIMP_P007_SETTINGS . "_settings[$name]'
+                        name='" . $plugin['settings'] . "_settings[$name]'
+                        id='" . $plugin['settings'] . "_settings[$name]'
                         $checked
                         class='control-switch $name'
                     >
@@ -97,8 +103,11 @@ function spacexchimp_p007_control_switch( $name, $label, $help=null ) {
  */
 function spacexchimp_p007_control_number( $name, $label, $help=null, $default=null ) {
 
+    // Put value of plugin constants into an array for easier access
+    $plugin = spacexchimp_p007_plugin();
+
     // Retrieve options from database and declare variables
-    $options = get_option( SPACEXCHIMP_P007_SETTINGS . '_settings' );
+    $options = get_option( $plugin['settings'] . '_settings' );
     $value = !empty( $options[$name] ) ? esc_attr( $options[$name] ) : $default;
 
     // Generate a part of table
@@ -115,8 +124,8 @@ function spacexchimp_p007_control_number( $name, $label, $help=null, $default=nu
                             </span>
                             <input
                                 type='number'
-                                name='" . SPACEXCHIMP_P007_SETTINGS . "_settings[$name]'
-                                id='" . SPACEXCHIMP_P007_SETTINGS . "_settings[$name]'
+                                name='" . $plugin['settings'] . "_settings[$name]'
+                                id='" . $plugin['settings'] . "_settings[$name]'
                                 value='$value'
                                 maxlength='4'
                                 class='form-control text-center'
@@ -142,8 +151,11 @@ function spacexchimp_p007_control_number( $name, $label, $help=null, $default=nu
  */
 function spacexchimp_p007_control_color( $name, $label, $help=null, $default=null ) {
 
+    // Put value of plugin constants into an array for easier access
+    $plugin = spacexchimp_p007_plugin();
+
     // Retrieve options from database and declare variables
-    $options = get_option( SPACEXCHIMP_P007_SETTINGS . '_settings' );
+    $options = get_option( $plugin['settings'] . '_settings' );
     $value = !empty( $options[$name] ) ? esc_attr( $options[$name] ) : $default;
 
     // Generate a part of table
@@ -154,8 +166,8 @@ function spacexchimp_p007_control_color( $name, $label, $help=null, $default=nul
                 <td>
                     <input
                         type='text'
-                        name='" . SPACEXCHIMP_P007_SETTINGS . "_settings[$name]'
-                        id='" . SPACEXCHIMP_P007_SETTINGS . "_settings[$name]'
+                        name='" . $plugin['settings'] . "_settings[$name]'
+                        id='" . $plugin['settings'] . "_settings[$name]'
                         value='$value'
                         placeholder='$default'
                         class='control-color $name'
@@ -175,8 +187,11 @@ function spacexchimp_p007_control_color( $name, $label, $help=null, $default=nul
  */
 function spacexchimp_p007_control_choice( $name, $items, $label, $help, $default ) {
 
+    // Put value of plugin constants into an array for easier access
+    $plugin = spacexchimp_p007_plugin();
+
     // Retrieve options from database and declare variables
-    $options = get_option( SPACEXCHIMP_P007_SETTINGS . '_settings' );
+    $options = get_option( $plugin['settings'] . '_settings' );
     $option = !empty( $options[$name] ) ? $options[$name] : '';
     $list_item = '';
 
@@ -191,7 +206,7 @@ function spacexchimp_p007_control_choice( $name, $items, $label, $help, $default
         $list_item .= "<li>
                            <input
                                   type='radio'
-                                  name='" . SPACEXCHIMP_P007_SETTINGS . "_settings[$name]'
+                                  name='" . $plugin['settings'] . "_settings[$name]'
                                   value='$item_key'
                                   $selected
                            >

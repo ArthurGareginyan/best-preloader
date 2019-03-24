@@ -10,8 +10,11 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
  */
 function spacexchimp_p007_add_container() {
 
+    // Put value of plugin constants into an array for easier access
+    $plugin = spacexchimp_p007_plugin();
+
     // Retrieve options from database
-    $options = get_option( SPACEXCHIMP_P007_SETTINGS . '_settings' );
+    $options = get_option( $plugin['settings'] . '_settings' );
 
     // Return if the button is disabled
     if ( empty( $options['enable_preloader'] ) ) {
