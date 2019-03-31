@@ -16,11 +16,6 @@ function spacexchimp_p007_add_container() {
     // Retrieve options from database
     $options = get_option( $plugin['settings'] . '_settings' );
 
-    // Return if the button is disabled
-    if ( empty( $options['enable_preloader'] ) ) {
-        return;
-    }
-
     ?>
         <div id="preloader">
             <div id="preloader-background"></div>

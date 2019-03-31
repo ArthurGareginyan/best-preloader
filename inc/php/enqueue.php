@@ -121,11 +121,6 @@ function spacexchimp_p007_load_scripts_frontend() {
     $options = get_option( $plugin['settings'] . '_settings' );
     $display_on = !empty( $options['display-preloader'] ) ? $options['display-preloader'] : '';
 
-    // Return if the button is disabled
-    if ( empty( $options['enable_preloader'] ) ) {
-        return;
-    }
-
     // If enabled on current page
     if ( $display_on == '' OR $display_on == 'Home Page Only' AND is_home() OR $display_on == 'Home Page Only' AND is_front_page() ) {
 

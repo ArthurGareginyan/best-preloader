@@ -5,7 +5,7 @@ loader, loading, loading screen indicator, loading indicator, screen indicator, 
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 5.1
-Stable tag: 4.31
+Stable tag: 4.32
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -171,7 +171,13 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 
 == Changelog ==
 
-= 4.31 - 2019-03-24 =
+= 4.32 - Mar 31, 2019 =
+* Fix: Not all text strings have been prepared for translation.
+* The option "Enable preloader" is deleted because of uselessness.
+* Framework updated: Code commenting improved.
+* Framework updated: The change log design is improved.
+
+= 4.31 - Mar 24, 2019 =
 * Framework updated: Added function "_plugin", which returns an array with the contents of plugin constants. The mention of plugin constants is replaced by the use of the function "_plugin".
 * Framework updated: The function "_settings_link" is improved.
 * Framework updated: The function "_plugin_row_meta" is improved.
@@ -179,19 +185,19 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 * Framework updated: Code commenting improved.
 * Framework updated: All translation files are updated.
 
-= 4.30 - 2019-03-18 =
+= 4.30 - Mar 18, 2019 =
 * Improvement: Notification display system updated
 * Code commenting improved.
 * Style sheet for the back end is optimised.
 
-= 4.29 - 2019-03-01 =
+= 4.29 - Mar 1, 2019 =
 * Framework updated: The file "page.php" is divided into the following parts: "page.php", "usage.php", "faq.php", "support.php".
 * Framework updated: The files "settings.php", "usage.php", "faq.php", "support.php" are moved to the subfolder "tabs".
 
-= 4.28 - 2019-02-24 =
+= 4.28 - Feb 24, 2019 =
 * Added French translation. (Thanks to Hervé Bouzin)
 
-= 4.27 =
+= 4.27 - Feb 21, 2019 =
 * The readme "Tested up to:" value changed to 5.1 after full testing process and ensuring compatibility.
 * Content of the "F.A.Q." section updated.
 * Some texts are corrected or replaced with new ones.
@@ -200,27 +206,27 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 * Added CSS class ".custom-list" for displaying a custom list, which is used on the plugin settings page.
 * The "humans.txt" file updated.
 
-= 4.26 =
+= 4.26 - Jan 11, 2019 =
 * Content of the "Usage" section updated.
 * Code formatting in the "admin.js" file improved.
 * Code commenting improved.
 * The copyright date updated.
 * Translation files are updated.
 
-= 4.25 =
+= 4.25 - Nov 2, 2018 =
 * Improvement: Design of the plugin settings page is improved.
 
-= 4.24 =
+= 4.24 - Oct 23, 2018 =
 * Improvement: Design of the plugin settings page is improved.
 
-= 4.23 =
+= 4.23 - Oct 9, 2018 =
 * Content of the "Settings" section updated.
 * Content of the "Usage Instructions" section updated.
 * CSS code, which is located in the file "admin.css" and is related to the "FAQ" section, is improved.
 * Code commenting improved.
 * Translation files are updated.
 
-= 4.22 =
+= 4.22 - Jul 24, 2018 =
 * Dutch translation added. (Thanks to Peter Leenders)
 * The code block that adds dynamic JavaScript is moved to a separate function '_load_scripts_dynamic_js' within the 'enqueue.php' file.
 * The code block that adds dynamic CSS is moved to a separate function '_load_scripts_dynamic_css' within the 'enqueue.php' file.
@@ -231,59 +237,59 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 * Some texts are updated.
 * All translation files are updated.
 
-= 4.21 =
+= 4.21 - Jul 13, 2018 =
 * The extra mention of the constant '_SLUG' is removed from the file 'enqueue.php'.
 * All translation files are updated.
 
-= 4.20 =
+= 4.20 - Jun 4, 2018 =
 * Fixed a bug due to which the plugin data that stored in the database to not be deleted during the uninstallation of the plugin.
 * The contents of the file 'uninstall.php' is moved to the file 'core.php'. The file 'uninstall.php' is deleted.
 * Some texts are corrected.
 
-= 4.19 =
+= 4.19 - May 20, 2018 =
 * Added new constant "_FILE".
 * Added a function that runs during the plugin activation. Now the date of the first activation of the plugin is recorded in the database.
 
-= 4.18 =
+= 4.18 - May 6, 2018 =
 * Added auto-versioning of the CSS and JavaScript files to avoid cache issues.
 * CSS code in the file 'admin.css' is optimized.
 
-= 4.17 =
+= 4.17 - Apr 25, 2018 =
 * Fixed the link "Settings", located in the plugin's meta row on the "Plugins" page. The suffix ".php" was deleted.
 * Fixed information stored in the header of the translation files.
 * Translation files updated.
 
-= 4.16 =
+= 4.16 - Apr 20, 2018 =
 * Some texts updated, and typos corrected.
 * All translation files updated.
 * The information about the author of the plugin (including name, links, copyright, etc.) was changed due to the fact that the plugin became the property of SpaceXChimp.
 * The "humans.txt" file updated.
 
-= 4.15 =
+= 4.15 - Jan 22, 2018 =
 * Texts updated.
 * The year in the copyright text is updated.
 * The sidebar items are rearranged.
 * Translation files updated.
 
-= 4.14 =
+= 4.14 - Nov 13, 2017 =
 * The plugin is fully tested for compatibility with WordPress version 4.9.
 * CSS code improved.
 
-= 4.13 =
+= 4.13 - Oct 28, 2017 =
 * German translation added. (Thanks to Michael)
 * Spanish translation updated. (Thanks to Patricio Toledo)
 * Fixed an issue where the "Hello" message could not be hidden.
 
-= 4.12 =
+= 4.12 - Sep 23, 2017 =
 * At the request of some users, plugin settings page moved to the submenu item in the top-level menu item "Settings", like before.
 
-= 4.11 =
+= 4.11 - Sep 19, 2017 =
 * Added branded footer text on the plugin's settings page.
 
-= 4.10 =
+= 4.10 - Sep 17, 2017 =
 * The hard coded HTML radio options are replaced with the PHP function that dynamically creates radio.
 
-= 4.9 =
+= 4.9 - Sep 15, 2017 =
 * Added the top level menu item of the brand.
 * The submenu item of the plugin has moved to the menu item of the brand.
 * The menu item of the plugin is renamed.
@@ -293,10 +299,10 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 * The "Support" tab renamed to the "Support Me".
 * The "Usage" tab renamed to the "Usage Instructions".
 
-= 4.8 =
+= 4.8 - Sep 8, 2017 =
 * Plugin data that saved in the database upgraded to version 0001.
 
-= 4.7 =
+= 4.7 - Aug 30, 2017 =
 * Added Spanish translation. (Thanks Patricio Toledo)
 * Function that render controls on the settings page is moved to a separate file 'controls.php'.
 * The '_setting' function divided into two functions: '_control_field' and '_control_switch'.
@@ -311,7 +317,7 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 * Prefixes of the PHP functions changed to ''spacexchimp_p007_.
 * Prefixes of the PHP constants changed to ''SPACEXCHIMP_P007_.
 
-= 4.6 =
+= 4.6 - Aug 10, 2017 =
 * Russian translation updated. (Thanks to Milena Kiseleva)
 * The navigation of the tabs is rearranged.
 * Fixed an issue due to which the sidebar was not hiding on mobile devices.
@@ -321,7 +327,7 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 * Banner moved from external source to plugin folder.
 * Code of PayPal button updated.
 
-= 4.5 =
+= 4.5 - Aug 8, 2017 =
 * Preview section on the settings page changed to live preview.
 * Stylesheet in the admin.css file improved.
 * The '!important' declarations in the admin.css file removed.
@@ -335,11 +341,11 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 * The 'Family' page tab renamed to 'Store'.
 * Added ad banner of my store website.
 
-= 4.4.1 =
+= 4.4.1 - Jun 21, 2017 =
 * The HTTPS mixed content issue fixed by changing all links to HTTPS.
 * Content of the "FAQ" section updated.
 
-= 4.4 =
+= 4.4 - Jun 16, 2017 =
 * On the plugin settings page, text of buttons are corrected.
 * On the plugin settings page, the information about the plugin version number moved to header section.
 * Some mention of constants replaced with variables for easier access.
@@ -347,14 +353,14 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 * Content of the "FAQ" tab updated.
 * Added load of the jQuery library on the plugin settings page.
 
-= 4.3 =
+= 4.3 - Jun 4, 2017 =
 * To the plugin settings page added information about the plugin version number.
 * The "Tested up to:" comment changed to 4.8 after full testing process.
 * The "version.php" file renamed to "versioning.php".
 * The "versioning.php" file updated to new version.
 * The "_plugin_version_number" function renamed to the "_versioning".
 
-= 4.2 =
+= 4.2 - May 26, 2017 =
 * Compatibility with PHP version 5.2 improved.
 * PHP shorthands improved.
 * Added function for generating the plugin constants.
@@ -366,7 +372,7 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 = 4.1.1 =
 * Fixed the bug due to which the "Warning: Constants may only evaluate to scalar values in" warning are displayed.
 
-= 4.1 =
+= 4.1 - May 24, 2017 =
 * Added new constants: "_SLUG", "_PREFIX", "_SETTINGS" and "_NAME".
 * Value of the "_VERSION" constant replaced with information from the plugin header data.
 * All references to the plugin name, slug, prefix are replaced with constants.
@@ -378,10 +384,10 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 * Code formatting improved.
 * F.A.Q. section updated.
 
-= 4.0.1 =
+= 4.0.1 - May 12, 2017 =
 * Fixed the bug due to which the the "Warning: Illegal string offset 'version' in" and the "Warning: Illegal string offset 'old_version' in" warnings are displayed. (Thanks to Sven Brill)
 
-= 4.0 =
+= 4.0 - May 8, 2017 =
 * The design of the plugin settings page is completely redone.
 * Added French translation. (Thanks Jean-Michel)
 * Added additional donate link to the "Plugins" page.
@@ -421,16 +427,17 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 * The POT file updated.
 * Translations updated.
 
-= 3.2 =
+= 3.2 - Nov 2, 2016 =
 * Added the Readme.txt file for translation contribution.
 * Added global constant for plugin text-domain.
 * Translations updated.
 * Ad banner replaced with new.
-= 3.1 =
+
+= 3.1 - Sep 3, 2016 =
 * Added prefixes to the stylesheet and script names when using wp_enqueue_style() and wp_enqueue_script().
 * Added constant for storing the plugin version number.
 
-= 3.0 =
+= 3.0 - Aug 30, 2016 =
 * The structure of files changed.
 * Style sheet of settings page improved and better commented.
 * Style sheet of settings page optimized for mobile devices.
@@ -439,7 +446,7 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 * Checkboxes replaced with cool triggers by using Bootstrap framework and Bootstrap-checkbox component.
 * Fixed error that appeared when preloader is disabled.
 
-= 2.1.1 =
+= 2.1.1 - Aug 23, 2016 =
 * POT file updated.
 * Russian translation updated.
 * Image "thanks.png" removed.
@@ -449,11 +456,11 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 * Function "bestpreloader_enqueue_scripts_admin" renamed to "bestpreloader_load_scripts_admin".
 * Function "bestpreloader_enqueue_scripts_frontend" renamed to "bestpreloader_load_scripts_frontend".
 
-= 2.1 =
+= 2.1 - Jun 15, 2016 =
 * Added option to set the delay before the preloader appears.
 * CSS code of preloader is improved.
 
-= 2.0 =
+= 2.0 - Apr 9, 2016 =
 * Some changes in design of settings page.
 * Constants variables added.
 * Text domain changed to "best-preloader".
@@ -464,11 +471,11 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 * .pot file updated.
 * Russian translation updated.
 
-= 1.1 =
+= 1.1 - Feb 24, 2016 =
 * Added Russian translation.
 * Added HTML tag < No Script > in order to hide preloader if JavaScript is disabled in user's browser.
 
-= 1.0 =
+= 1.0 - Feb 18, 2016 =
 * Initial release.
 * Added ready for translation (.pot file included).
 

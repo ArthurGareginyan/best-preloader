@@ -26,10 +26,12 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                         $preloader_size = !empty( $options['preloader-size'] ) ? $options['preloader-size'] : '100';
                     ?>
 
+                    <!-- SUBMIT -->
                     <button type="submit" name="submit" id="submit" class="btn btn-info btn-lg button-save-top">
                         <i class="fa fa-save" aria-hidden="true"></i>
                         <span><?php _e( 'Save changes', $plugin['text'] ); ?></span>
                     </button>
+                    <!-- END SUBMIT -->
 
                     <div class="postbox" id="settings">
                         <h3 class="title"><?php _e( 'Main Settings', $plugin['text'] ); ?></h3>
@@ -37,10 +39,6 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                             <p class="note"><?php _e( 'Here you can configure this plugin.', $plugin['text'] ); ?></p>
                             <table class="form-table">
                                 <?php
-                                    spacexchimp_p007_control_switch( 'enable_preloader',
-                                                                     __( 'Enable preloader', $plugin['text'] ),
-                                                                     __( 'Enable or disable this plugin.', $plugin['text'] )
-                                                                   );
                                     spacexchimp_p007_control_field( 'custom-image',
                                                                     __( 'Preloader image', $plugin['text'] ),
                                                                     __( 'You can set your own image of preloader. To do this, enter the link to the file of image. Leave blank to use the default image of preloader.', $plugin['text'] ),
@@ -58,8 +56,8 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                                   );
                                     spacexchimp_p007_control_choice( 'display-preloader',
                                                                      array(
-                                                                            ''               => 'Every frontend page',
-                                                                            'Home Page Only' => 'Home Page Only'
+                                                                            ''               => __( 'Every frontend page', $plugin['text'] ),
+                                                                            'Home Page Only' => __( 'Home Page Only', $plugin['text'] )
                                                                           ),
                                                                      __( 'Display Preloader on', $plugin['text'] ),
                                                                      __( 'Select where preloader need to be appeared.', $plugin['text'] ),
@@ -75,8 +73,11 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                         </div>
                     </div>
 
+                    <!-- SUBMIT -->
                     <input type="submit" name="submit" id="submit" class="btn btn-default btn-lg button-save-main" value="<?php _e( 'Save changes', $plugin['text'] ); ?>">
+                    <!-- END SUBMIT -->
 
+                    <!-- PREVIEW -->
                     <div class="postbox" id="preview">
                         <h3 class="title"><?php _e( 'Live Preview', $plugin['text'] ); ?></h3>
                         <div class="inside">
@@ -91,7 +92,9 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                             </style>
                         </div>
                     </div>
+                    <!-- END PREVIEW -->
 
+                    <!-- SUPPORT -->
                     <div class="postbox" id="support-addition">
                         <h3 class="title"><?php _e( 'Support', $plugin['text'] ); ?></h3>
                         <div class="inside">
@@ -105,6 +108,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                             <p><?php _e( 'Thanks for your support!', $plugin['text'] ); ?></p>
                         </div>
                     </div>
+                    <!-- END SUPPORT -->
 
                 </form>
 
