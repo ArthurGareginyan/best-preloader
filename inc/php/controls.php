@@ -232,3 +232,32 @@ function spacexchimp_p007_control_choice( $name, $items, $label, $help, $default
     // Print a help text
     spacexchimp_p007_control_help( $help );
 }
+
+/**
+ * Generator of the separator between option groups
+ */
+function spacexchimp_p007_control_separator( $text=null ) {
+
+    // Generate a part of table
+    if ( ! empty( $text ) ) {
+        $out = "<tr>
+                    <td height='60' colspan='2'>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan='2' style='text-align:center;'>
+                    " . $text . "
+                    </td>
+                </tr>";
+    } else {
+        $out = "<tr>
+                    <td height='60' colspan='2'>
+                        <hr>
+                    </td>
+                </tr>";
+    }
+
+    // Print the generated part of table
+    echo $out;
+}

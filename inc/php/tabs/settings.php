@@ -33,10 +33,10 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                     </button>
                     <!-- END SUBMIT -->
 
-                    <div class="postbox" id="settings">
-                        <h3 class="title"><?php _e( 'Main Settings', $plugin['text'] ); ?></h3>
+                    <div class="postbox" id="options-group-preloader">
+                        <h3 class="title"><?php _e( 'Preloader', $plugin['text'] ); ?></h3>
                         <div class="inside">
-                            <p class="note"><?php _e( 'Here you can configure this plugin.', $plugin['text'] ); ?></p>
+                            <p class="note"><?php _e( 'Here you can customize the preloader.', $plugin['text'] ); ?></p>
                             <table class="form-table">
                                 <?php
                                     spacexchimp_p007_control_field( 'custom-image',
@@ -44,29 +44,53 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                                     __( 'You can set your own image of preloader. To do this, enter the link to the file of image. Leave blank to use the default image of preloader.', $plugin['text'] ),
                                                                     'http://'
                                                                   );
-                                    spacexchimp_p007_control_number( 'preloader-size',
-                                                                     __( 'Preloader image size', $plugin['text'] ),
-                                                                     __( 'You can set the size of preloaders image (in pixels).', $plugin['text'] ),
-                                                                     '100'
-                                                                   );
+                                    spacexchimp_p007_control_separator();
                                     spacexchimp_p007_control_color( 'background-color',
                                                                     __( 'Background color', $plugin['text'] ),
                                                                     __( 'Select the background color of preloader. You can also add html HEX color code.', $plugin['text'] ),
                                                                     '#fff'
                                                                   );
+                                    spacexchimp_p007_control_separator();
+                                    spacexchimp_p007_control_number( 'preloader-size',
+                                                                     __( 'Preloader image size', $plugin['text'] ),
+                                                                     __( 'You can set the size of preloaders image (in pixels).', $plugin['text'] ),
+                                                                     '100'
+                                                                   );
+                                ?>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="postbox" id="options-group-effects">
+                        <h3 class="title"><?php _e( 'Effects', $plugin['text'] ); ?></h3>
+                        <div class="inside">
+                            <p class="note"><?php _e( 'Here you can customize the effects.', $plugin['text'] ); ?></p>
+                            <table class="form-table">
+                                <?php
+                                    spacexchimp_p007_control_number( 'seconds',
+                                                                     __( 'Delay time', $plugin['text'] ),
+                                                                     __( 'You can set the time (in seconds) before preloader will appear.', $plugin['text'] ),
+                                                                     '0'
+                                                                   );
+                                ?>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="postbox" id="options-group-autoload">
+                        <h3 class="title"><?php _e( 'Autoload', $plugin['text'] ); ?></h3>
+                        <div class="inside">
+                            <p class="note"><?php _e( 'Here you can configure the autoload.', $plugin['text'] ); ?></p>
+                            <table class="form-table">
+                                <?php
                                     spacexchimp_p007_control_choice( 'display-preloader',
                                                                      array(
                                                                             ''               => __( 'Every frontend page', $plugin['text'] ),
                                                                             'Home Page Only' => __( 'Home Page Only', $plugin['text'] )
                                                                           ),
-                                                                     __( 'Display Preloader on', $plugin['text'] ),
+                                                                     __( 'Display preloader on', $plugin['text'] ),
                                                                      __( 'Select where preloader need to be appeared.', $plugin['text'] ),
                                                                      ''
-                                                                   );
-                                    spacexchimp_p007_control_number( 'seconds',
-                                                                     __( 'Delay time', $plugin['text'] ),
-                                                                     __( 'You can set the time (in seconds) before preloader will appear.', $plugin['text'] ),
-                                                                     '0'
                                                                    );
                                 ?>
                             </table>
@@ -79,7 +103,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 
                     <!-- PREVIEW -->
                     <div class="postbox" id="preview">
-                        <h3 class="title"><?php _e( 'Live Preview', $plugin['text'] ); ?></h3>
+                        <h3 class="title"><?php _e( 'Live preview', $plugin['text'] ); ?></h3>
                         <div class="inside">
                             <div id="preloader">
                                 <div id="preloader-background"></div>

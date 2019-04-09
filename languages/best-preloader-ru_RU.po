@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Best Preloader\n"
-"POT-Creation-Date: 2019-03-31 16:10+0300\n"
-"PO-Revision-Date: 2019-03-31 16:11+0300\n"
+"POT-Creation-Date: 2019-04-09 13:59+0300\n"
+"PO-Revision-Date: 2019-04-09 13:59+0300\n"
 "Last-Translator: Arthur Gareginyan\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
@@ -28,7 +28,7 @@ msgstr "Настройки"
 msgid "Donate"
 msgstr "Поддержать"
 
-#: inc/php/core.php:78
+#: inc/php/core.php:78 inc/php/tabs/settings.php:37
 msgid "Preloader"
 msgstr "Предзагрузчик"
 
@@ -74,7 +74,7 @@ msgstr "Применение"
 msgid "F.A.Q."
 msgstr "F.A.Q."
 
-#: inc/php/page.php:46 inc/php/sidebar.php:46 inc/php/tabs/settings.php:99
+#: inc/php/page.php:46 inc/php/sidebar.php:46 inc/php/tabs/settings.php:123
 msgid "Support"
 msgstr "Поддержка"
 
@@ -102,16 +102,16 @@ msgstr "Помощь"
 msgid "If you have a question, please read the information in the FAQ section."
 msgstr "Если у вас есть вопрос, пожалуйста ознакомьтесь с информацией в разделе FAQ."
 
-#: inc/php/sidebar.php:48 inc/php/tabs/settings.php:101
+#: inc/php/sidebar.php:48 inc/php/tabs/settings.php:125
 msgid "Every little contribution helps to cover our costs and allows us to spend more time creating things for awesome people like you to enjoy."
 msgstr "Каждый небольшой вклад помогает покрыть наши расходы и позволяет нам тратить больше времени на создание вещей, которыми могут наслаждаться удивительные люди, такие как вы."
 
-#: inc/php/sidebar.php:53 inc/php/tabs/settings.php:106
+#: inc/php/sidebar.php:53 inc/php/tabs/settings.php:130
 #: inc/php/tabs/support.php:21
 msgid "Donate with PayPal"
 msgstr "Пожертвовать через PayPal"
 
-#: inc/php/sidebar.php:55 inc/php/tabs/settings.php:108
+#: inc/php/sidebar.php:55 inc/php/tabs/settings.php:132
 msgid "Thanks for your support!"
 msgstr "Спасибо за вашу поддержку!"
 
@@ -470,17 +470,13 @@ msgstr "Вы можете задать ваш вопрос на %s этой ст
 msgid "But please keep in mind that this plugin is free, and there is no a special support team, so we have no way to answer everyone."
 msgstr "Но имейте в виду, что этот плагин является бесплатным и без специальной поддержки, поэтому у нас нет возможности ответить на все вопросы."
 
-#: inc/php/tabs/settings.php:32 inc/php/tabs/settings.php:77
+#: inc/php/tabs/settings.php:32 inc/php/tabs/settings.php:101
 msgid "Save changes"
 msgstr "Сохранить изменения"
 
-#: inc/php/tabs/settings.php:37
-msgid "Main Settings"
-msgstr "Основные Настройки"
-
 #: inc/php/tabs/settings.php:39
-msgid "Here you can configure this plugin."
-msgstr "Здесь вы можете настроить этот плагин."
+msgid "Here you can customize the preloader."
+msgstr "Здесь вы можете настроить этот Preloader."
 
 #: inc/php/tabs/settings.php:43
 msgid "Preloader image"
@@ -490,48 +486,64 @@ msgstr "Изображение предзагрузчика"
 msgid "You can set your own image of preloader. To do this, enter the link to the file of image. Leave blank to use the default image of preloader."
 msgstr "Можно установить собственное изображение предзагрузчика. Чтобы сделать это, введите ссылку на файл изображения. Оставьте пустым для использования встроенного изображение предзагрузчика."
 
-#: inc/php/tabs/settings.php:48
-msgid "Preloader image size"
-msgstr "Размер изображения предзагрузчика"
-
 #: inc/php/tabs/settings.php:49
-msgid "You can set the size of preloaders image (in pixels)."
-msgstr "Можно задать размер изображения предзагрузчика (в пикселях)."
-
-#: inc/php/tabs/settings.php:53
 msgid "Background color"
 msgstr "Фоновый цвет"
 
-#: inc/php/tabs/settings.php:54
+#: inc/php/tabs/settings.php:50
 msgid "Select the background color of preloader. You can also add html HEX color code."
 msgstr "Выберите цвет фона предзагрузчика. Вы также можете добавить html HEX код цвета."
 
-#: inc/php/tabs/settings.php:59
-msgid "Every frontend page"
-msgstr ""
+#: inc/php/tabs/settings.php:55
+msgid "Preloader image size"
+msgstr "Размер изображения предзагрузчика"
 
-#: inc/php/tabs/settings.php:60
-msgid "Home Page Only"
-msgstr ""
+#: inc/php/tabs/settings.php:56
+msgid "You can set the size of preloaders image (in pixels)."
+msgstr "Можно задать размер изображения предзагрузчика (в пикселях)."
 
-#: inc/php/tabs/settings.php:62
-msgid "Display Preloader on"
-msgstr "Отображать предзагрузчик на"
-
-#: inc/php/tabs/settings.php:63
-msgid "Select where preloader need to be appeared."
-msgstr "Выберите, где должен показываться предзагрузчик."
+#: inc/php/tabs/settings.php:65
+msgid "Effects"
+msgstr "Эффекты"
 
 #: inc/php/tabs/settings.php:67
+msgid "Here you can customize the effects."
+msgstr ""
+
+#: inc/php/tabs/settings.php:71
 msgid "Delay time"
 msgstr "Время задержки"
 
-#: inc/php/tabs/settings.php:68
+#: inc/php/tabs/settings.php:72
 msgid "You can set the time (in seconds) before preloader will appear."
 msgstr "Вы можете установить время (в секундах) задержки появления предзагрузчика."
 
-#: inc/php/tabs/settings.php:82
-msgid "Live Preview"
+#: inc/php/tabs/settings.php:81
+msgid "Autoload"
+msgstr ""
+
+#: inc/php/tabs/settings.php:83
+msgid "Here you can configure the autoload."
+msgstr ""
+
+#: inc/php/tabs/settings.php:88
+msgid "Every frontend page"
+msgstr ""
+
+#: inc/php/tabs/settings.php:89
+msgid "Home Page Only"
+msgstr ""
+
+#: inc/php/tabs/settings.php:91
+msgid "Display preloader on"
+msgstr "Отображать предзагрузчик на"
+
+#: inc/php/tabs/settings.php:92
+msgid "Select where preloader need to be appeared."
+msgstr "Выберите, где должен показываться предзагрузчик."
+
+#: inc/php/tabs/settings.php:106
+msgid "Live preview"
 msgstr "Просмотр в реальном времени"
 
 #: inc/php/tabs/support.php:13
@@ -615,6 +627,9 @@ msgstr "Space X-Chimp"
 #. Author URI of the plugin/theme
 msgid "https://www.spacexchimp.com"
 msgstr "https://www.spacexchimp.com"
+
+#~ msgid "Main Settings"
+#~ msgstr "Основные Настройки"
 
 #~ msgid "Enable preloader"
 #~ msgstr "Включить предзагрузчик"
