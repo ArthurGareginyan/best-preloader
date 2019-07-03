@@ -21,7 +21,7 @@ Also you don't need to edit any file of your theme, this plugin will do everythi
 * Translation ready
 * Published on [WordPess.org](http://wordpess.org/)
 
-**Key features include...**
+**Key features include**
 
 * Background color changer (Unlimited colors)
 * Changeable preloader image
