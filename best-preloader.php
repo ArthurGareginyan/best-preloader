@@ -5,7 +5,7 @@
  * Description: Easily and safely add a preloader to your WordPress website.
  * Author: Space X-Chimp
  * Author URI: https://www.spacexchimp.com
- * Version: 4.33
+ * Version: 4.33.1
  * License: GPL3
  * Text Domain: best-preloader
  * Domain Path: /languages/
