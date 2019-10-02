@@ -5,7 +5,7 @@ loader, loading, loading screen indicator, loading indicator, screen indicator, 
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 5.2
-Stable tag: 4.33.1
+Stable tag: 4.34
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -170,6 +170,9 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 
 
 == Changelog ==
+
+= 4.34 - Oct 2, 2019 =
+* French translation updated. (Thanks to Hervé Bouzin)
 
 = 4.33.1 - Jul 16, 2019 =
 * Fixed: Prints a warning since PHP/7.1: "Notice: A non well formed numeric value encountered in /inc/php/versioning.php on line 43".
