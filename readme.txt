@@ -3,7 +3,7 @@ Contributors: Arthur Gareginyan
 Tags: animated pre-loader, animated preloader, best preloader, custom preloader, flat, preloader spinner, flat preloader, free preloader, html5 loader, load, loader,
 loader, loading, loading screen indicator, loading indicator, screen indicator, page load, page loader, page spinners, pre-loader, preload, preloader, preloader spinner, preloader, site loader, spinner
 Donate link: https://www.spacexchimp.com/donate.html
-Requires at least: 3.9
+Requires at least: 4.9
 Tested up to: 5.3
 Stable tag: 4.36
 License: GPL3
@@ -55,11 +55,13 @@ If you want to help translate this plugin, please visit the [translation page](h
 
 **Minimum system requirements:**
 
+* [WordPress](https://wordpress.org) version **4.9** or higher.
 * [PHP](https://secure.php.net) version **5.2** or higher.
 * [MySQL](https://www.mysql.com) version **5.0** or higher.
 
 **Recommended system requirements:**
 
+* [WordPress](https://wordpress.org) version **5.0** or higher.
 * [PHP](https://secure.php.net) version **7.0** or higher.
 * [MySQL](https://www.mysql.com) version **5.6** or higher.
 
