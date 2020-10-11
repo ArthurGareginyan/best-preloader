@@ -19,6 +19,9 @@ p {
 .postbox a {
     text-decoration: none;
 }
+.postbox button.btn {
+    height: 34px;
+}
 
 /* Title and Description of page
  -------------------------------------------------------------- */
@@ -620,7 +623,7 @@ td.help-text {
 }
 #preloader img {
     position: relative;
-    margin-top: -300px;
+    margin-top: -200px;
 }
 #preloader-background {
     position: static !important;
