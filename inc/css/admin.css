@@ -623,7 +623,7 @@ td.help-text {
 }
 #preloader img {
     position: relative;
-    margin-top: -300px;
+    margin-top: -200px;
 }
 #preloader-background {
     position: static !important;
