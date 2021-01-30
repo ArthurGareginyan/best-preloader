@@ -204,13 +204,18 @@ function spacexchimp_p007_control_choice( $name, $items, $label, $help, $default
             $selected = "";
         }
         $list_item .= "<li>
-                           <input
-                                  type='radio'
-                                  name='" . $plugin['settings'] . "_settings[$name]'
-                                  value='$item_key'
-                                  $selected
-                           >
-                            $item_value
+                            <div>
+                                <input
+                                    type='radio'
+                                    id='" . $plugin['settings'] . "_settings[$name]-$item_key'
+                                    name='" . $plugin['settings'] . "_settings[$name]'
+                                    value='$item_key'
+                                    $selected
+                                >
+                               <label for='" . $plugin['settings'] . "_settings[$name]-$item_key'>
+                                    $item_value
+                               </label>
+                            </div>
                        <li>";
     }
 
