@@ -16,16 +16,6 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                 <form action="options.php" method="post" enctype="multipart/form-data">
                     <?php settings_fields( $plugin['settings'] . '_settings_group' ); ?>
 
-                    <?php
-                        // Retrieve options from database
-                        $options = get_option( $plugin['settings'] . '_settings' );
-
-                        // Set default value if option is empty
-                        $background_color = !empty( $options['background-color'] ) ? $options['background-color'] : '#fff';
-                        $custom_image = !empty( $options['custom-image'] ) ? $options['custom-image'] : $plugin['url'] . 'inc/img/preloader.gif';
-                        $preloader_size = !empty( $options['preloader-size'] ) ? $options['preloader-size'] : '100';
-                    ?>
-
                     <!-- SUBMIT -->
                     <button type="submit" name="submit" id="submit" class="btn btn-info btn-lg button-save-top">
                         <i class="fa fa-save" aria-hidden="true"></i>
@@ -113,15 +103,10 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                     <div class="postbox" id="preview">
                         <h3 class="title"><?php _e( 'Live preview', $plugin['text'] ); ?></h3>
                         <div class="inside">
-                            <div id="preloader">
-                                <div id="preloader-background"></div>
-                                <img src="<?php echo $custom_image; ?>" width="<?php echo $preloader_size; ?>" height="<?php echo $preloader_size; ?>" />
+                            <p class="note"><?php _e( 'Click the "Save changes" button to update this preview.', $plugin['text'] ); ?></p><br>
+                            <div class="text-center">
+                                <?php spacexchimp_p007_add_container(); ?>
                             </div>
-                            <style>
-                                #preloader-background {
-                                    background-color: <?php echo $background_color; ?>;
-                                }
-                            </style>
                         </div>
                     </div>
                     <!-- END PREVIEW -->
