@@ -642,14 +642,14 @@ td.help-text {
  -------------------------------------------------------------- */
 
 /* Preview section */
-#preloader {
+#preview #preloader {
     display: block !important;
 }
-#preloader-background {
+#preview #preloader-background {
     position: static !important;
     width: 100%;
     height: 300px;
 }
-#preloader-status {
+#preview #preloader-status {
     position: absolute !important;
 }
