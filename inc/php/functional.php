@@ -8,7 +8,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Add DIV container with preloader to footer.
  */
-function spacexchimp_p007_add_container() {
+function spacexchimp_p007_generator() {
 
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p007_plugin();
@@ -32,4 +32,4 @@ function spacexchimp_p007_add_container() {
         </noscript>
     <?php
 }
-add_action( 'wp_head', 'spacexchimp_p007_add_container', 0 );
+add_action( 'wp_head', 'spacexchimp_p007_generator', 0 );
