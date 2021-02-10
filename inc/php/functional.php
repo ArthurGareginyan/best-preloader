@@ -6,7 +6,7 @@
 defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
- * Add DIV container with preloader to footer.
+ * Generate the preloader
  */
 function spacexchimp_p007_generator() {
 
@@ -16,11 +16,16 @@ function spacexchimp_p007_generator() {
     // Retrieve options from database
     $options = get_option( $plugin['settings'] . '_settings' );
 
+    // Generate preloader
     ?>
         <div id="preloader">
             <div id="preloader-background"></div>
             <div id="preloader-status"></div>
         </div>
+    <?php
+
+    // Generate script
+    ?>
         <noscript>
             <style type="text/css">
                 #preloader,
