@@ -7,6 +7,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
  * Generate the preloader
+ * @return string
  */
 function spacexchimp_p007_generator() {
 
