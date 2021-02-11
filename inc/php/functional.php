@@ -38,4 +38,8 @@ function spacexchimp_p007_generator() {
         </noscript>
     <?php
 }
+
+/**
+ * Inject the preloader into the website's frontend (head section)
+ */
 add_action( 'wp_head', 'spacexchimp_p007_generator', 0 );
