@@ -34,6 +34,32 @@ function spacexchimp_p007_generator() {
 }
 
 /**
+ * Callback for checking if the current page matches the selected one
+ * @return boolean ('true' or 'false')
+ */
+function spacexchimp_p007_load_on() {
+
+    // Put value of plugin constants into an array for easier access
+    $plugin = spacexchimp_p007_plugin();
+
+    // Retrieve options from database
+    $options = get_option( $plugin['settings'] . '_settings' );
+    $load_on = !empty( $options['display-preloader'] ) ? $options['display-preloader'] : '';
+
+    // Return 'true' if the current page matches the selected one
+    if ( $load_on == '' ) {
+        return true;
+    } elseif ( $load_on == 'Home Page Only' ) {
+        if ( is_home() OR is_front_page() ) {
+            return true;
+        }
+    }
+
+    // Return 'false' if nothing matches
+    return false;
+}
+
+/**
  * Inject the preloader into the website's frontend (head section)
  */
 add_action( 'wp_head', 'spacexchimp_p007_generator', 0 );
