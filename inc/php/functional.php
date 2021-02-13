@@ -60,6 +60,18 @@ function spacexchimp_p007_load_on() {
 }
 
 /**
+ * Autoload option
+ */
+function spacexchimp_p007_autoload() {
+
+    // Check if the current page matches the selected one
+    $load_on = spacexchimp_p007_load_on();
+    if ( $load_on === true ) {
+        spacexchimp_p007_generator();
+    }
+}
+
+/**
  * Inject the preloader into the website's frontend (head section)
  */
 add_action( 'wp_head', 'spacexchimp_p007_generator', 0 );
