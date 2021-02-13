@@ -114,32 +114,28 @@ add_action( 'admin_enqueue_scripts', $plugin['prefix'] . '_load_scripts_admin' )
  */
 function spacexchimp_p007_load_scripts_frontend() {
 
+    // Return if the current page does not match the selected one
+    $load_on = spacexchimp_p007_load_on();
+    if ( $load_on !== true ) {
+        return;
+    }
+
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p007_plugin();
 
-    // Retrieve options from database and declare variables
-    $options = get_option( $plugin['settings'] . '_settings' );
-    $display_on = !empty( $options['display-preloader'] ) ? $options['display-preloader'] : '';
+    // Load jQuery library
+    wp_enqueue_script( 'jquery' );
 
-    // If enabled on current page
-    if ( $display_on == '' OR $display_on == 'Home Page Only' AND is_home() OR $display_on == 'Home Page Only' AND is_front_page() ) {
+    // Style sheet
+    wp_enqueue_style( $plugin['prefix'] . '-frontend-css', $plugin['url'] . 'inc/css/frontend.css', array(), $plugin['version'], 'all' );
 
-        // Load jQuery library
-        wp_enqueue_script( 'jquery' );
+    // JavaScript
+    wp_enqueue_script( $plugin['prefix'] . '-frontend-js', $plugin['url'] . 'inc/js/frontend.js', array('jquery'), $plugin['version'], true );
 
-        // Style sheet
-        wp_enqueue_style( $plugin['prefix'] . '-frontend-css', $plugin['url'] . 'inc/css/frontend.css', array(), $plugin['version'], 'all' );
+    // Call the function that contains the dynamic JavaScript
+    spacexchimp_p007_load_scripts_dynamic_js();
 
-        // JavaScript
-        wp_enqueue_script( $plugin['prefix'] . '-frontend-js', $plugin['url'] . 'inc/js/frontend.js', array('jquery'), $plugin['version'], true );
-
-        // Call the function that contains the dynamic JavaScript
-        spacexchimp_p007_load_scripts_dynamic_js();
-
-        // Call the function that contains the dynamic CSS
-        spacexchimp_p007_load_scripts_dynamic_css();
-
-    }
-
+    // Call the function that contains the dynamic CSS
+    spacexchimp_p007_load_scripts_dynamic_css();
 }
 add_action( 'wp_enqueue_scripts', $plugin['prefix'] . '_load_scripts_frontend' );
