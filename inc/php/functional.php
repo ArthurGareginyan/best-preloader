@@ -74,4 +74,4 @@ function spacexchimp_p007_autoload() {
 /**
  * Inject the preloader into the website's frontend (head section)
  */
-add_action( 'wp_head', 'spacexchimp_p007_generator', 0 );
+add_action( 'wp_head', 'spacexchimp_p007_autoload', 0 );
