@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Best Preloader\n"
-"POT-Creation-Date: 2021-01-02 21:01+0300\n"
-"PO-Revision-Date: 2021-01-02 21:01+0300\n"
+"POT-Creation-Date: 2021-02-14 19:24+0300\n"
+"PO-Revision-Date: 2021-02-14 19:24+0300\n"
 "Last-Translator: Arthur Gareginyan\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
@@ -27,7 +27,7 @@ msgstr "Paramètres"
 msgid "Donate"
 msgstr "Faire un don"
 
-#: inc/php/core.php:78 inc/php/tabs/settings.php:37
+#: inc/php/core.php:78 inc/php/tabs/settings.php:27
 msgid "Preloader"
 msgstr "Preloader"
 
@@ -73,7 +73,7 @@ msgstr "Utilisation"
 msgid "F.A.Q."
 msgstr "FAQ."
 
-#: inc/php/page.php:46 inc/php/sidebar.php:46 inc/php/tabs/settings.php:131
+#: inc/php/page.php:46 inc/php/sidebar.php:46 inc/php/tabs/settings.php:116
 msgid "Support"
 msgstr "Support"
 
@@ -101,16 +101,16 @@ msgstr "Aide"
 msgid "If you have a question, please read the information in the FAQ section."
 msgstr "Si vous avez une question, veuillez lire les informations dans la section FAQ."
 
-#: inc/php/sidebar.php:48 inc/php/tabs/settings.php:133
+#: inc/php/sidebar.php:48 inc/php/tabs/settings.php:118
 msgid "Every little contribution helps to cover our costs and allows us to spend more time creating things for awesome people like you to enjoy."
 msgstr "Toute contribution même minime nous aident à couvrir nos frais et nous laisse plus de temps pour ajouter des fonctionnalités que les utilisateurs comme vous apprécient."
 
-#: inc/php/sidebar.php:53 inc/php/tabs/settings.php:138
+#: inc/php/sidebar.php:53 inc/php/tabs/settings.php:123
 #: inc/php/tabs/support.php:25
 msgid "Donate with PayPal"
 msgstr "Faire un don avec PayPal"
 
-#: inc/php/sidebar.php:55 inc/php/tabs/settings.php:140
+#: inc/php/sidebar.php:55 inc/php/tabs/settings.php:125
 msgid "Thanks for your support!"
 msgstr "Merci pour votre soutien!"
 
@@ -469,81 +469,87 @@ msgstr "Vous pouvez poser votre question sur %s cette page %s."
 msgid "But please keep in mind that this plugin is free, and there is no a special support team, so we have no way to answer everyone."
 msgstr ""
 
-#: inc/php/tabs/settings.php:32 inc/php/tabs/settings.php:109
+#: inc/php/tabs/settings.php:22 inc/php/tabs/settings.php:99
 msgid "Save changes"
 msgstr "Enregistrer les modifications"
 
-#: inc/php/tabs/settings.php:39
+#: inc/php/tabs/settings.php:29
 msgid "Here you can customize the preloader."
 msgstr "Ici vous pouvez configurer ce Preloader."
 
-#: inc/php/tabs/settings.php:43
+#: inc/php/tabs/settings.php:33
 msgid "Preloader image"
 msgstr "Image de preloader"
 
-#: inc/php/tabs/settings.php:44
+#: inc/php/tabs/settings.php:34
 msgid "You can set your own image of preloader. To do this, enter the link to the file of image. Leave blank to use the default image of preloader."
 msgstr "Vous pouvez mettre votre propre animation de \"Chargement de la page en cours...\". Pour cela, indiquer un lien vers cette animation. Si vous laisser le champ vide, l'extension utilisera l'animation par défaut."
 
-#: inc/php/tabs/settings.php:49
+#: inc/php/tabs/settings.php:39
 msgid "Background color"
 msgstr "Couleur de fond"
 
-#: inc/php/tabs/settings.php:50
+#: inc/php/tabs/settings.php:40
 msgid "Select the background color of preloader. You can also add html HEX color code."
 msgstr "Choisir la couleur de fond de l'animation de \"Chargement de la page en cours\". Vous pouvez aussi indiquer un code de couleur au format html hexadécimal."
 
-#: inc/php/tabs/settings.php:55
+#: inc/php/tabs/settings.php:45
 msgid "Preloader image size"
 msgstr "Dimensions de preloader"
 
-#: inc/php/tabs/settings.php:56
+#: inc/php/tabs/settings.php:46
 msgid "You can set the size of preloaders image (in pixels)."
 msgstr "Vous pouvez indiquer les dimensions (en pixels) de l'animation \"Chargement de la page en cours…”."
 
-#: inc/php/tabs/settings.php:65
+#: inc/php/tabs/settings.php:55
 msgid "Effects"
 msgstr ""
 
-#: inc/php/tabs/settings.php:67
+#: inc/php/tabs/settings.php:57
 msgid "Here you can customize the effects."
 msgstr ""
 
-#: inc/php/tabs/settings.php:71
+#: inc/php/tabs/settings.php:61
 msgid "Delay time"
 msgstr "Temporisation"
 
-#: inc/php/tabs/settings.php:72
+#: inc/php/tabs/settings.php:62
 msgid "You can set the time (in seconds) before preloader will appear."
 msgstr "Vous pouvez indiquer une durée (en secondes) avant que l'animation \"Chargement de la page en cours...\" n'apparaisse."
 
-#: inc/php/tabs/settings.php:81
+#: inc/php/tabs/settings.php:71
 msgid "Autoload"
 msgstr ""
 
-#: inc/php/tabs/settings.php:83
+#: inc/php/tabs/settings.php:73
 msgid "Here you can configure the autoload."
 msgstr ""
 
-#: inc/php/tabs/settings.php:88
+#: inc/php/tabs/settings.php:78
 msgid "Every frontend page"
 msgstr "Chaque page frontal"
 
-#: inc/php/tabs/settings.php:89
+#: inc/php/tabs/settings.php:79
 msgid "Home Page Only"
 msgstr ""
 
-#: inc/php/tabs/settings.php:91
+#: inc/php/tabs/settings.php:81
 msgid "Display preloader on"
 msgstr "Afficher preloader sur"
 
-#: inc/php/tabs/settings.php:92
+#: inc/php/tabs/settings.php:82
 msgid "Select where preloader need to be appeared."
 msgstr "Choisir l'endroit où preloader apparaîtra."
 
-#: inc/php/tabs/settings.php:114
+#: inc/php/tabs/settings.php:104
 msgid "Live preview"
 msgstr ""
+
+#: inc/php/tabs/settings.php:106
+#, fuzzy
+#| msgid "Click the \"Save changes\" button."
+msgid "Click the \"Save changes\" button to update this preview."
+msgstr "Cliquez sur le bouton \"Enregistrer les modifications\"."
 
 #: inc/php/tabs/support.php:17
 msgid "Support Us"
