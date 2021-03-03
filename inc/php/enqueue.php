@@ -13,8 +13,9 @@ function spacexchimp_p007_load_scripts_dynamic_js() {
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p007_plugin();
 
-    // Retrieve options from database and declare variables
-    $options = get_option( $plugin['settings'] . '_settings' );
+    // Put the value of the plugin options into an array for easier access
+    $options = spacexchimp_p007_options();
+
     $seconds = !empty( $options['seconds'] ) ? $options['seconds'] : '';
 
     // Create an array (JS object) with all the settings
@@ -36,8 +37,9 @@ function spacexchimp_p007_load_scripts_dynamic_css() {
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p007_plugin();
 
-    // Retrieve options from database and declare variables
-    $options = get_option( $plugin['settings'] . '_settings' );
+    // Put the value of the plugin options into an array for easier access
+    $options = spacexchimp_p007_options();
+
     $backgroun_color = !empty( $options['background-color'] ) ? $options['background-color'] : '#fff';
     $image = !empty( $options['custom-image'] ) ? $options['custom-image'] : $plugin['url'] . 'inc/img/preloader.gif';
     $preloader_size = !empty( $options['preloader-size'] ) ? $options['preloader-size'] : '100';
