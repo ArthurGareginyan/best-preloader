@@ -42,8 +42,9 @@ function spacexchimp_p007_load_on() {
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p007_plugin();
 
-    // Retrieve options from database
-    $options = get_option( $plugin['settings'] . '_settings' );
+    // Put the value of the plugin options into an array for easier access
+    $options = spacexchimp_p007_options();
+
     $load_on = !empty( $options['display-preloader'] ) ? $options['display-preloader'] : '';
 
     // Return 'true' if the current page matches the selected one
