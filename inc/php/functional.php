@@ -46,7 +46,7 @@ function spacexchimp_p007_load_on() {
     $options = spacexchimp_p007_options();
 
     // Declare variables
-    $load_on = !empty( $options['display-preloader'] ) ? $options['display-preloader'] : '';
+    $load_on = $options['display-preloader'];
 
     // Return 'true' if the current page matches the selected one
     if ( $load_on == '' ) {

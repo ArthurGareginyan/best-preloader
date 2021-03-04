@@ -22,6 +22,7 @@ function spacexchimp_p007_options() {
 
     // Set default value if option is empty
     $array['hidden_scrollto'] = !empty( $options['hidden_scrollto'] ) ? $options['hidden_scrollto'] : '0';
+    $array['display-preloader'] = !empty( $options['display-preloader'] ) ? $options['display-preloader'] : '';
     $array['seconds'] = !empty( $options['seconds'] ) ? $options['seconds'] : '';
     $array['background-color'] = !empty( $options['background-color'] ) ? $options['background-color'] : '#fff';
     $array['custom-image'] = !empty( $options['custom-image'] ) ? $options['custom-image'] : $plugin['url'] . 'inc/img/preloader.gif';
