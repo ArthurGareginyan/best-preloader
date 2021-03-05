@@ -28,6 +28,9 @@ function spacexchimp_p007_options() {
     $array['custom-image'] = !empty( $options['custom-image'] ) ? $options['custom-image'] : $plugin['url'] . 'inc/img/preloader.gif';
     $array['preloader-size'] = !empty( $options['preloader-size'] ) ? $options['preloader-size'] : '100';
 
+    // Sanitize data
+
+
     // Return the processed data
     return $array;
 }
