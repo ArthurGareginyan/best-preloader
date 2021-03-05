@@ -4,7 +4,7 @@ Tags: animated pre-loader, animated preloader, best preloader, custom preloader,
 loader, loading, loading screen indicator, loading indicator, screen indicator, page load, page loader, page spinners, pre-loader, preload, preloader, preloader spinner, preloader, site loader, spinner
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 4.9
-Tested up to: 5.6
+Tested up to: 5.7
 Requires PHP: 5.6
 Stable tag: 4.43
 License: GPL3
