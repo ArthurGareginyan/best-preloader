@@ -16,13 +16,10 @@ function spacexchimp_p007_load_scripts_dynamic_js() {
     // Put the value of the plugin options into an array for easier access
     $options = spacexchimp_p007_options();
 
-    // Declare variables
-    $seconds = $options['seconds'];
-
     // Create an array (JS object) with all the settings
     $script_params = array(
                            'plugin_url' => $plugin['url'],
-                           'seconds' => $seconds
+                           'seconds' => $options['seconds']
                            );
 
     // Inject the array into the JavaScript file
@@ -41,24 +38,19 @@ function spacexchimp_p007_load_scripts_dynamic_css() {
     // Put the value of the plugin options into an array for easier access
     $options = spacexchimp_p007_options();
 
-    // Declare variables
-    $backgroun_color = $options['background-color'];
-    $image = $options['custom-image'];
-    $preloader_size = $options['preloader-size'];
-
     // Create an array with all the settings (CSS code)
     $custom_css = "
                     #preloader {
                         display: none;
                     }
                     #preloader-background {
-                        background-color: " . $backgroun_color . ";
+                        background-color: " . $options['background-color'] . ";
                     }
                     #preloader-status {
-                        background-image:url(" . $image . ");
-                        -moz-background-size: " . $preloader_size . "px " . $preloader_size . "px;
-                        -o-background-size: " . $preloader_size . "px " . $preloader_size . "px;
-                        -webkit-background-size: " . $preloader_size . "px " . $preloader_size . "px;
+                        background-image:url(" . $options['custom-image'] . ");
+                        -moz-background-size: " . $options['preloader-size'] . "px " . $options['preloader-size'] . "px;
+                        -o-background-size: " . $options['preloader-size'] . "px " . $options['preloader-size'] . "px;
+                        -webkit-background-size: " . $options['preloader-size'] . "px " . $options['preloader-size'] . "px;
                     }
                   ";
 
