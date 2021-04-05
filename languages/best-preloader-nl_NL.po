@@ -547,10 +547,8 @@ msgid "Live preview"
 msgstr ""
 
 #: inc/php/tabs/settings.php:106
-#, fuzzy
-#| msgid "Click the \"Save changes\" button."
 msgid "Click the \"Save changes\" button to update this preview."
-msgstr "Klik op de knop \"Wijzigingen opslaan\"."
+msgstr ""
 
 #: inc/php/tabs/support.php:17
 msgid "Support Us"
