@@ -4,7 +4,7 @@ Tags: animated pre-loader, animated preloader, best preloader, custom preloader,
 loader, loading, loading screen indicator, loading indicator, screen indicator, page load, page loader, page spinners, pre-loader, preload, preloader, preloader spinner, preloader, site loader, spinner
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 4.9
-Tested up to: 5.7
+Tested up to: 5.8
 Requires PHP: 5.6
 Stable tag: 4.44
 License: GPL3
@@ -175,6 +175,9 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 
 
 == Changelog ==
+
+=
+* Maintenance: Ensure compatibility with upcoming WordPress 5.8.
 
 = 4.44 - Mar 8, 2021 =
 * Maintenance: Ensure compatibility with upcoming WordPress 5.7.
