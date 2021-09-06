@@ -64,41 +64,6 @@ function spacexchimp_p007_control_field( $name, $label, $help=null, $placeholder
 }
 
 /**
- * Generator of the switch option for saving plugin settings to database
- */
-function spacexchimp_p007_control_switch( $name, $label, $help=null ) {
-
-    // Put value of plugin constants into an array for easier access
-    $plugin = spacexchimp_p007_plugin();
-
-    // Retrieve options from database and declare variables
-    $options = get_option( $plugin['settings'] . '_settings' );
-    $checked = !empty( $options[$name] ) ? "checked='checked'" : '';
-
-    // Generate a part of table
-    $out = "<tr>
-                <th scope='row'>
-                    $label
-                </th>
-                <td>
-                    <input
-                        type='checkbox'
-                        name='" . $plugin['settings'] . "_settings[$name]'
-                        id='" . $plugin['settings'] . "_settings[$name]'
-                        $checked
-                        class='control-switch $name'
-                    >
-                </td>
-            </tr>";
-
-    // Print the generated part of table
-    echo $out;
-
-    // Print a help text
-    spacexchimp_p007_control_help( $help );
-}
-
-/**
  * Generator of the number option for saving plugin settings to database
  */
 function spacexchimp_p007_control_number( $name, $label, $help=null, $default=null ) {

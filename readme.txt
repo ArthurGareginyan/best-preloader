@@ -176,6 +176,9 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 
 == Changelog ==
 
+=
+* Maintenance: The function "_control_switch" is deleted because of uselessness.
+
 = 4.45 - Jul 19, 2021 =
 * Maintenance: Ensure compatibility with upcoming WordPress 5.8.
 
