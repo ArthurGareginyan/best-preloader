@@ -177,7 +177,7 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 == Changelog ==
 
 =  =
-* Security improvement: Prevent direct access to the "inc/options.php" file.
+* Security improvement: Prevent direct access to the "inc/php/options.php" file.
 * Maintenance: The function "_control_switch" is deleted because of uselessness.
 
 = 4.45 - Jul 19, 2021 =
