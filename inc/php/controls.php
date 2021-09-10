@@ -35,8 +35,8 @@ function spacexchimp_p007_control_field( $name, $label, $help=null, $placeholder
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p007_plugin();
 
-    // Retrieve options from database and declare variables
-    $options = get_option( $plugin['settings'] . '_settings' );
+    // Put the value of the plugin options into an array for easier access
+    $options = spacexchimp_p007_options();
     $value = !empty( $options[$name] ) ? esc_textarea( $options[$name] ) : '';
 
     // Generate a part of table
@@ -71,8 +71,8 @@ function spacexchimp_p007_control_number( $name, $label, $help=null, $default=nu
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p007_plugin();
 
-    // Retrieve options from database and declare variables
-    $options = get_option( $plugin['settings'] . '_settings' );
+    // Put the value of the plugin options into an array for easier access
+    $options = spacexchimp_p007_options();
     $value = !empty( $options[$name] ) ? esc_attr( $options[$name] ) : $default;
 
     // Generate a part of table
@@ -119,8 +119,8 @@ function spacexchimp_p007_control_color( $name, $label, $help=null, $default=nul
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p007_plugin();
 
-    // Retrieve options from database and declare variables
-    $options = get_option( $plugin['settings'] . '_settings' );
+    // Put the value of the plugin options into an array for easier access
+    $options = spacexchimp_p007_options();
     $value = !empty( $options[$name] ) ? esc_attr( $options[$name] ) : $default;
 
     // Generate a part of table
@@ -155,8 +155,8 @@ function spacexchimp_p007_control_choice( $name, $items, $label, $help, $default
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p007_plugin();
 
-    // Retrieve options from database and declare variables
-    $options = get_option( $plugin['settings'] . '_settings' );
+    // Put the value of the plugin options into an array for easier access
+    $options = spacexchimp_p007_options();
     $option = !empty( $options[$name] ) ? $options[$name] : '';
     $list_item = '';
 
