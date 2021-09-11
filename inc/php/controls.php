@@ -66,14 +66,14 @@ function spacexchimp_p007_control_field( $name, $label, $help=null, $placeholder
 /**
  * Generator of the number option for saving plugin settings to database
  */
-function spacexchimp_p007_control_number( $name, $label, $help=null, $default=null ) {
+function spacexchimp_p007_control_number( $name, $label, $help=null ) {
 
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p007_plugin();
 
     // Put the value of the plugin options into an array for easier access
     $options = spacexchimp_p007_options();
-    $option = !empty( $options[$name] ) ? esc_attr( $options[$name] ) : $default;
+    $option = !empty( $options[$name] ) ? esc_attr( $options[$name] ) : '';
 
     // Generate a part of table
     $out = "<tr>
@@ -114,14 +114,14 @@ function spacexchimp_p007_control_number( $name, $label, $help=null, $default=nu
 /**
  * Generator of the color option for saving plugin settings to database
  */
-function spacexchimp_p007_control_color( $name, $label, $help=null, $default=null ) {
+function spacexchimp_p007_control_color( $name, $label, $help=null ) {
 
     // Put value of plugin constants into an array for easier access
     $plugin = spacexchimp_p007_plugin();
 
     // Put the value of the plugin options into an array for easier access
     $options = spacexchimp_p007_options();
-    $option = !empty( $options[$name] ) ? esc_attr( $options[$name] ) : $default;
+    $option = !empty( $options[$name] ) ? esc_attr( $options[$name] ) : '';
 
     // Generate a part of table
     $out = "<tr>
@@ -134,7 +134,7 @@ function spacexchimp_p007_control_color( $name, $label, $help=null, $default=nul
                         name='" . $plugin['settings'] . "_settings[$name]'
                         id='" . $plugin['settings'] . "_settings[$name]'
                         value='$option'
-                        placeholder='$default'
+                        placeholder='$option'
                         class='control-color $name'
                     >
                 </td>

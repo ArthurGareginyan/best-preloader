@@ -37,14 +37,12 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                     spacexchimp_p007_control_separator();
                                     spacexchimp_p007_control_color( 'background-color',
                                                                     __( 'Background color', $plugin['text'] ),
-                                                                    __( 'Select the background color of preloader. You can also add html HEX color code.', $plugin['text'] ),
-                                                                    '#fff'
+                                                                    __( 'Select the background color of preloader. You can also add html HEX color code.', $plugin['text'] )
                                                                   );
                                     spacexchimp_p007_control_separator();
                                     spacexchimp_p007_control_number( 'preloader-size',
                                                                      __( 'Preloader image size', $plugin['text'] ),
-                                                                     __( 'You can set the size of preloaders image (in pixels).', $plugin['text'] ),
-                                                                     '100'
+                                                                     __( 'You can set the size of preloaders image (in pixels).', $plugin['text'] )
                                                                    );
                                 ?>
                             </table>
@@ -59,8 +57,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                 <?php
                                     spacexchimp_p007_control_number( 'seconds',
                                                                      __( 'Delay time', $plugin['text'] ),
-                                                                     __( 'You can set the time (in seconds) before preloader will appear.', $plugin['text'] ),
-                                                                     '0'
+                                                                     __( 'You can set the time (in seconds) before preloader will appear.', $plugin['text'] )
                                                                    );
                                 ?>
                             </table>
