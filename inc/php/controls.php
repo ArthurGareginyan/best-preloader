@@ -37,7 +37,7 @@ function spacexchimp_p007_control_field( $name, $label, $help=null, $placeholder
 
     // Put the value of the plugin options into an array for easier access
     $options = spacexchimp_p007_options();
-    $option = !empty( $options[$name] ) ? esc_textarea( $options[$name] ) : '';
+    $option = $options[$name];
 
     // Generate a part of table
     $out = "<tr>
@@ -73,7 +73,7 @@ function spacexchimp_p007_control_number( $name, $label, $help=null ) {
 
     // Put the value of the plugin options into an array for easier access
     $options = spacexchimp_p007_options();
-    $option = !empty( $options[$name] ) ? esc_attr( $options[$name] ) : '';
+    $option = $options[$name];
 
     // Generate a part of table
     $out = "<tr>
@@ -121,7 +121,7 @@ function spacexchimp_p007_control_color( $name, $label, $help=null ) {
 
     // Put the value of the plugin options into an array for easier access
     $options = spacexchimp_p007_options();
-    $option = !empty( $options[$name] ) ? esc_attr( $options[$name] ) : '';
+    $option = $options[$name];
 
     // Generate a part of table
     $out = "<tr>
@@ -157,7 +157,7 @@ function spacexchimp_p007_control_choice( $name, $items, $label, $help, $default
 
     // Put the value of the plugin options into an array for easier access
     $options = spacexchimp_p007_options();
-    $option = !empty( $options[$name] ) ? $options[$name] : '';
+    $option = $options[$name];
     $list_item = '';
 
     foreach ( $items as $item_key => $item_value ) {
