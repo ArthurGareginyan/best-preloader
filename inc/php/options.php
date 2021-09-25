@@ -27,12 +27,12 @@ function spacexchimp_p007_options() {
 
     // Set default value if option is empty
     $list = array(
-        'background-color' => '#fff',
-        'custom-image' => $plugin['url'] . 'inc/img/preloader.gif',
-        'display-preloader' => '',
-        'hidden_scrollto' => '0',
-        'preloader-size' => '100',
-        'seconds' => '',
+        'background-color' => '#fff', // _control_color
+        'custom-image' => $plugin['url'] . 'inc/img/preloader.gif', // _control_field
+        'display-preloader' => '', // _control_choice
+        'hidden_scrollto' => '0', // _control_hidden
+        'preloader-size' => '100', // _control_number
+        'seconds' => '', // _control_number
     );
     foreach ( $list as $name => $default ) {
         $array[$name] = !empty( $options[$name] ) ? $options[$name] : $default;
