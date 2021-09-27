@@ -24,8 +24,6 @@ function spacexchimp_p007_options() {
 
     // Create an array with options
     $array = $options;
-
-    // Set default value if option is empty
     $list = array(
         'background-color' => (string) '#fff', // _control_color
         'custom-image' => (string) $plugin['url'] . 'inc/img/preloader.gif', // _control_field
@@ -35,6 +33,8 @@ function spacexchimp_p007_options() {
         'seconds' => (integer) '', // _control_number
     );
     foreach ( $list as $name => $default ) {
+
+        // Set default value if option is empty
         $array[$name] = !empty( $options[$name] ) ? $options[$name] : $default;
     }
 
