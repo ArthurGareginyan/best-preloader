@@ -180,6 +180,7 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 * Security improvement: Prevent direct access to the "inc/php/options.php" file.
 * Maintenance: Processing of options has been improved. Direct retrieving of options from the database is replaced by the "_options" callback.
 * Maintenance: Processing of options has been improved. The "_options" function has been rewritten.
+* Maintenance: Processing of options has been improved. Explicit type definition technique is now used in variable declarations.
 * Maintenance: The function "_control_switch" is deleted because of uselessness.
 * Maintenance: The contents of PHP files have been optimised; Code formatting and commenting improved.
 
