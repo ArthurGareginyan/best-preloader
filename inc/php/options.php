@@ -30,7 +30,7 @@ function spacexchimp_p007_options() {
         'display-preloader' => (string) '', // _control_choice
         'hidden_scrollto' => (integer) '0', // _control_hidden
         'preloader-size' => (integer) '100', // _control_number
-        'seconds' => (integer) '', // _control_number
+        'seconds' => (integer) '0', // _control_number
     );
     foreach ( $list as $name => $default ) {
 
