@@ -49,11 +49,7 @@ function spacexchimp_p007_options() {
 
     // Sanitize data
     //$array['background-color'] = esc_textarea( $array['background-color'] );
-    //$array['custom-image'] = esc_textarea( $array['custom-image'] );
     //$array['display-preloader'] = esc_textarea( $array['display-preloader'] );
-    //$array['hidden_scrollto'] = esc_textarea( $array['hidden_scrollto'] );
-    //$array['preloader-size'] = esc_textarea( $array['preloader-size'] );
-    //$array['seconds'] = esc_textarea( $array['seconds'] );
 
     // Modify data
 
