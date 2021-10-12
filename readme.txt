@@ -185,6 +185,7 @@ Commercial licensing (e.g. for projects that can‚Äôt use an open-source lice
 * Maintenance: The function "_control_switch" is deleted because of uselessness.
 * Maintenance: The contents of PHP files have been optimised; Code formatting and commenting improved.
 * Maintenance: The "_test" function has been added to the "inc/php/options.php" file for development/testing purposes. It writes the options to a text file for the visualisation of options processing.
+* Maintenance: Code formatting and commenting improved.
 
 = 4.45 - Jul 19, 2021 =
 * Maintenance: Ensure compatibility with upcoming WordPress 5.8.
